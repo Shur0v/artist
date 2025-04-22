@@ -1,26 +1,57 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --white     : #ffffff;
+  --background: #FFF9EB;
+  --foreground: #4A4C56;
+  --color1    : #1D1F2C;
+  --color2    : #FF6B00;
+  --color3    : #AC9A72;
+  --color4    : #CCC8BE;
+  --color5    : #777980;
 }
 
 @theme inline {
+  --color-white: var(--white);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-color1: var(--color1);
+  --color-color2: var(--color2);
+  --color-color3: var(--color3);
+  --color-color4: var(--color4);
+  --color-color5: var(--color5);
+  --font-poppins: var(--font-poppins);
+  --font-playwrite: var(--font-playwrite);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+
+
+.some-element {
+  font-family: var(--font-poppins);
 }
 
 body {
+  font-family: "Poppins", sans-serif;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
 }

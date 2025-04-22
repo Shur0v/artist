@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins, Playwrite_US_Modern } from "next/font/google";
 import "./globals.css";
+import Nav from "./(site)/_components/common/nav";
+import Footer from "./(site)/_components/common/footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const playwrite = Playwrite_US_Modern({
+  variable: "--font-playwrite",
+  weight: ["100", "200", "300", "400"],
 });
 
 export const metadata: Metadata = {
@@ -24,10 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${poppins.variable} ${playwrite.variable} antialiased`}>
+        <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );

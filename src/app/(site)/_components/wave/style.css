@@ -1,0 +1,85 @@
+/* Import Lato font from Google Fonts for typography */
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+/* Main container styles */
+.wave {
+    width: full;
+    margin: 0;
+    margin-top: 23px;
+    margin-bottom: 80px;
+    height: 140px;
+
+}
+
+/* Wave animation container */
+.wave .waves {
+    position: relative;
+    width: 100%;
+    height: 115px;
+    margin-bottom: -7px; /* Fixes safari gap */
+    min-height: 75px;
+    max-height: 115px;
+}
+
+/* Content section below waves */
+.wave .content {
+    position: relative;
+    height: 25px;
+    text-align: center;
+    background-color: #B5B2B5; /* Background color of content section */
+}
+
+/* Animation settings for wave layers */
+.wave .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+}
+
+/* Individual wave layer animations */
+.wave .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+    /* First wave layer - Lightest - rgba(255,255,255,0.7) */
+}
+
+.wave .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+    /* Second wave layer - Medium light - rgba(255,255,255,0.5) */
+}
+
+.wave .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+    /* Third wave layer - Medium dark - rgba(255,255,255,0.3) */
+}
+
+.wave .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+    /* Fourth wave layer - Solid - #fff */
+}
+
+/* Wave animation keyframes */
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px,0,0); /* Start position */
+    }
+    100% { 
+        transform: translate3d(85px,0,0); /* End position */
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .wave .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+    .wave .content {
+        height: 30vh;
+    }
+    .wave h1 {
+        font-size: 24px;
+    }
+}
+
