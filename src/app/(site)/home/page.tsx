@@ -5,6 +5,8 @@ import Poetrysec from '../_components/home/poetrysec';
 import Poetry2sec from '../_components/home/poetry2sec';
 import Eventsec from '../_components/home/eventsec';
 import Contactsec from '../_components/home/contactsec';
+import Artbottom from '../_components/art/page';
+
 
 
 export default function Homee() {
@@ -16,7 +18,7 @@ export default function Homee() {
         <Poetrysec />
         <Poetry2sec />
         <Eventsec />
-        {/* <Contact /> */}
+        <Artbottom />
         <Contactsec />
     </div>
   )

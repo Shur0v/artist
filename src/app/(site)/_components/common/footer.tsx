@@ -43,7 +43,7 @@ export default function Footer() {
             <br />
             Gharbi
           </div>
-          <div className="text-center text-white text-lg font-normal leading-[27px] mb-8">
+          <div className="text-center text-white text-lg font-normal leading-[27px] mx-5 md:mx-0 mb-8">
             It is a long established fact that a reader will be distracted by
             the.
           </div>
