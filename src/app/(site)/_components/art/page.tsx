@@ -1,8 +1,65 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useRef } from 'react'
 import Image from "next/image"
 import "./art.css"
+import gsap from 'gsap'
 
 export default function Artbottom() {
+  const smallGradientRef = useRef<HTMLDivElement>(null);
+  const largeGradientRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const smallGradient = smallGradientRef.current;
+    const largeGradient = largeGradientRef.current;
+    const container = containerRef.current;
+    
+    if (!smallGradient || !largeGradient || !container) return;
+
+    // Get container dimensions
+    const bounds = container.getBoundingClientRect();
+    const maxX = bounds.width - 200;
+    const maxY = bounds.height - 200;
+
+    // Function to get random position within bounds
+    const getRandomPosition = () => ({
+      x: gsap.utils.random(-maxX/2, maxX/2),
+      y: gsap.utils.random(-maxY/2, maxY/2),
+      rotation: gsap.utils.random(-180, 180)
+    });
+
+    // Function to create next animation
+    const animateGradient = (target: HTMLElement, duration: number) => {
+      const pos = getRandomPosition();
+      
+      gsap.to(target, {
+        x: pos.x,
+        y: pos.y,
+        rotation: pos.rotation,
+        duration: duration,
+        ease: "power1.inOut",
+        onComplete: () => animateGradient(target, gsap.utils.random(5, 10))
+      });
+    };
+
+    // Initial setup
+    gsap.set([smallGradient, largeGradient], {
+      xPercent: -50,
+      yPercent: -50,
+      x: 0,
+      y: 0
+    });
+
+    // Start endless animations
+    animateGradient(smallGradient, 8);
+    animateGradient(largeGradient, 10);
+
+    // Cleanup
+    return () => {
+      gsap.killTweensOf([smallGradient, largeGradient]);
+    };
+  }, []);
+
   return (
     <div className="main py-20 mx-4 lg:mx-0">
       <div className="container">
@@ -88,7 +145,9 @@ export default function Artbottom() {
               </div>
 
               {/* Artist feature - large center */}
-              <div className="gallery-item item-6">
+              <div className="gallery-item item-6" ref={containerRef}>
+                <div className="gradient small-gradient" ref={smallGradientRef}></div>
+                <div className="gradient large-gradient" ref={largeGradientRef}></div>
                 <div className="text-container justify-start">
                   <h2 className='font-playwrite'>Rajaa <br /> Gharbi </h2>
                 </div>

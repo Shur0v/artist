@@ -3,6 +3,8 @@ import { Poppins, Playwrite_US_Modern } from "next/font/google";
 import "./globals.css";
 import Nav from "./(site)/_components/common/nav";
 import Footer from "./(site)/_components/common/footer";
+import Wave from "./(site)/_components/wave/wave";
+import Contactsec from "./(site)/_components/home/contactsec";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -29,7 +31,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.variable} ${playwrite.variable} antialiased`}>
         <Nav />
+        <Wave />
         {children}
+        <Contactsec />
         <Footer />
       </body>
     </html>

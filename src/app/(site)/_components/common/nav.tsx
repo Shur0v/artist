@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -14,67 +14,114 @@ const navItems: NavItem[] = [
   { label: "Bio", path: "/bio"},
   { label: "Poetry", path: "/poetry" },
   { label: "Event", path: "/event" },
-  { label: "Art Gallery", path: "/art-gallery" },
+  { label: "Art Gallery", path: "/art" },
   { label: "Login", path: "/login" },
 ];
 
 export default function Nav() {
   const pathname = usePathname();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
-
-
-    <div className=" bg-color3 ">
-
-
-    <div className="max-w-[1440px] mx-auto bg-color3 overflow-hidden">
-    
-        <div className=" h-[220px] w-full flex items-center overflow-hidden">
-      <div className="container ">
-        <div className="nav text-white flex justify-between">
-          <div className="logo align-middle text-3xl font-extrabold">
-            <div className="line relative">
-              <div className="justify-start text-white text-[44px] font-normal font-playwrite leading-[57.20px] ">
-                Rajaa
-                <br />
-                Gharbi
-              </div>
-              <div className="wraper h-12 w-[600px] bg-color2 flex justify-center items-center -rotate-45 absolute right-12 ">
-                <div className="justify-center text-white text-[22px] font-normal font-playwrite leading-7 pl-96 ">
-                  The Art of
+    <div className="bg-color3">
+      <div className="max-w-[1440px] mx-auto bg-color3 overflow-hidden">
+        <div className="h-[220px] md:h-[220px] w-full flex items-center overflow-hidden">
+          <div className="container mx-auto px-4 w-full">
+            <div className="nav text-white flex justify-between items-center relative w-full">
+              <div className="logo align-middle text-3xl font-extrabold">
+                <div className="line relative">
+                  <div className="justify-start text-white text-[44px] font-normal font-playwrite leading-[57.20px]">
+                    Rajaa
+                    <br />
+                    Gharbi
+                  </div>
+                  <div className="wraper md:block hidden">
+                    <div className="wraper h-12 w-[600px] bg-color2 flex justify-center items-center -rotate-45 absolute right-12">
+                      <div className="justify-center text-white text-[22px] font-normal font-playwrite leading-7 pl-96">
+                        The Art of
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div className="menu flex items-center">
-            <div className="flex justify-center items-center">
-              {navItems.map((item) => {
-                const isActive = pathname === item.path;
-                return (
-                  <Link
-                    key={item.path}
-                    href={item.path}
-                    className={`p-3 flex justify-center items-center gap-2.5 ${
-                      isActive ? "bg-[#ff6b00] rounded-[20px]" : ""
-                    }`}
-                  >
-                    <div className="justify-start text-white text-base font-normal leading-tight">
-                      {item.label}
-                    </div>
-                  </Link>
-                );
-              })}
+              {/* Hamburger Menu Button */}
+              <button
+                className="md:hidden p-2 text-white z-50"
+                onClick={toggleMobileMenu}
+                aria-label="Toggle mobile menu"
+              >
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  {isMobileMenuOpen ? (
+                    <path d="M6 18L18 6M6 6l12 12" />
+                  ) : (
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                  )}
+                </svg>
+              </button>
+
+              {/* Desktop Menu */}
+              <div className="menu hidden md:flex items-center flex-1 justify-end">
+                <div className="flex justify-end items-center flex-wrap gap-2">
+                  {navItems.map((item) => {
+                    const isActive = pathname === item.path;
+                    return (
+                      <Link
+                        key={item.path}
+                        href={item.path}
+                        className={`p-3 flex justify-center items-center gap-2.5 hover:bg-[#ff6b00] hover:rounded-[20px] transition-all ${
+                          isActive ? "bg-[#ff6b00] rounded-[20px]" : ""
+                        }`}
+                      >
+                        <div className="text-white text-base font-normal leading-tight whitespace-nowrap">
+                          {item.label}
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Mobile Menu Overlay */}
+              {isMobileMenuOpen && (
+                <div className="fixed inset-0 bg-color3 md:hidden z-40 pt-[220px]">
+                  <div className="flex flex-col items-center">
+                    {navItems.map((item) => {
+                      const isActive = pathname === item.path;
+                      return (
+                        <Link
+                          key={item.path}
+                          href={item.path}
+                          onClick={() => setIsMobileMenuOpen(false)}
+                          className={`p-4 w-full text-center hover:bg-[#ff6b00] transition-all ${
+                            isActive ? "bg-[#ff6b00]" : ""
+                          }`}
+                        >
+                          <div className="text-white text-base font-normal leading-tight">
+                            {item.label}
+                          </div>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    </div>
-    </div>
-
-
-
   );
 }

@@ -75,8 +75,16 @@
         height: 40px;
         min-height: 40px;
     }
+    .wave {
+        width: full;
+        margin-top: -70px;
+        margin-bottom: -20px;
+        height: 140px;
+        /* max-height: 140px; */
+    }
+
     .wave .content {
-        height: 8vh;
+        height: 15px;
     }
     .wave h1 {
         font-size: 24px;
