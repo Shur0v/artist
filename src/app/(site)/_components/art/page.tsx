@@ -89,9 +89,8 @@ export default function Artbottom() {
 
               {/* Artist feature - large center */}
               <div className="gallery-item item-6">
-                <div className="text-container">
-                  <h2>Rajaa</h2>
-                  <h2>Gharbi</h2>
+                <div className="text-container justify-start">
+                  <h2 className='font-playwrite'>Rajaa <br /> Gharbi </h2>
                 </div>
               </div>
 
