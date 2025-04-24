@@ -10,15 +10,22 @@ export default function Poetry2sec() {
     <div className="main py-20 mx-4 lg:mx-0">
       <div className="container">
         <div className="content">
-          <div className="flex justify-center">
+
+
+        <div className="flex justify-center "> 
+          <div className="flex justify-center flex-col gap-4">
             <Image 
-                src="/images/image5.png" 
+                src="/images/event.jpg" 
                 alt="poetry reviews" 
                 width={996} 
                 height={430} 
-                className="w-full md:w-[996px] h-auto md:h-[430px] rounded-xl"
+                className="w-full md:w-[696px] h-auto md:h-[430px] rounded-xl object-cover"
             />
+                        <p className="text-start text-sm font-normal leading-none mt-4">
+                        by <span className="font-bold">Jacinta Ceballo</span> 
+                        </p>
           </div>
+        </div>
 
           <div className="flex flex-col justify-start items-center gap-10 mt-10">
             <div className="flex flex-col justify-start items-start gap-6">

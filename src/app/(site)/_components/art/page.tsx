@@ -92,7 +92,7 @@ export default function Artbottom() {
               {/* Gallery hallway - tall left */}
               <div className="gallery-item item-1">
                 <Image
-                  src="/gallery/gal1.png"
+                  src="/art/var3.jpg"
                   alt="Art gallery hallway with paintings"
                   width={274}
                   height={406}
@@ -103,7 +103,7 @@ export default function Artbottom() {
               {/* Boat painting */}
               <div className="gallery-item item-2">
                 <Image
-                  src="/gallery/gal2.png"
+                  src="/art/art12.jpg"
                   alt="Painting of a boat on water at sunset"
                   width={274}
                   height={214}
@@ -114,7 +114,7 @@ export default function Artbottom() {
               {/* Person viewing art */}
               <div className="gallery-item item-3">
                 <Image
-                  src="/gallery/gal3.png"
+                  src="/art/art21.jpg" 
                   alt="Person viewing art in gallery"
                   width={274}
                   height={214}
@@ -125,7 +125,7 @@ export default function Artbottom() {
               {/* Framed artwork - tall right */}
               <div className="gallery-item item-4">
                 <Image
-                  src="/gallery/gal4.png"
+                  src="/art/var1.jpg"
                   alt="Framed artwork displayed on walls"
                   width={274}
                   height={406}
@@ -136,7 +136,7 @@ export default function Artbottom() {
               {/* Black swan */}
               <div className="gallery-item item-5">
                 <Image
-                  src="/gallery/gal8.png"
+                  src="/art/art15.jpg"
                   alt="Black swan illustration"
                   width={274}
                   height={214}
@@ -156,7 +156,7 @@ export default function Artbottom() {
               {/* Person examining painting */}
               <div className="gallery-item item-7">
                 <Image
-                  src="/gallery/gal7.png"
+                  src="/art/art31.jpg"
                   alt="Person examining a painting"
                   width={538}
                   height={214}
@@ -167,7 +167,7 @@ export default function Artbottom() {
               {/* Artist hand */}
               <div className="gallery-item item-8">
                 <Image
-                  src="/gallery/gal6.png"
+                  src="/art/art11.jpg"
                   alt="Artist hand with paintbrush"
                   width={274}
                   height={214}
@@ -178,7 +178,7 @@ export default function Artbottom() {
               {/* Gallery scene - tall right */}
               <div className="gallery-item item-9">
                 <Image
-                  src="/gallery/gal5.png"
+                  src="/art/var2.jpg"
                   alt="Gallery scene with person viewing art"
                   width={274}
                   height={406}

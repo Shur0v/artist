@@ -15,7 +15,7 @@ export default function Arttop() {
             <div className="w-full inline-flex flex-col justify-start items-start gap-8 mb-6">
               <Image 
                 className="w-full h-[240px] md:h-80 rounded-xl object-cover" 
-                src="/art/art1.jpg" 
+                src="/art/galleryfirst.jpg" 
                 alt="Art 1" 
                 width={588} 
                 height={320}
@@ -23,7 +23,7 @@ export default function Arttop() {
               <div className="self-stretch h-[62px] inline-flex justify-between items-start w-full">
                 <div className="inline-flex flex-col justify-start items-start gap-1">
                   <div className="justify-center text-[#1d1f2c] text-xl font-medium font-['Poppins'] leading-loose">Art 1</div>
-                  <div className="justify-center text-[#777980] text-base font-normal font-['Poppins'] leading-relaxed">22 Sep, 2025</div>
+                  <div className="justify-center text-[#777980] text-base font-normal font-['Poppins'] leading-relaxed">by <span className="font-bold">Amanda Ovena</span></div>
                 </div>
                 <Image className="w-[175px] h-[62px]" src="/icon/ptrn.svg" alt="Pattern" width={175} height={62}/>
               </div>
