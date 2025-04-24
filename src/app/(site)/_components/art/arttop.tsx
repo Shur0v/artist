@@ -15,7 +15,7 @@ export default function Arttop() {
             <div className="w-full inline-flex flex-col justify-start items-start gap-8 mb-6">
               <Image 
                 className="w-full h-[240px] md:h-80 rounded-xl object-cover" 
-                src="/art/art1.png" 
+                src="/art/art1.jpg" 
                 alt="Art 1" 
                 width={588} 
                 height={320}
@@ -32,7 +32,7 @@ export default function Arttop() {
             <div className="w-full inline-flex flex-col justify-start items-start gap-8 mb-6">
               <Image 
                 className="w-full h-[240px] md:h-80 rounded-xl object-cover" 
-                src="/art/art2.png" 
+                src="/art/art2.jpg" 
                 alt="Art 2" 
                 width={588} 
                 height={320}
@@ -49,7 +49,7 @@ export default function Arttop() {
             <div className="w-full inline-flex flex-col justify-start items-start gap-8 mb-6">
               <Image 
                 className="w-full h-[240px] md:h-80 rounded-xl object-cover" 
-                src="/art/art3.png" 
+                src="/art/art3.jpg" 
                 alt="Art 3" 
                 width={588} 
                 height={320}
@@ -66,7 +66,7 @@ export default function Arttop() {
             <div className="w-full inline-flex flex-col justify-start items-start gap-8 mb-6">
               <Image 
                 className="w-full h-[240px] md:h-80 rounded-xl object-cover" 
-                src="/art/art4.png" 
+                src="/art/art4.jpg" 
                 alt="Art 4" 
                 width={588} 
                 height={320}
@@ -83,7 +83,7 @@ export default function Arttop() {
             <div className="w-full inline-flex flex-col justify-start items-start gap-8 mb-6">
               <Image 
                 className="w-full h-[240px] md:h-80 rounded-xl object-cover" 
-                src="/art/art5.png" 
+                src="/art/art5.jpg" 
                 alt="Art 5" 
                 width={588} 
                 height={320}
@@ -100,7 +100,7 @@ export default function Arttop() {
             <div className="w-full inline-flex flex-col justify-start items-start gap-8 mb-6">
               <Image 
                 className="w-full h-[240px] md:h-80 rounded-xl object-cover" 
-                src="/art/art6.png" 
+                src="/art/art6.jpg" 
                 alt="Art 6" 
                 width={588} 
                 height={320}
