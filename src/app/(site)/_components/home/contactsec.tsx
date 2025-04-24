@@ -32,16 +32,16 @@ export default function Contactsec() {
               {/* Contact Title */}
               <div className="max-w-[135px] flex flex-col justify-start items-start gap-2">
                 <div className="self-stretch inline-flex justify-start items-center gap-2">
-                  <div className="justify-start text-[#4a4c56] text-base font-normal leading-tight">Contact</div>
-                  <div className="w-[60px] h-0 outline-1 outline-offset-[-0.50px] outline-[#ff6b00]"></div>
+                  <div className="justify-start text-base font-normal leading-tight">Contact</div>
+                  <div className="w-[60px] h-0 outline-1 outline-offset-[-0.50px] outline-color2"></div>
                 </div>
-                <div className="self-stretch justify-start text-[#1d1f2c] text-2xl font-semibold leading-[31.20px] mb-8">Contact Us</div>
+                <div className="self-stretch justify-start text-color1 text-2xl font-semibold leading-[31.20px] mb-8">Contact Us</div>
               </div>
 
               <div className="lg:col-span-4 inline-flex flex-col justify-start items-start gap-6">
                 {/* Address */}
                 <div className="self-stretch inline-flex justify-start items-center gap-[13px]">
-                  <div className="w-10 h-10 p-[5px] bg-[#ff6b00]/20 rounded-[20px] flex justify-center items-center">
+                  <div className="w-10 h-10 p-[5px] bg-color2/20 rounded-[20px] flex justify-center items-center">
                     <Image 
                       src="/icon/location.svg" 
                       alt="location" 
@@ -51,14 +51,14 @@ export default function Contactsec() {
                     />
                   </div>
                   <div className="max-w-[272px] inline-flex flex-col justify-start items-start gap-1.5">
-                    <div className="self-stretch justify-start text-[#1d1f2c] text-base font-medium leading-tight">Address</div>
-                    <div className="self-stretch justify-start text-[#777980] text-sm font-normal leading-[18.20px]">2518 Adams Street, New York, NY 53022</div>
+                    <div className="self-stretch justify-start text-color1 text-base font-medium leading-tight">Address</div>
+                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">2518 Adams Street, New York, NY 53022</div>
                   </div>
                 </div>
 
                 {/* Call Us */}
                 <div className="self-stretch inline-flex justify-start items-center gap-[13px]">
-                  <div className="w-10 h-10 p-[5px] bg-[#ff6b00]/20 rounded-[20px] flex justify-center items-center">
+                  <div className="w-10 h-10 p-[5px] bg-color2/20 rounded-[20px] flex justify-center items-center">
                     <Image 
                       src="/icon/call.svg" 
                       alt="phone" 
@@ -68,14 +68,14 @@ export default function Contactsec() {
                     />
                   </div>
                   <div className="max-w-[272px] inline-flex flex-col justify-start items-start gap-1.5">
-                    <div className="self-stretch justify-start text-[#1d1f2c] text-base font-medium leading-tight">Call Us</div>
-                    <div className="self-stretch justify-start text-[#777980] text-sm font-normal leading-[18.20px]">+1 5589 55488 55</div>
+                    <div className="self-stretch justify-start text-color1 text-base font-medium leading-tight">Call Us</div>
+                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">+1 5589 55488 55</div>
                   </div>
                 </div>
 
                 {/* Email Us */}
                 <div className="self-stretch inline-flex justify-start items-center gap-[13px]">
-                  <div className="w-10 h-10 p-[5px] bg-[#ff6b00]/20 rounded-[20px] flex justify-center items-center">
+                  <div className="w-10 h-10 p-[5px] bg-color2/20 rounded-[20px] flex justify-center items-center">
                     <Image 
                       src="/icon/mail.svg" 
                       alt="email" 
@@ -85,8 +85,8 @@ export default function Contactsec() {
                     />
                   </div>
                   <div className="max-w-[272px] inline-flex flex-col justify-start items-start gap-1.5">
-                    <div className="self-stretch justify-start text-[#1d1f2c] text-base font-medium leading-tight">Email Us</div>
-                    <div className="self-stretch justify-start text-[#777980] text-sm font-normal leading-[18.20px]">demo@gmail.com</div>
+                    <div className="self-stretch justify-start text-color1 text-base font-medium leading-tight">Email Us</div>
+                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">demo@gmail.com</div>
                   </div>
                 </div>
               </div>
@@ -99,18 +99,18 @@ export default function Contactsec() {
                   <div className="self-stretch inline-flex justify-start items-start gap-3 flex-col md:flex-row">
                     <div className="flex-1 w-full inline-flex flex-col justify-start items-start gap-2">
                       <div className="inline-flex justify-center items-center gap-2.5">
-                        <div className="justify-start text-[#777980] text-base font-normal font-['Poppins'] leading-relaxed">Your Name</div>
+                        <div className="justify-start text-color5 text-base font-normal font-['Poppins'] leading-relaxed">Your Name</div>
                       </div>
                       <input
                         type="text"
                         {...register("name", { required: true })}
-                        className="self-stretch h-14 px-[18px] py-3.5 bg-white rounded-md border-[0.60px] border-black/20 focus:outline-none focus:border-[#ff6b00] w-full"
+                        className="self-stretch h-14 px-[18px] py-3.5 bg-white rounded-md border-[0.60px] border-black/20 focus:outline-none focus:border-color2 w-full"
                       />
                       {errors.name && <span className="text-red-500 text-sm">This field is required</span>}
                     </div>
                     <div className="flex-1 w-full inline-flex flex-col justify-start items-start gap-2">
                       <div className="inline-flex justify-center items-center gap-2.5">
-                        <div className="justify-start text-[#777980] text-base font-normal font-['Poppins'] leading-relaxed">Your Email</div>
+                        <div className="justify-start text-color5 text-base font-normal font-['Poppins'] leading-relaxed">Your Email</div>
                       </div>
                       <input
                         type="email"
@@ -118,7 +118,7 @@ export default function Contactsec() {
                           required: true,
                           pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i 
                         })}
-                        className="self-stretch h-14 px-[18px] py-3.5 bg-white rounded-md border-[0.60px] border-black/20 focus:outline-none focus:border-[#ff6b00] w-full"
+                        className="self-stretch h-14 px-[18px] py-3.5 bg-white rounded-md border-[0.60px] border-black/20 focus:outline-none focus:border-color2  w-full"
                       />
                       {errors.email && <span className="text-red-500 text-sm">Please enter a valid email</span>}
                     </div>
@@ -127,12 +127,12 @@ export default function Contactsec() {
                   <div className="self-stretch inline-flex justify-start items-start gap-3">
                     <div className="flex-1 inline-flex flex-col justify-start items-start gap-2 w-full">
                       <div className="inline-flex justify-center items-center gap-2.5">
-                        <div className="justify-start text-[#777980] text-base font-normal font-['Poppins'] leading-relaxed">Subject</div>
+                        <div className="justify-start text-color5 text-base font-normal font-['Poppins'] leading-relaxed">Subject</div>
                       </div>
                       <input
                         type="text"
                         {...register("subject", { required: true })}
-                        className="self-stretch h-14 px-[18px] py-3.5 bg-white rounded-md border-[0.60px] border-black/20 focus:outline-none focus:border-[#ff6b00] w-full"
+                        className="self-stretch h-14 px-[18px] py-3.5 bg-white rounded-md border-[0.60px] border-black/20 focus:outline-none focus:border-color2  w-full"
                       />
                       {errors.subject && <span className="text-red-500 text-sm">This field is required</span>}
                     </div>
@@ -141,13 +141,13 @@ export default function Contactsec() {
                   <div className="self-stretch flex flex-col justify-start items-start gap-8 w-full">
                     <div className="self-stretch flex flex-col justify-start items-start gap-2 w-full">
                       <div className="inline-flex justify-center items-center gap-2.5">
-                        <div className="justify-start text-[#777980] text-base font-normal font-['Poppins'] leading-relaxed">Message</div>
+                        <div className="justify-start text-color5 text-base font-normal font-['Poppins'] leading-relaxed">Message</div>
                       </div>
                       <textarea
                         {...register("message", { required: true })}
                         rows={6}
                         placeholder="Share your thoughts..."
-                        className="self-stretch h-[168px] px-[18px] py-3.5 bg-white rounded-md border-[0.60px] border-black/20 focus:outline-none focus:border-[#ff6b00] resize-none text-[#a5a5ab] text-base font-normal font-['Poppins'] leading-relaxed w-full"
+                        className="self-stretch h-[168px] px-[18px] py-3.5 bg-white rounded-md border-[0.60px] border-black/20 focus:outline-none focus:border-color2 resize-none text-color5 text-base font-normal font-['Poppins'] leading-relaxed w-full"
                       />
                       {errors.message && <span className="text-red-500 text-sm">This field is required</span>}
                     </div>
@@ -157,9 +157,9 @@ export default function Contactsec() {
                 <div className="self-stretch flex flex-col justify-start items-center gap-20">
                   <button
                     type="submit"
-                    className="self-stretch h-14 px-7 py-4 bg-[#ff6b00] rounded-[10px] inline-flex justify-center items-center gap-4 hover:bg-[#e65600] transition-colors duration-300"
+                    className="self-stretch h-14 px-7 py-4 bg-color2 rounded-[10px] inline-flex justify-center items-center gap-4 hover:bg-color1 transition-colors duration-300"
                   >
-                    <span className="justify-center text-[#fef7f9] text-xl font-medium font-['Poppins'] leading-7">Send Message</span>
+                    <span className="justify-center text-color3 text-xl font-medium font-['Poppins'] leading-7">Send Message</span>
                   </button>
                 </div>
               </form>

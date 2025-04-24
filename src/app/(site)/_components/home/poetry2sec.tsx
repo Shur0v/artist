@@ -104,9 +104,9 @@ export default function Poetry2sec() {
 
             <button 
               onClick={() => setShowFullText(!showFullText)}
-              className="h-11 px-8 py-4 bg-[#ff6b00] rounded-[22px] inline-flex justify-center items-center gap-3 hover:bg-[#e65600] transition-colors duration-300"
+              className="h-11 px-8 py-4 bg-color2 rounded-[22px] inline-flex justify-center items-center gap-3 hover:bg-color1 transition-colors duration-300"
             >
-              <div className="text-[#fff9eb] text-base font-medium leading-none flex items-center">
+              <div className="text-background text-base font-medium leading-none flex items-center">
                 {showFullText ? 'Show Less' : 'See More'} 
                 <FaAngleDown className={`text-white ml-2 transition-transform duration-300 ${showFullText ? 'rotate-180' : 'rotate-0'}`} />
               </div>

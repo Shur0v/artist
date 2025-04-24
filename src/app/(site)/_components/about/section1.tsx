@@ -17,13 +17,13 @@ export default function Section1() {
                     <div className="text-base font-normal leading-tight">
                       About
                     </div>
-                    <div className="w-[63px] h-0 outline-[1.50px] outline-[#ff6b00]"></div>
+                    <div className="w-[63px] h-0 outline-[1.50px] outline-color2"></div>
                   </div>
                 </div>
 
                 <div className="flex justify-start items-center gap-2.5">
                   <div className="flex-1 justify-center">
-                    <span className="text-[#1d1f2c] text-[40px] font-bold leading-[48px]">
+                    <span className="text-color1 text-[40px] font-bold leading-[48px]">
                       This is{" "}
                     </span>
                     <span className="text-color2 text-[40px] font-bold leading-[48px]">
@@ -102,7 +102,7 @@ export default function Section1() {
             <div className="left col-span-7 mb-10 md:mb-0">
               <div className="max-w-[690px] flex flex-col justify-start items-start gap-6">
                 <div className="self-stretch flex flex-col justify-center items-start gap-2.5">
-                  <div className="justify-center text-[#4a4c56] text-base font-normal leading-relaxed">
+                  <div className="justify-center text-base font-normal leading-relaxed">
                     My art is a search for medicine laughter. Utilizing natural and synthetic water based media I alternate, stylistically and thematically, between the meditative semi-abstract and the playfully caricatural to look for &ldquo;poetry&rdquo; that surfaces in the dark and in daylight, unsuspected, gentle, yet unbreakable.
                   </div>
                 </div>

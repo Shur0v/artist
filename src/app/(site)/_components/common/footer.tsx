@@ -36,14 +36,14 @@ export default function Footer() {
         <div className="content py-[60px]">
 
           
-          <div className="top max-w-[996px] mx-auto flex justify-center flex-col items-center border-b border-white mb-10">
+          <div className="top max-w-[996px] mx-auto flex justify-center flex-col items-center border-b border-color6 mb-10">
 
-          <div className="justify-start text-white text-[28px] font-normal font-playwrite leading-9 mb-5">
+          <div className="justify-start text-color6 text-[28px] font-normal font-playwrite leading-9 mb-5">
             Rajaa
             <br />
             Gharbi
           </div>
-          <div className="text-center text-white text-lg font-normal leading-[27px] mx-5 md:mx-0 mb-8">
+          <div className="text-center text-color6 text-lg font-normal leading-[27px] mx-5 md:mx-0 mb-8">
             It is a long established fact that a reader will be distracted by
             the.
           </div>
@@ -55,7 +55,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={item.ariaLabel}
-                className="w-10 h-10 bg-[#ff6b00] rounded-full flex items-center justify-center hover:bg-[#e66000] transition-colors"
+                className="w-10 h-10 bg-color2 rounded-full flex items-center justify-center hover:bg-color1 transition-colors"
               >
                 <item.icon className="text-white text-xl" />
               </a>
@@ -64,7 +64,7 @@ export default function Footer() {
 
           </div>
 
-          <div className="text-center text-white text-base font-normal leading-tight">Copyright Rajaa Gharbi All Rights Reserved</div>
+          <div className="text-center text-color6 text-base font-normal leading-tight">Copyright Rajaa Gharbi All Rights Reserved</div>
 
         </div>
       </div>

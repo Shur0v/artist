@@ -68,18 +68,18 @@ export default function Artbottom() {
           <div className="flex flex-col justify-start items-start gap-6">
             <div className="flex flex-col justify-start items-start gap-2">
               <div className="flex justify-start items-center gap-2">
-                <div className="text-[#4a4c56] text-base font-normal leading-tight">
+                <div className="text-color5 text-base font-normal leading-tight">
                   Art Gallery
                 </div>
-                <div className="w-[63px] h-0 outline-[1.50px] outline-offset-[-0.75px] outline-[#ff6b00]"></div>
+                <div className="w-[63px] h-0 outline-[1.50px] outline-color2"></div>
               </div>
             </div>
             <div className="flex justify-center items-center gap-2.5">
               <div className="max-w-[830px] justify-start">
-                <span className="text-[#1d1f2c] text-[40px] font-bold leading-[48px] tracking-tight">
+                <span className="text-color1 text-[40px] font-bold leading-[48px] tracking-tight">
                   Dive Into Our Collection of{" "}
                 </span>
-                <span className="text-[#ff6b00] text-[40px] font-bold leading-[48px] tracking-tight">
+                <span className="text-color2 text-[40px] font-bold leading-[48px] tracking-tight">
                   Engaging Art.
                 </span>
               </div>

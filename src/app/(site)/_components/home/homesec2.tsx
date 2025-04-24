@@ -52,13 +52,13 @@ export default function Homesec2() {
                   <div className="text-base font-normal leading-tight">
                     About
                   </div>
-                  <div className="w-[63px] h-0 outline-[1.50px] outline-[#ff6b00]"></div>
+                  <div className="w-[63px] h-0 outline-[1.50px] outline-color2"></div>
                 </div>
               </div>
 
               <div className=" max-w-[690px] flex justify-start items-center gap-2.5">
                 <div className="flex-1 justify-center">
-                  <span className="text-[#1d1f2c] text-[40px] font-bold leading-[48px]">
+                  <span className="text-color1 text-[40px] font-bold leading-[48px]">
                     This is{" "}
                   </span>
                   <span className="text-color2 text-[40px] font-bold leading-[48px]">
@@ -137,9 +137,9 @@ export default function Homesec2() {
 
               <button
                 onClick={() => setShowFullText(!showFullText)}
-                className="h-11 px-8 py-4 bg-[#ff6b00] rounded-[22px] inline-flex justify-center items-center gap-3 cursor-pointer hover:bg-[#e65600] transition-colors duration-300"
+                className="h-11 px-8 py-4 bg-color2 rounded-[22px] inline-flex justify-center items-center gap-3 cursor-pointer hover:bg-color1 transition-colors duration-300"
               >
-                <div className="justify-center text-[#fff9eb] text-base font-medium font-['Poppins'] leading-none">
+                <div className="justify-center text-background text-base font-medium font-['Poppins'] leading-none">
                   {showFullText ? "Show Less" : "Learn More"}
                 </div>
               </button>

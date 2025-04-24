@@ -34,7 +34,7 @@ export default function Nav() {
             <div className="nav text-white flex justify-between items-center relative w-full">
               <div className="logo align-middle text-3xl font-extrabold">
                 <div className="line relative">
-                  <div className="justify-start text-white text-[44px] font-normal font-playwrite leading-[57.20px]">
+                  <div className="justify-start text-color6 text-[44px] font-normal font-playwrite leading-[57.20px]">
                     Rajaa
                     <br />
                     Gharbi
@@ -51,7 +51,7 @@ export default function Nav() {
 
               {/* Hamburger Menu Button */}
               <button
-                className="md:hidden p-2 text-white z-50"
+                className="md:hidden p-2 text-color6 z-50"
                 onClick={toggleMobileMenu}
                 aria-label="Toggle mobile menu"
               >
@@ -74,18 +74,18 @@ export default function Nav() {
 
               {/* Desktop Menu */}
               <div className="menu hidden md:flex items-center flex-1 justify-end">
-                <div className="flex justify-end items-center flex-wrap gap-2">
+                <div className="flex justify-end items-center flex-wrap gap-2 ">
                   {navItems.map((item) => {
                     const isActive = pathname === item.path;
                     return (
                       <Link
                         key={item.path}
                         href={item.path}
-                        className={`p-3 flex justify-center items-center gap-2.5 hover:bg-[#ff6b00] hover:rounded-[20px] transition-all ${
-                          isActive ? "bg-[#ff6b00] rounded-[20px]" : ""
+                        className={`p-3 flex justify-center items-center gap-2.5 hover:bg-color2 hover:rounded-[20px] transition-all ${
+                          isActive ? "bg-color2 rounded-[20px]" : ""
                         }`}
                       >
-                        <div className="text-white text-base font-normal leading-tight whitespace-nowrap">
+                        <div className={`${isActive ? 'text-white' : 'text-color6'} text-base font-normal leading-tight whitespace-nowrap`}>
                           {item.label}
                         </div>
                       </Link>
@@ -105,11 +105,11 @@ export default function Nav() {
                           key={item.path}
                           href={item.path}
                           onClick={() => setIsMobileMenuOpen(false)}
-                          className={`p-4 w-full text-center hover:bg-[#ff6b00] transition-all ${
-                            isActive ? "bg-[#ff6b00]" : ""
+                          className={`p-4 w-full text-center hover:bg-color2 transition-all ${
+                            isActive ? "bg-color2" : ""
                           }`}
                         >
-                          <div className="text-white text-base font-normal leading-tight">
+                          <div className={`${isActive ? 'text-white' : 'text-color6'} text-base font-normal leading-tight`}>
                             {item.label}
                           </div>
                         </Link>

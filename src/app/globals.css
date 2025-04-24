@@ -1,14 +1,19 @@
 @import "tailwindcss";
 
+
+/* 8a7341 ff6b00 1d1f2c 4a4c56 1d1f2c  1d1f2c  8a7341 8a7341  4a4c56  1d1f2c  272727*/
+
 :root {
   --white     : #ffffff;
   --background: #FFF9EB;
   --foreground: #4A4C56;
   --color1    : #1D1F2C;
   --color2    : #FF6B00;
-  --color3    : #AC9A72;
+  --color3    : #eee4d1;
   --color4    : #CCC8BE;
   --color5    : #777980;
+  --color6    : #8a7341;
+  --color7    : #272727;
 }
 
 @theme inline {
@@ -20,6 +25,8 @@
   --color-color3: var(--color3);
   --color-color4: var(--color4);
   --color-color5: var(--color5);
+  --color-color6: var(--color6);
+  --color-color7: var(--color7);
   --font-poppins: var(--font-poppins);
   --font-playwrite: var(--font-playwrite);
 }
