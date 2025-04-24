@@ -12,7 +12,7 @@ export default function Homee() {
   return (
     <div>
         <Homesec2 />
-        <Slider />
+        {/* <Slider /> */}
         <Biography />
         <Poetrysec />
         <Poetry2sec />
