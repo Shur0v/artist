@@ -80,7 +80,7 @@ export default function Biosec() {
               onClick={() => setShowFullText(!showFullText)}
               className="h-11 px-8 py-4 bg-color2 rounded-[22px] inline-flex justify-center items-center gap-3 cursor-pointer hover:bg-color1 transition-colors duration-300 self-center"
             >
-              <div className="text-color3 text-base font-medium leading-none">
+              <div className="text-white text-base font-medium leading-none">
                 {showFullText ? 'Show Less' : 'Learn More'}
               </div>
             </button>

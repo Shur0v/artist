@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
-import Image from 'next/image'
 import { useForm } from 'react-hook-form'
+import { HiOutlineLocationMarker, HiOutlinePhone, HiOutlineMail } from 'react-icons/hi'
 
 type FormData = {
   name: string;
@@ -42,13 +42,7 @@ export default function Contactsec() {
                 {/* Address */}
                 <div className="self-stretch inline-flex justify-start items-center gap-[13px]">
                   <div className="w-10 h-10 p-[5px] bg-color2/20 rounded-[20px] flex justify-center items-center">
-                    <Image 
-                      src="/icon/location.svg" 
-                      alt="location" 
-                      width={24} 
-                      height={24}
-                      className="w-6 h-6"
-                    />
+                    <HiOutlineLocationMarker className="w-6 h-6 text-color2" />
                   </div>
                   <div className="max-w-[272px] inline-flex flex-col justify-start items-start gap-1.5">
                     <div className="self-stretch justify-start text-color1 text-base font-medium leading-tight">Address</div>
@@ -59,13 +53,7 @@ export default function Contactsec() {
                 {/* Call Us */}
                 <div className="self-stretch inline-flex justify-start items-center gap-[13px]">
                   <div className="w-10 h-10 p-[5px] bg-color2/20 rounded-[20px] flex justify-center items-center">
-                    <Image 
-                      src="/icon/call.svg" 
-                      alt="phone" 
-                      width={24} 
-                      height={24}
-                      className="w-6 h-6"
-                    />
+                    <HiOutlinePhone className="w-6 h-6 text-color2" />
                   </div>
                   <div className="max-w-[272px] inline-flex flex-col justify-start items-start gap-1.5">
                     <div className="self-stretch justify-start text-color1 text-base font-medium leading-tight">Call Us</div>
@@ -76,13 +64,7 @@ export default function Contactsec() {
                 {/* Email Us */}
                 <div className="self-stretch inline-flex justify-start items-center gap-[13px]">
                   <div className="w-10 h-10 p-[5px] bg-color2/20 rounded-[20px] flex justify-center items-center">
-                    <Image 
-                      src="/icon/mail.svg" 
-                      alt="email" 
-                      width={24} 
-                      height={24}
-                      className="w-6 h-6"
-                    />
+                    <HiOutlineMail className="w-6 h-6 text-color2" />
                   </div>
                   <div className="max-w-[272px] inline-flex flex-col justify-start items-start gap-1.5">
                     <div className="self-stretch justify-start text-color1 text-base font-medium leading-tight">Email Us</div>
@@ -159,7 +141,7 @@ export default function Contactsec() {
                     type="submit"
                     className="self-stretch h-14 px-7 py-4 bg-color2 rounded-[10px] inline-flex justify-center items-center gap-4 hover:bg-color1 transition-colors duration-300"
                   >
-                    <span className="justify-center text-color3 text-xl font-medium font-['Poppins'] leading-7">Send Message</span>
+                    <span className="justify-center text-white text-xl font-medium font-['Poppins'] leading-7">Send Message</span>
                   </button>
                 </div>
               </form>

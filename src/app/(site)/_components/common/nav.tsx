@@ -34,7 +34,7 @@ export default function Nav() {
             <div className="nav text-white flex justify-between items-center relative w-full">
               <div className="logo align-middle text-3xl font-extrabold">
                 <div className="line relative">
-                  <div className="justify-start text-color6 text-[44px] font-normal font-playwrite leading-[57.20px]">
+                  <div className="justify-start text-white text-[44px] font-normal font-playwrite leading-[57.20px]">
                     Rajaa
                     <br />
                     Gharbi
@@ -51,7 +51,7 @@ export default function Nav() {
 
               {/* Hamburger Menu Button */}
               <button
-                className="md:hidden p-2 text-color6 z-50"
+                className="md:hidden p-2 text-white z-50"
                 onClick={toggleMobileMenu}
                 aria-label="Toggle mobile menu"
               >
@@ -85,7 +85,7 @@ export default function Nav() {
                           isActive ? "bg-color2 rounded-[20px]" : ""
                         }`}
                       >
-                        <div className={`${isActive ? 'text-white' : 'text-color6'} text-base font-normal leading-tight whitespace-nowrap`}>
+                        <div className={`${isActive ? 'text-white' : 'text-white'} text-base font-normal leading-tight whitespace-nowrap`}>
                           {item.label}
                         </div>
                       </Link>
@@ -109,7 +109,7 @@ export default function Nav() {
                             isActive ? "bg-color2" : ""
                           }`}
                         >
-                          <div className={`${isActive ? 'text-white' : 'text-color6'} text-base font-normal leading-tight`}>
+                          <div className={`${isActive ? 'text-white' : 'text-white'} text-base font-normal leading-tight`}>
                             {item.label}
                           </div>
                         </Link>

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import { HiOutlineDownload, HiOutlineMail } from 'react-icons/hi'
 
 export default function Poetrysec() {
   return (
@@ -43,10 +44,8 @@ export default function Poetrysec() {
       </div>
       <div className="w-full flex flex-col md:flex-row justify-start items-start md:items-center gap-6">
         <div className="w-full md:w-auto px-7 py-2.5 bg-color7 rounded-xl flex justify-start items-center gap-3">
-          <div className="w-10 h-10 p-[5px] bg-color2/20 rounded-[20px] flex justify-center items-center gap-2.5">
-            <div className="w-6 h-6 relative">
-              <Image className="w-6 h-6 rounded-xl" src="/icon/downlodbox.svg" alt="artist" width={2000} height={2000}/>
-            </div>
+          <div className="w-10 h-10 p-[5px] bg-white/20 rounded-[20px] flex justify-center items-center gap-2.5">
+            <HiOutlineDownload className="w-6 h-6 text-white" />
           </div>
           <div className="flex-1 md:flex-none inline-flex flex-col justify-start items-start gap-1.5">
             <div className="self-stretch justify-start text-white text-base font-medium font-['Poppins'] leading-tight">Download This Poet</div>
@@ -54,10 +53,8 @@ export default function Poetrysec() {
           </div>
         </div>
         <div className="w-full md:w-auto px-7 py-2.5 bg-color7 rounded-xl flex justify-start items-center gap-3">
-          <div className="w-10 h-10 p-[5px] bg-color2/20 rounded-[20px] flex justify-center items-center gap-2.5">
-            <div className="w-6 h-6 relative overflow-hidden">
-              <Image className="w-6 h-6 rounded-xl" src="/icon/emailbox.svg" alt="artist" width={2000} height={2000}/>
-            </div>
+          <div className="w-10 h-10 p-[5px] bg-white/20 rounded-[20px] flex justify-center items-center gap-2.5">
+            <HiOutlineMail className="w-6 h-6 text-white" />
           </div>
           <div className="flex-1 md:flex-none inline-flex flex-col justify-start items-start gap-1.5">
             <div className="self-stretch justify-start text-white text-base font-medium font-['Poppins'] leading-tight">Email Us</div>
