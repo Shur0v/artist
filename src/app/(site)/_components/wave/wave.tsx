@@ -24,10 +24,10 @@ of Simple CSS Waves--> */}
             />
           </defs>
           <g className="parallax ">
-            <use xlinkHref="#gentle-wave" x="48" y="0" fill="#efe6d3" opacity={0.3}/>
-            <use xlinkHref="#gentle-wave" x="48" y="3" fill="#efe6d3" opacity={0.5}/>
-            <use xlinkHref="#gentle-wave" x="48" y="5" fill="#efe6d3" opacity={0.7}/>
-            <use xlinkHref="#gentle-wave" x="48" y="7" fill="#efe6d3" />
+            <use xlinkHref="#gentle-wave" x="48" y="0" fill="#B5B2B5" opacity={0.3}/>
+            <use xlinkHref="#gentle-wave" x="48" y="3" fill="#B5B2B5" opacity={0.5}/>
+            <use xlinkHref="#gentle-wave" x="48" y="5" fill="#B5B2B5" opacity={0.7}/>
+            <use xlinkHref="#gentle-wave" x="48" y="7" fill="#B5B2B5" />
           </g>
         </svg>
       </div>
