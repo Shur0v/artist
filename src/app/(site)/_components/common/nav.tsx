@@ -15,7 +15,7 @@ const navItems: NavItem[] = [
   { label: "Poetry", path: "/poetry" },
   { label: "Event", path: "/event" },
   { label: "Art Gallery", path: "/art" },
-  { label: "Login", path: "/login" },
+  { label: "Contact", path: "/contact" },
 ];
 
 export default function Nav() {

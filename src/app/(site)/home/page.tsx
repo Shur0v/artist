@@ -6,7 +6,7 @@ import Poetry2sec from '../_components/home/poetry2sec';
 import Eventsec from '../_components/home/eventsec';
 import Artbottom from '../_components/art/page';
 import Slider from '../_components/home/slider';
-
+import Review from '../_components/home/review';
 
 export default function Homee() {
   return (
@@ -17,6 +17,7 @@ export default function Homee() {
         <Poetrysec />
         <Poetry2sec />
         <Eventsec />
+        <Review />
         <Artbottom />
     </div>
   )
