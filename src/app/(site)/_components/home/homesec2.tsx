@@ -26,13 +26,13 @@ export default function Homesec2() {
 
                 <div className="col-span-5">
                     <div className="right flex my-6 md:m-0 flex-col gap-4">
-                        <div className="image justify-start max-w-[400px] h-[300px] rounded-xl overflow-hidden shadow-2xl">
+                        <div className="image justify-start max-w-[336px] h-[240px] rounded-xl overflow-hidden shadow-2xl">
                             <Image
                                 src="/images/profile.jpg"
                                 alt="artist"
                                 width={2000}
                                 height={2000}
-                                className="w-[400px] h-[300px] bg-cover object-cover"
+                                className="w-[336px] h-[240px] bg-cover object-cover"
                             />
                         </div>
                         <p className="text-start text-sm font-normal leading-none mt-4">
