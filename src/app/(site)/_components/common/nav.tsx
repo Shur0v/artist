@@ -10,11 +10,11 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { label: "Home", path: "/" },
-  { label: "About", path: "/about" },
-  { label: "Bio", path: "/bio"},
+  { label: "Fine Art Portfolio", path: "/art" },
   { label: "Poetry", path: "/poetry" },
-  { label: "Event", path: "/event" },
-  { label: "Art Gallery", path: "/art" },
+  { label: "Artist Statement", path: "/about" },
+  { label: "Biography", path: "/bio"},
+  { label: "Reviews", path: "/event" },
   { label: "Contact", path: "/contact" },
 ];
 

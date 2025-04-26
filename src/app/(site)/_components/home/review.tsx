@@ -144,7 +144,7 @@ export default function Review() {
   const visibleReviews = reviewsData.slice(currentIndex, currentIndex + 3);
 
   return (
-    <div className="main py-20 mx-4 lg:mx-0 overflow-x-hidden">
+    <div className="main py-20 mx-4 lg:mx-0 overflow-x-hidden md:overflow-x-visible ">
       {/* Add style tag for custom Swiper styles */}
       <style>{swiperStyles}</style>
       
@@ -165,6 +165,7 @@ export default function Review() {
             </div>
           </div>
 
+          {/* --------------------------------------------------- */}
           <div className="relative hidden md:block">
             <div className="flex justify-start items-stretch gap-6 transition-all duration-300 ease-in-out">
               {visibleReviews.map((review, index) => (
@@ -213,13 +214,14 @@ export default function Review() {
 
             <button 
               onClick={nextSlide}
-              className="absolute right-[-20px] top-1/2 transform -translate-y-1/2 bg-[#3d521a] text-white rounded-full p-2 hover:bg-[#2a3912] transition-colors"
+              className="absolute right-[-20px] top-1/2 transform -translate-y-1/2 bg-[#3d521a] text-white rounded-full p-2 hover:bg-[#2a3912] transition-colors z-10"
             >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
               </svg>
             </button>
           </div>
+          {/* --------------------------------------------------- */}
 
           {/* Mobile Version Container - Shows only on screens smaller than 'md' breakpoint */}
           <div className="block md:hidden overflow-hidden">
@@ -275,6 +277,7 @@ export default function Review() {
               ))}
             </Swiper>
           </div>
+          {/* ------------------------------------------------ */}
         </div>
       </div>
     </div>
