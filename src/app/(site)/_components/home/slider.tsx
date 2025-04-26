@@ -46,17 +46,12 @@ export default function Slider() {
   }, []);
 
   return (
-    <div className="main py-20 mx-4 lg:mx-0">
+    <div className="main py-20 mx-4 lg:mx-0 my-[200px]">
       <div className="container">
         <div className="content">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-            <div className="col-span-1 md:col-span-4 order-2 md:order-1 mt-6 md:mt-0">
-              <h4 className="text-base font-normal leading-relaxed md:pr-36">
-                My art is a search for medicine laughter. Utilizing natural and synthetic water based media I alternate, stylistically and thematically, between the meditative semi-abstract and the playfully caricatural to look for &ldquo;poetry&rdquo; that surfaces in the dark and in daylight, unsuspected, gentle, yet unbreakable.
-              </h4>
-            </div>
+          <div className="flex justify-center items-center">
 
-            <div className="col-span-1 md:col-span-8 order-1 md:order-2">
+
               <div ref={sliderRef} className="images relative h-[300px] md:h-[500px] w-full rounded-xl overflow-hidden shadow-2xl">
                 <Image src="/art/art2.jpg" alt="slider" width={1000} height={1000} className="slide-image absolute top-0 left-0 w-full h-full object-cover" />
                 <Image src="/art/art1.jpg" alt="slider" width={1000} height={1000} className="slide-image absolute top-0 left-0 w-full h-full object-cover" />
@@ -95,7 +90,7 @@ export default function Slider() {
                 <Image src="/art/art35.jpg" alt="slider" width={1000} height={1000} className="slide-image absolute top-0 left-0 w-full h-full object-cover" />
                 <Image src="/art/art36.jpg" alt="slider" width={1000} height={1000} className="slide-image absolute top-0 left-0 w-full h-full object-cover" />
               </div>
-            </div>
+          
           </div>
         </div>
       </div>

@@ -22,7 +22,7 @@ export default function Contactsec() {
   };
 
   return (
-    <div className="main py-20 mx-4 lg:mx-0">
+    <div className="main py-20 mx-4 lg:mx-0 my-[200px]">
       <div className="container">
         <div className="content">
           <div className="both flex justify-between flex-col lg:flex-row">
