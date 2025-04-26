@@ -73,7 +73,7 @@ export default function Slider() {
       <div className="container">
         <div className="content">
           <div className="flex justify-center items-center">
-            <div ref={sliderRef} className="relative h-[400px] md:h-[650px] md:w-[65%] w-full rounded-xl overflow-hidden shadow-2xl">
+            <div ref={sliderRef} className="relative h-[400px] md:h-[650px] md:w-[62%] w-full rounded-xl overflow-hidden shadow-2xl">
               <div className="slide-container absolute inset-0">
                 <Image src="/art/art2.jpg" alt="Art 1" fill className="object-cover" priority />
                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6">
