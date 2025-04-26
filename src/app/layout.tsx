@@ -5,6 +5,7 @@ import Nav from "./(site)/_components/common/nav";
 import Footer from "./(site)/_components/common/footer";
 // import Wave from "./(site)/_components/wave/wave";
 import Contactsec from "./(site)/_components/home/contactsec";
+import SecurityProvider from "./providers/SecurityProvider";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -29,12 +30,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';" />
+        <meta name="referrer" content="no-referrer" />
+      </head>
       <body className={`${poppins.variable} ${playwrite.variable} antialiased`}>
-        <Nav />
-        {/* <Wave /> */}
-        {children}
-        <Contactsec />
-        <Footer />
+        <SecurityProvider>
+          <Nav />
+          {/* <Wave /> */}
+          {children}
+          <Contactsec />
+          <Footer />
+        </SecurityProvider>
       </body>
     </html>
   );
