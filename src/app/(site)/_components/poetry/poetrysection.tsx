@@ -1,9 +1,12 @@
 "use client"
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import Poetrysec from "../home/poetrysec";
+import { FaAngleDown } from "react-icons/fa6";
 
 export default function Poetrysection() {
+  const [showFullText, setShowFullText] = useState(false);
+  
   return (
     <div>
         <Poetrysec />
@@ -37,12 +40,12 @@ export default function Poetrysection() {
               </div>
 
               {/* First review - French */}
-              <div className="text-base font-normal leading-relaxed">
+              <div className={`text-base font-normal leading-relaxed ${showFullText ? 'opacity-100' : 'opacity-100'}`}>
                 &apos;Son écriture poétique est fraiche et forte qui force l&apos;attention et exige ses propres articulations compréhensives verbales. C&apos;est une mise au point affectif et esthétique dans ce contexte nord-american. Mais son écriture va plus loin grace a cette quête de l&apos;universel ... perles d&apos;Amour... sa réflexion sur la poesie est sublime...une guerrière de la lumiére...C&apos;est une grande joie et un immense honneur d&apos;avoir cette ecrivaine dans Le Maghreb Litteraire...&apos;
               </div>
 
-              {/* First review - English translation */}
-              <div>
+              {/* second review - English translation */}
+              <div className={`${showFullText ? 'opacity-100' : 'opacity-100'}`}>
                 <span className="text-base font-normal leading-relaxed">
                   &quot;Her poetic writing is fresh, powerful... it commends attention and mandates its own articulations of verb and meaning. It establishes an innovation in the emotional and the esthetic in this North American context. But her writing goes beyond [this context] thanks to her quest for the universal... Pearls of Love... Her reflections on Poetry are sublime...A warrior for light...&quot;     
                 </span>
@@ -51,8 +54,8 @@ export default function Poetrysection() {
                 </span>
               </div>
 
-              {/* Second review - Bilingual */}
-              <div>
+              {/* third review - Bilingual */}
+              <div className={`transition-all duration-300 ${showFullText ? 'opacity-100' : 'opacity-30'}`}>
                 <span className="text-base font-normal leading-relaxed">
                   &quot;Gharbi&apos;s visuals read like poems. She dissects meaning and reinstates it in a narrative context that embraces forces of an intuitive nature...&quot;      &quot;L&apos;art visual de Gharbi se lit comme des poèmes et ses poèmes se lisent comme de l&apos;art visuel… Elle dissèque le sens et le reintégre dans un context de récit qui embrasse des forces d&apos;une nature intuitive…&quot;     
                 </span>
@@ -61,23 +64,23 @@ export default function Poetrysection() {
                 </span>
               </div>
 
-              {/* Third review */}
-              <div className="text-base font-normal leading-relaxed">
-                &quot;…Gharbi&apos;s poetry leaps boundaries, embraces, is personal, political and spiritual-without being &quot;neatly&quot; or &quot;categorically&quot; any one of those things…&quot; &quot;... This evening, with art and poetry, is indicative of the range, intertwining, and connectedness between art forms and ideas that Rajaa Gharbi explores in this beautiful new work...&quot;
-              </div>
+              {/* Hidden reviews section - includes fourth review and onwards */}
+              <div className={`flex flex-col gap-6 transition-all duration-300 ${showFullText ? 'opacity-100 max-h-[2000px]' : 'opacity-0 max-h-0 overflow-hidden'}`}>
+                {/* fourth review */}
+                <div className="text-base font-normal leading-relaxed">
+                  &quot;…Gharbi&apos;s poetry leaps boundaries, embraces, is personal, political and spiritual-without being &quot;neatly&quot; or &quot;categorically&quot; any one of those things…&quot; &quot;... This evening, with art and poetry, is indicative of the range, intertwining, and connectedness between art forms and ideas that Rajaa Gharbi explores in this beautiful new work...&quot;
+                </div>
 
-              {/* Fifth review */}
-              <div>
-                <span className="text-base font-normal leading-relaxed">
-                  &quot;Gharbi saute des barrières, est politique et spirituelle sans ẻtre &quot;joliement&quot; ou &quot;catégoriquement&quot;  l&apos;une ou l&apos;autre de ces choses ... Cette soirée avec de l&apos;art et de la poesie est indicative de la portée, de l&apos;entrelacement et des liens entre des arts et des pensées que R. Gharbi explore dans cette belle nouvelle oeuvre&quot; »      
-                </span>
-                <span className="text-base font-medium leading-relaxed">
-                  -Rick Simonson, Literary curator of the Elliott Bay Book Company
-                </span>
-              </div>
+                {/* Fifth review */}
+                <div>
+                  <span className="text-base font-normal leading-relaxed">
+                    &quot;Gharbi saute des barrières, est politique et spirituelle sans ẻtre &quot;joliement&quot; ou &quot;catégoriquement&quot;  l&apos;une ou l&apos;autre de ces choses ... Cette soirée avec de l&apos;art et de la poesie est indicative de la portée, de l&apos;entrelacement et des liens entre des arts et des pensées que R. Gharbi explore dans cette belle nouvelle oeuvre&quot; »      
+                  </span>
+                  <span className="text-base font-medium leading-relaxed">
+                    -Rick Simonson, Literary curator of the Elliott Bay Book Company
+                  </span>
+                </div>
 
-              {/* Previously hidden reviews - now always visible */}
-              <div className="flex flex-col gap-6">
                 <div>
                   <span className="text-base font-normal leading-relaxed">
                     &quot;...Tunisian-born artist/poet Rajaa A. Gharbi enthralled the audience at her poetry reading and book signing...&quot;         
@@ -103,6 +106,16 @@ export default function Poetrysection() {
                 </div>
               </div>
             </div>
+
+            <button 
+              onClick={() => setShowFullText(!showFullText)}
+              className="h-11 px-8 py-4 bg-color2 rounded-[22px] inline-flex justify-center items-center gap-3 hover:bg-color1 transition-colors duration-300"
+            >
+              <div className="text-background text-base font-medium leading-none flex items-center">
+                {showFullText ? 'Show Less' : 'See More'} 
+                <FaAngleDown className={`text-white ml-2 transition-transform duration-300 ${showFullText ? 'rotate-180' : 'rotate-0'}`} />
+              </div>
+            </button>
           </div>
         </div>
       </div>
