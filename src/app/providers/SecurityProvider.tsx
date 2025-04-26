@@ -8,29 +8,40 @@ import {
   clearClipboard,
 } from '../security';
 
-export default function SecurityProvider({
-  children,
-}: {
+interface SecurityProviderProps {
   children: React.ReactNode;
-}) {
+}
+
+export default function SecurityProvider({ children }: SecurityProviderProps) {
   useEffect(() => {
     // Disable right click
-    document.addEventListener('contextmenu', disableRightClick as any);
-    
+    const handleRightClick = (e: MouseEvent) => {
+      disableRightClick(e);
+    };
+
     // Disable keyboard shortcuts
-    document.addEventListener('keydown', disableKeyboardShortcuts as any);
-    
+    const handleKeyDown = (e: KeyboardEvent) => {
+      disableKeyboardShortcuts(e);
+    };
+
     // Disable image drag
-    document.addEventListener('dragstart', disableImageDrag as any);
+    const handleDragStart = (e: DragEvent) => {
+      disableImageDrag(e);
+    };
+
+    // Add event listeners
+    document.addEventListener('contextmenu', handleRightClick);
+    document.addEventListener('keydown', handleKeyDown);
+    document.addEventListener('dragstart', handleDragStart);
     
     // Clear clipboard periodically
     const clipboardInterval = setInterval(clearClipboard, 1000);
 
     // Cleanup
     return () => {
-      document.removeEventListener('contextmenu', disableRightClick as any);
-      document.removeEventListener('keydown', disableKeyboardShortcuts as any);
-      document.removeEventListener('dragstart', disableImageDrag as any);
+      document.removeEventListener('contextmenu', handleRightClick);
+      document.removeEventListener('keydown', handleKeyDown);
+      document.removeEventListener('dragstart', handleDragStart);
       clearInterval(clipboardInterval);
     };
   }, []);
