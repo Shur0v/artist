@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Artbottom from "../art/page";
+// import Artbottom from "../art/page";
 export default function Section1() {
   return (
     <div className="main py-20 mx-4 lg:mx-0">
@@ -112,7 +112,7 @@ export default function Section1() {
         {/* section4 */}
 
         <div className="mt-[260px]">
-        <Artbottom  />
+        {/* <Artbottom  /> */}
         </div>
 
 

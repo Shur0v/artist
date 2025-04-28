@@ -9,9 +9,8 @@ export default function Poetrysection() {
   
   return (
     <div>
-        <Poetrysec />
 
-        <div className="main py-20 mx-4 lg:mx-0">
+        <div className="main py-20 mx-4 lg:mx-0 ">
       <div className="container">
         <div className="content">
 
@@ -117,6 +116,9 @@ export default function Poetrysection() {
               </div>
             </button>
           </div>
+
+          <Poetrysec />
+
         </div>
       </div>
     </div>

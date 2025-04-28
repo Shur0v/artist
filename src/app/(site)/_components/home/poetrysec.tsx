@@ -4,7 +4,7 @@ import { HiOutlineDownload, HiOutlineMail } from 'react-icons/hi'
 
 export default function Poetrysec() {
   return (
-    <div className="main py-20 mx-4 lg:mx-0">
+    <div className="main mx-4 lg:mx-0 md:mt-[350px] my-0">
     <div className="container">
       <div className="content">
 
