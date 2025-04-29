@@ -50,9 +50,9 @@ export default function Section1() {
             </div>
 
             <div className="right col-span-5 flex justify-end ">
-              <div className="image justify-end max-w-[445px] h-[600px] rounded-xl overflow-hidden shadow-2xl ">
+              <div className="image justify-end max-w-[445px] h-[350px] rounded-xl overflow-hidden shadow-2xl ">
                 <Image
-                  src="/images/image1.png"
+                  src="/images/about1.jpg"
                   alt="artist"
                   width={2000}
                   height={2000}
@@ -80,7 +80,7 @@ export default function Section1() {
             <div className="right col-span-5 flex justify-end">
               <div className="image justify-end max-w-[445px] rounded-xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/image3.png"
+                  src="/images/about2.jpg"
                   alt="artist"
                   width={2000}
                   height={2000}
