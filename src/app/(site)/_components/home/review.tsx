@@ -26,72 +26,72 @@ const swiperStyles = `
 const reviewsData = [
   {
     id: 1,
-    review: "We&apos;re really happy to get the services from them. Their services are really good. I highly recommend them to all the people out there.",
-    name: "Charlos Angel",
-    profession: "Literature",
+    review: "Her writing is steeped in symbolism… is  made of different terrains of meanings that paint with words where the poet makes the unraveling of the third person pronoun a spiritual rebirth that reaches deep flight into existence and one’s being; as the poet comments: “It’s important to write in the first person pronoun, the pronoun of the historian, the witness, the documentarian, the analyst, the creator, the one who defies the pains of silence or its comforts.",
+    name: "Dr. Fatma Lakhdhar",
+    profession: "Writer, literary Critic, University of Tunis",
     rating: 5
   },
   {
     id: 2,
-    review: "The quality of work and attention to detail exceeded my expectations. A truly professional service that delivers excellence.",
-    name: "Sarah Johnson",
-    profession: "Art History",
+    review: "نوع الكتابة التي توختها الشاعرة موغل في الرمزية... يتكون من تضاريس معنوية مختلفة... فهو شعر يستكشف أغوارالذات والنّفسيات ويعمد إلى رسم بالكلمات، لتجعل فيها من انسلاخها عن ضمير الغائب انبعاثا روحيّا يحقّق لها التحليق بعيدا في الكون وفي الكيان كما تضيف الشاعرة: الكتابة بالانا ضمير الحاضر المؤرخ الشاهِد، الموثِق، المحلِل، المبدِع، المتحدِي لعذاب الصمت أو راحته",
+    name: "د. فاطمة الأخضر",
+    profession: "",
     rating: 5
   },
   {
     id: 3,
-    review: "An incredible experience working with this team. They understand exactly what you need and deliver beyond expectations.",
-    name: "Michael Chen",
-    profession: "Poetry",
+    review: "Her poetic writing is fresh, powerful... it commands attention and mandates its own articulations of verb and meaning. It establishes an innovation in the emotional and the esthetic in this North American context. But her writing goes beyond [this context] thanks to her quest for the universal... Pearls of Love... Her reflections on Poetry are sublime...A warrior for light...",
+    name: "",
+    profession: "",
     rating: 5
   },
   {
     id: 4,
-    review: "The dedication and passion they bring to their work is remarkable. Still room for improvement.",
-    name: "Emma Thompson",
-    profession: "Creative Writing",
-    rating: 4.5
+    review: "Son écriture poétique est fraiche et forte qui force l’attention et exige ses propres articulations compréhensives verbales. C’est une mise au point affectif et esthétique dans ce contexte nord-américain. Mais son écriture va plus loin grâce à cette quête de l’universel ... perles d’Amour... sa réflexion sur la poésie est sublime...une guerrière de la lumière... C’est une grande joie et un immense honneur d’avoir cette écrivaine dans Le Maghreb Littéraire...",
+    name: "Najib Redouane",
+    profession: "Literary critic Chief editor of the international Le Maghreb Littéraire",
+    rating: 5
   },
   {
     id: 5,
-    review: "Outstanding service and communication throughout the entire process. Would definitely work with them again.",
-    name: "David Rodriguez",
-    profession: "Modern Literature",
+    review: "Gharbi’s visuals read like poems and her poems read like poems. She dissects meaning and reinstates it in a narrative context that embraces forces of an intuitive nature...”“L’art visuel de Gharbi se lit comme des poèmes et ses poèmes se lisent comme de l’art visuel… Elle dissèque le sens et le réintègre dans un contexte de récit qui embrasse des forces d’une nature intuitive…",
+    name: "Joe Fedderson",
+    profession: "American Artist",
     rating: 5
   },
   {
     id: 6,
-    review: "Their expertise and professionalism made the entire experience smooth and enjoyable. Highly recommended!",
-    name: "Lisa Zhang",
-    profession: "Classical Studies",
+    review: "...Tunisian-born artist/poet Rajaa A. Gharbi enthralled the audience at her poetry reading and book signing... L'artiste et poète d'origine Tunisienne Rajaa Gharbi a emerveillé l'audience pendant sa lecture et signature de livre à l'espace culturel de l'ambassade de Tunisie...",
+    name: "The Washington Report on Middle East Affairs",
+    profession: "",
     rating: 5
   },
   {
     id: 7,
-    review: "Exceptional quality and attention to detail. They truly care about delivering the best results.",
+    review: "…In I-dentity”, the poetic voice employs an image – metaphor – that comes back to haunt the fortunate reader. This successful metaphor is but one of many in this delightful book of words and images",
     name: "James Wilson",
     profession: "Contemporary Art",
-    rating: 4
+    rating: 5
   },
   {
     id: 8,
-    review: "A fantastic team that goes above and beyond to ensure client satisfaction. Very impressed!",
-    name: "Maria Garcia",
-    profession: "Visual Arts",
+    review: "...Dans le poème “I-Dentity” la voix poetique emploie une image-métaphore qui revient pour hanter le chanceux lecteur",
+    name: "Dena Bugel-Shunra Literary and Judiciary Hebrew Translator",
+    profession: "Proteus publication",
     rating: 5
   },
   {
     id: 9,
-    review: "Their creative approach and technical expertise make them stand out. An absolute pleasure to work with.",
-    name: "Robert Kim",
-    profession: "Digital Arts",
+    review: "...I was moved by both the scope and depth of her work.  Her strength of expression in the English language is extraordinary",
+    name: "",
+    profession: "",
     rating: 5
   },
   {
     id: 10,
-    review: "Consistently delivering high-quality results. They've exceeded my expectations in every way.",
-    name: "Sophie Martin",
-    profession: "Fine Arts",
+    review: "...J’étais touchée aussi bien par l’étendue que par la profondeur de son travail.  La force de son expression dans la langue anglaise est extraordinaire.",
+    name: "Malti Greenberg",
+    profession: "Reader",
     rating: 5
   }
 ];
