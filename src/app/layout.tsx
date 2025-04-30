@@ -6,6 +6,7 @@ import Footer from "./(site)/_components/common/footer";
 // import Wave from "./(site)/_components/wave/wave";
 import Contactsec from "./(site)/_components/home/contactsec";
 import SecurityProvider from "./providers/SecurityProvider";
+import BackToTop from "./(site)/_components/BackToTop";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -41,6 +42,7 @@ export default function RootLayout({
           {children}
           <Contactsec />
           <Footer />
+          <BackToTop />
         </SecurityProvider>
       </body>
     </html>

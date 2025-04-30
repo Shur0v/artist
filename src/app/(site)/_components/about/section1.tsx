@@ -12,10 +12,10 @@ export default function Section1() {
           <div className="content md:grid grid-cols-12 gap-6 justify-between">
             <div className="left col-span-7 mb-10 md:mb-0">
               <div className="max-w-[690px] flex flex-col justify-start items-start gap-6">
-                <div className="max-w-[135px] flex flex-col justify-start items-start gap-2">
+                <div className="max-w-[185px] flex flex-col justify-start items-start gap-2">
                   <div className="flex justify-start items-center gap-2">
-                    <div className="text-base font-normal leading-tight">
-                      About
+                    <div className="text-base font-normal leading-tight whitespace-nowrap">
+                      Artist Statement
                     </div>
                     <div className="w-[63px] h-0 outline-[1.50px] outline-color2"></div>
                   </div>
@@ -23,16 +23,16 @@ export default function Section1() {
 
                 <div className="flex justify-start items-center gap-2.5">
                   <div className="flex-1 justify-center">
-                    <span className="text-color1 text-[40px] font-bold leading-[48px]">
-                      This is{" "}
+                    {/* <span className="text-color1 text-[40px] font-bold leading-[48px]">
+                      Artist{" "}
                     </span>
                     <span className="text-color2 text-[40px] font-bold leading-[48px]">
-                      Rajaa Gharbi.
-                    </span>
-                    <span className="text-color1 text-[40px] font-bold leading-[48px]">
+                      Statement
+                    </span> */}
+                    {/* <span className="text-color1 text-[40px] font-bold leading-[48px]">
                       {" "}
                       I&apos;m Always Here to Help You.
-                    </span>
+                    </span> */}
                   </div>
                 </div>
 

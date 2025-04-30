@@ -78,7 +78,7 @@ export default function Homesec2() {
                 className={`flex flex-col justify-center items-start gap-2.5 transition-all duration-300 `}
               >
                 <div className="justify-center text-base font-normal leading-relaxed">
-                My artwork is a search for the soul of everything and a search for medicine and laughter.
+                My artwork is a search for the soul of everything and a search for medicine laughter.
 Utilizing natural and synthetic water-based media to paint, and many other media to
 design small and large installations, I still alternate, stylistically and thematically,
 between the meditative semi-abstract and the playfully caricatural, always looking for
