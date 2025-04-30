@@ -16,7 +16,7 @@ export default function Arttop() {
                     <div className="about">
                         <div className="max-w-[690px] flex justify-start items-center gap-2.5">
                             <div className="flex-1">
-                                <span className="text-color2 text-[48px] font-bold leading-[48px] font-playwrite">
+                            <span className="text-color2 text-[56px] font-medium leading-[48px] font-garamond">
                                     Rajaa Gharbi.
                                 </span>
                             </div>

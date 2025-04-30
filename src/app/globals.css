@@ -29,6 +29,7 @@
   --color-color7: var(--color7);
   --font-poppins: var(--font-poppins);
   --font-playwrite: var(--font-playwrite);
+  --font-garamond: var(--font-eb-garamond);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -41,6 +42,9 @@
 
 .some-element {
   font-family: var(--font-poppins);
+}
+.my-text {
+  font-family: var(--font-eb-garamond);
 }
 
 body {
