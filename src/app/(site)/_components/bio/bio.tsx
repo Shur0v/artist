@@ -16,8 +16,7 @@ export default function Biography() {
           </div>
           <div className="inline-flex justify-center items-center gap-2.5">
             <div className="max-w-[1099px] text-center">
-              <span className="text-color1 text-[40px] font-semibold leading-[46px]">Here All You Can </span>
-              <span className="text-color2 text-[40px] font-semibold leading-[46px]">Know About Me</span>
+              <span className="text-color2 text-[52px] font-garamond font-semibold leading-[46px] ">Rajaa Gharbi</span>
             </div>
           </div>
         </div>

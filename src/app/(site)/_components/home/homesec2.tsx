@@ -15,7 +15,7 @@ export default function Homesec2() {
                         <div className="max-w-[690px] flex justify-start items-center gap-2.5">
                             <div className="flex-1">
                                 <span className="text-color2 text-[56px] font-medium leading-[48px] font-garamond">
-                                    Rajaa Gharbi.
+                                    Rajaa Gharbi
                                 </span>
                             </div>
                         </div>

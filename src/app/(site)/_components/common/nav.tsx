@@ -34,7 +34,7 @@ export default function Nav() {
             <div className="nav text-white flex justify-between items-center relative w-full">
               <div className="logo align-middle text-3xl font-extrabold">
                 <div className="line relative">
-                  <div className="justify-start text-white text-[44px] font-normal font-playwrite leading-[57.20px]">
+                  <div className="justify-start text-white text-[52px] font-normal font-garamond leading-[57.20px]">
                     Rajaa
                     <br />
                     Gharbi
