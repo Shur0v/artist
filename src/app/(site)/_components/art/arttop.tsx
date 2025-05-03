@@ -246,6 +246,8 @@ export default function Arttop() {
             </div>
           )}
 
+          <div className='text-center text-color5 text-sm font-normal mt-32'> Art Photography by <span className='font-bold'>The Color Group</span> </div>
+
         </div>
       </div>
     </div>

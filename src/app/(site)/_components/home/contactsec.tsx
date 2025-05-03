@@ -57,7 +57,7 @@ export default function Contactsec() {
                   </div>
                   <div className="max-w-[272px] inline-flex flex-col justify-start items-start gap-1.5">
                     <div className="self-stretch justify-start text-color1 text-base font-medium leading-tight">Call Us</div>
-                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">+1 5589 55488 55</div>
+                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">(206)816-9378</div>
                   </div>
                 </div>
 

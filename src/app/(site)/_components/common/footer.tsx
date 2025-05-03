@@ -63,7 +63,7 @@ export default function Footer() {
 
           </div>
 
-          <div className="text-center text-white text-base font-normal leading-tight">Copyright Rajaa Gharbi All Rights Reserved</div>
+          <div className="text-center text-white text-base font-normal leading-tight"> © 2025 Rajaa Gharbi All Rights Reserved</div>
 
         </div>
       </div>

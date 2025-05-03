@@ -41,7 +41,7 @@ export default function Nav() {
                   </div>
                   <div className="wraper md:block hidden">
                     <div className="wraper h-12 w-[600px] bg-color2 flex justify-center items-center -rotate-45 absolute right-12">
-                      <div className="justify-center text-white text-[22px] font-normal font-playwrite leading-7 pl-96">
+                      <div className="justify-center text-white text-[22px] font-bold font-playwrite leading-7 pl-96">
                         The Art of
                       </div>
                     </div>

@@ -148,10 +148,10 @@ export default function Eventsec() {
               <div className="inline-flex justify-start items-center gap-2.5">
                 <div className="flex-1 justify-center">
                   <span className="text-color1 text-[28px] md:text-[40px] font-bold leading-tight md:leading-[48px]">
-                    The Future of Tech:{" "}
+                    Upcoming and{" "}
                   </span>
                   <span className="text-color2 text-[28px] md:text-[40px] font-bold leading-tight md:leading-[48px]">
-                    Live Sessions & Meetups
+                  Past Events
                   </span>
                 </div>
               </div>
