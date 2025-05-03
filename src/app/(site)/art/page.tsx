@@ -8,7 +8,7 @@ export default function Art() {
   return (
     <div>
       <Arttop />
-      <Artbottom />
+      {/* <Artbottom /> */}
     </div>
   );
 }

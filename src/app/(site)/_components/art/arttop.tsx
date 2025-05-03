@@ -2,6 +2,151 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 
+// Define the artwork data structure
+interface ArtworkData {
+  id: number;
+  image: string;
+  title: string;
+  description: string;
+}
+
+// Array of artwork data
+const artworkData: ArtworkData[] = [
+  {
+    id: 1,
+    image: '/art/art2.jpg',
+    title: 'Villages and Passages',
+    description: 'crylic on canvas 36" x 48". Available'
+  },
+  {
+    id: 2,
+    image: '/art/art4.jpg',
+    title: 'An-Alhambra Afterglow',
+    description: 'Acrylic on canvas 36hx48 Available'
+  },
+  {
+    id: 3,
+    image: '/art/art3.jpg',
+    title: "L'Aiisha, Life in our Names",
+    description: 'Acrylic on paper 20.1/8 X 22.6/8.Prints available'
+  },
+  {
+    id: 4,
+    image: '/art/art5.jpg',
+    title: "Cauldron Delights II",
+    description: 'Acrylic on parchment.17x11. Prints available'
+  },
+  {
+    id: 5,
+    image: '/latest/15.jpg',
+    title: 'Cauldron Delights I',
+    description: 'Acrylic on parchment.14X11.Available'
+  },
+  {
+    id: 6,
+    image: '/latest/21.jpg',
+    title: 'Trip to Bountiful',
+    description: 'Acrylic on paper.6.3/8x4. Prints available'
+  },
+  {
+    id: 7,
+    image: '/latest/4.jpg',
+    title: "Moons, Desires and Rumi's Mistresses",
+    description: 'Acrylicon paper30.1/8x 22.3/8. Prints available'
+  },
+  {
+    id: 8,
+    image: '/latest/11.jpg',
+    title: 'Songs of the Flower-Eyed Dancer;Tribute to Michael Jackson',
+    description: 'Acrylic on paper. 28x38. Available'
+  },
+  {
+    id: 9,
+    image: '/latest/12.jpg',
+    title: 'I see you Coming from Far Away',
+    description: 'Acrylic on paper9.4/8x7.4/8. Available'
+  },
+  {
+    id: 10,
+    image: '/latest/10.jpeg',
+    title: 'Once Beneath a Time, Conversation',
+    description: 'Watercolor Ink, and Pencilon paper. 20.4/8X20.4/8. Prints available'
+  },
+  {
+    id: 11,  
+    image: '/latest/8.jpg',
+    title: 'In-Sights',
+    description: 'Acrylics on paper. 19.4/8X 9.1/4. Available'
+  },
+  {
+    id: 12,
+    image: '/latest/7.jpg',
+    title: 'I love you Too',
+    description: 'Acrylic on paperboard. 14.6/8x10.7/8. Prints available.23.1/2x 11.6/8. Available'
+  },
+  {
+    id: 13,
+    image: '/latest/13.jpg',
+    title: 'A Child’s Freedom',
+    description: 'Acrylic on paper.11x8.4/8. Prints available'
+  },
+  {
+    id: 14,
+    image: '/latest/5.jpg',
+    title: 'Hidden Friends I.',
+    description: 'Acrylic on paper. 30.4/8x22.7/8. Available'
+  },
+  {
+    id: 15,
+    image: '/latest/6.jpeg',
+    title: 'Birds in the Wind and in the Mouth',
+    description: 'Acrylic on canvas.24x24. Available'
+  },
+  {
+    id: 16,
+    image: '/latest/16.jpg',
+    title: 'Dancers by the Rim of Dreams',
+    description: 'Acrylic on paper 18.4.8by17.4.8'
+  },
+  {
+    id: 17,
+    image: '/latest/19.jpg',
+    title: 'When the Diacritic Sign Speaks its Life',
+    description: ' Acrylic on paper. 21.1/8x15.2/8.Printsavailable'
+  },
+  {
+    id: 18,
+    image: '/latest/14.jpg',
+    title: 'Birds in the City',
+    description: ' Acrylic on canvas. 9x12. Prints available'
+  },
+  {
+    id: 19,
+    image: '/latest/17.jpg',
+    title: 'Memory Before the Tablet',
+    description: 'Gouache, watercolor, pencil, ink on paper.32x25. Prints available'
+  },
+  {
+    id: 20,
+    image: '/latest/20.jpg',
+    title: 'On a Ride to Where...?',
+    description: 'Acrylic on canvas. 48X36. Available'
+  },
+
+  {
+    id: 21,
+    image: '/latest/9.jpg',
+    title: 'Lioness, Le Rouge et Le Noir Ne s\'épousent-ils Pas ?',
+    description: 'Acrylic on paper.11x8.4/8. Available'
+  },
+  {
+    id: 22,
+    image: '/latest/18.jpg',
+    title: 'Simorgh Never Was Entirely Plucked 2014',
+    description: 'Acrylic on paper 41x28.4..8'
+  },
+];
+
 export default function Arttop() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
@@ -17,9 +162,6 @@ export default function Arttop() {
     <div className="main py-20 mx-4 lg:mx-0">
       <div className="container">
         <div className="content">
-
-
-
           {/* top */}
           <div className="top md:flex justify-between items-center mb-10 md:mb-20 gap-20 w-full">
             <div className="md:grid md:grid-cols-12 gap-8 w-full">
@@ -54,289 +196,35 @@ export default function Arttop() {
             </div>
           </div>
 
-{/* ======================================================================== */}
-
           <div className="pb-5 border-b-2 border-color2 w-full inline-flex justify-start items-center gap-2.5">
             <div className="justify-start text-color2 text-[36px] md:text-[56px] font-medium leading-[1.2]">Our Gallery</div>
           </div>
 
           <div className="self-stretch grid grid-cols-1 md:grid-cols-2 gap-6 mt-20">
-            <div className="w-full inline-flex flex-col justify-start items-start gap-8 mb-6">
-              <div className="relative w-full">
-                <div 
-                  className="relative w-full h-[240px] md:h-80 cursor-pointer"
-                  onClick={() => handleImageClick('/art/art2.jpg')}
-                >
-                  <Image 
-                    className="rounded-xl object-cover" 
-                    src="/art/art2.jpg" 
-                    alt="Art 1" 
-                    fill
-                  />
+            {artworkData.map((artwork) => (
+              <div key={artwork.id} className="w-full inline-flex flex-col justify-start items-start gap-8 mb-6">
+                <div className="relative w-full">
+                  <div 
+                    className="relative w-full h-[240px] md:h-80 cursor-pointer"
+                    onClick={() => handleImageClick(artwork.image)}
+                  >
+                    <Image 
+                      className="rounded-xl object-cover" 
+                      src={artwork.image} 
+                      alt={artwork.title} 
+                      fill
+                    />
+                  </div>
+                </div>
+                <div className="self-stretch h-[62px] inline-flex justify-between items-start w-full">
+                  <div className="inline-flex flex-col justify-start items-start gap-1">
+                    <div className="justify-center text-color1 text-xl font-medium font-['Poppins'] ">{artwork.title}</div>
+                    <div className="justify-center text-color5 text-base font-normal font-['Poppins'] leading-relaxed">{artwork.description}</div>
+                  </div>
+                  <Image className="w-[175px] h-[62px]" src="/icon/ptrn.svg" alt="Pattern" width={175} height={62}/>
                 </div>
               </div>
-              <div className="self-stretch h-[62px] inline-flex justify-between items-start w-full">
-                <div className="inline-flex flex-col justify-start items-start gap-1">
-                  <div className="justify-center text-color1 text-xl font-medium font-['Poppins'] leading-loose">Villages and Passages</div>
-                  <div className="justify-center text-color5 text-base font-normal font-['Poppins'] leading-relaxed">crylic on canvas 36&quot; x 48&quot;. Available</div>
-                </div>
-                <Image className="w-[175px] h-[62px]" src="/icon/ptrn.svg" alt="Pattern" width={175} height={62}/>
-              </div>
-            </div>
-
-            <div className="w-full inline-flex flex-col justify-start items-start gap-8 mb-6">
-              <div className="relative w-full">
-                <div 
-                  className="relative w-full h-[240px] md:h-80 cursor-pointer"
-                  onClick={() => handleImageClick('/art/art4.jpg')}
-                >
-                  <Image 
-                    className="rounded-xl object-cover" 
-                    src="/art/art4.jpg" 
-                    alt="Art 2" 
-                    fill
-                  />
-                </div>
-              </div>
-              <div className="self-stretch h-[62px] inline-flex justify-between items-start w-full">
-                <div className="inline-flex flex-col justify-start items-start gap-1">
-                  <div className="justify-center text-color1 text-xl font-medium font-['Poppins'] leading-loose">An-Alhambra Afterglow</div>
-                  <div className="justify-center text-color5 text-base font-normal font-['Poppins'] leading-relaxed">Acrylic on canvas 36hx48 Available</div>
-                </div>
-                <Image className="w-[175px] h-[62px]" src="/icon/ptrn.svg" alt="Pattern" width={175} height={62}/>
-              </div>
-            </div>
-
-            <div className="w-full inline-flex flex-col justify-start items-start gap-8 mb-6">
-              <div className="relative w-full">
-                <div 
-                  className="relative w-full h-[240px] md:h-80 cursor-pointer"
-                  onClick={() => handleImageClick('/art/art3.jpg')}
-                >
-                  <Image 
-                    className="rounded-xl object-cover" 
-                    src="/art/art3.jpg" 
-                    alt="Art 3" 
-                    fill
-                  />
-                </div>
-              </div>
-              <div className="self-stretch h-[62px] inline-flex justify-between items-start w-full">
-                <div className="inline-flex flex-col justify-start items-start gap-1">
-                  <div className="justify-center text-color1 text-xl font-medium font-['Poppins'] leading-loose">L&apos;Aiisha, Life in our Names</div>
-                  <div className="justify-center text-color5 text-base font-normal font-['Poppins'] leading-relaxed">Acrylic on paper 20.1/8 X 22.6/8.Prints available</div>
-                </div>
-                <Image className="w-[175px] h-[62px]" src="/icon/ptrn.svg" alt="Pattern" width={175} height={62}/>
-              </div>
-            </div>
-
-            <div className="w-full inline-flex flex-col justify-start items-start gap-8 mb-6">
-              <div className="relative w-full">
-                <div 
-                  className="relative w-full h-[240px] md:h-80 cursor-pointer"
-                  onClick={() => handleImageClick('/latest/4.jpg')}
-                >
-                  <Image 
-                    className="rounded-xl object-cover" 
-                    src="/latest/4.jpg" 
-                    alt="Art 4" 
-                    fill
-                  />
-                </div>
-              </div>
-              <div className="self-stretch h-[62px] inline-flex justify-between items-start w-full">
-                <div className="inline-flex flex-col justify-start items-start gap-1">
-                  <div className="justify-center text-color1 text-xl font-medium font-[&apos;Poppins&apos;] leading-loose">Moons, Desires and Rumi&apos;s Mistresses</div>
-                  <div className="justify-center text-color5 text-base font-normal font-['Poppins'] leading-relaxed"> Acrylicon paper30.1/8x 22.3/8. Prints available</div>
-                </div>
-                <Image className="w-[175px] h-[62px]" src="/icon/ptrn.svg" alt="Pattern" width={175} height={62}/>
-              </div>
-            </div>
-
-            <div className="w-full inline-flex flex-col justify-start items-start gap-8 mb-6">
-              <div className="relative w-full">
-                <div 
-                  className="relative w-full h-[240px] md:h-80 cursor-pointer"
-                  onClick={() => handleImageClick('/latest/5.jpg')}
-                >
-                  <Image 
-                    className="rounded-xl object-cover" 
-                    src="/latest/5.jpg" 
-                    alt="Art 5" 
-                    fill
-                  />
-                </div>
-              </div>
-              <div className="self-stretch h-[62px] inline-flex justify-between items-start w-full">
-                <div className="inline-flex flex-col justify-start items-start gap-1">
-                  <div className="justify-center text-color1 text-xl font-medium font-['Poppins'] leading-loose">Hidden Friends I.</div>
-                  <div className="justify-center text-color5 text-base font-normal font-['Poppins'] leading-relaxed">Acrylic on paper. 30.4/8x22.7/8. Available</div>
-                </div>
-                <Image className="w-[175px] h-[62px]" src="/icon/ptrn.svg" alt="Pattern" width={175} height={62}/>
-              </div>
-            </div>
-
-            <div className="w-full inline-flex flex-col justify-start items-start gap-8 mb-6">
-              <div className="relative w-full">
-                <div 
-                  className="relative w-full h-[240px] md:h-80 cursor-pointer"
-                  onClick={() => handleImageClick('/latest/6.jpeg')}
-                >
-                  <Image 
-                    className="rounded-xl object-cover" 
-                    src="/latest/6.jpeg" 
-                    alt="Art 6" 
-                    fill
-                  />
-                </div>
-              </div>
-              <div className="self-stretch h-[62px] inline-flex justify-between items-start w-full">
-                <div className="inline-flex flex-col justify-start items-start gap-1">
-                  <div className="justify-center text-color1 text-xl font-medium font-['Poppins'] leading-loose">Birds in the Wind and in the Mouth</div>
-                  <div className="justify-center text-color5 text-base font-normal font-['Poppins'] leading-relaxed">Acrylic on canvas.24x24. Available</div>
-                </div>
-                <Image className="w-[175px] h-[62px]" src="/icon/ptrn.svg" alt="Pattern" width={175} height={62}/>
-              </div>
-            </div>
-
-            <div className="w-full inline-flex flex-col justify-start items-start gap-8 mb-6">
-              <div className="relative w-full">
-                <div 
-                  className="relative w-full h-[240px] md:h-80 cursor-pointer"
-                  onClick={() => handleImageClick('/latest/7.jpg')}
-                >
-                  <Image 
-                    className="rounded-xl object-cover" 
-                    src="/latest/7.jpg" 
-                    alt="Art 7" 
-                    fill
-                  />
-                </div>
-              </div>
-              <div className="self-stretch h-[62px] inline-flex justify-between items-start w-full">
-                <div className="inline-flex flex-col justify-start items-start gap-1">
-                  <div className="justify-center text-color1 text-xl font-medium font-['Poppins'] leading-loose">I love you Too</div>
-                  <div className="justify-center text-color5 text-base font-normal font-['Poppins'] leading-relaxed"> Acrylic on paperboard. 14.6/8x10.7/8. Prints available.23.1/2x 11.6/8. Available</div>
-                </div>
-                <Image className="w-[175px] h-[62px]" src="/icon/ptrn.svg" alt="Pattern" width={175} height={62}/>
-              </div>
-            </div>
-
-            <div className="w-full inline-flex flex-col justify-start items-start gap-8 mb-6">
-              <div className="relative w-full">
-                <div 
-                  className="relative w-full h-[240px] md:h-80 cursor-pointer"
-                  onClick={() => handleImageClick('/latest/8.jpg')}
-                >
-                  <Image 
-                    className="rounded-xl object-cover" 
-                    src="/latest/8.jpg" 
-                    alt="Art 8" 
-                    fill
-                  />
-                </div>
-              </div>
-              <div className="self-stretch h-[62px] inline-flex justify-between items-start w-full">
-                <div className="inline-flex flex-col justify-start items-start gap-1">
-                  <div className="justify-center text-color1 text-xl font-medium font-['Poppins'] leading-loose">In-Sights</div>
-                  <div className="justify-center text-color5 text-base font-normal font-['Poppins'] leading-relaxed">Acrylics on paper. 19.4/8X 9.1/4. Available</div>
-                </div>
-                <Image className="w-[175px] h-[62px]" src="/icon/ptrn.svg" alt="Pattern" width={175} height={62}/>
-              </div>
-            </div>
-
-            <div className="w-full inline-flex flex-col justify-start items-start gap-8 mb-6">
-              <div className="relative w-full">
-                <div 
-                  className="relative w-full h-[240px] md:h-80 cursor-pointer"
-                  onClick={() => handleImageClick('/latest/9.jpg')}
-                >
-                  <Image 
-                    className="rounded-xl object-cover" 
-                    src="/latest/9.jpg" 
-                    alt="Art 9" 
-                    fill
-                  />
-                </div>
-              </div>
-              <div className="self-stretch h-[62px] inline-flex justify-between items-start w-full">
-                <div className="inline-flex flex-col justify-start items-start gap-1">
-                  <div className="justify-center text-color1 text-xl font-medium font-['Poppins'] ">Lioness, Le Rouge et Le Noir Ne s&apos;épousent-ils Pas ?</div>
-                  <div className="justify-center text-color5 text-base font-normal font-['Poppins'] leading-relaxed">Acrylic on paper.11x8.4/8. Available</div>
-                </div>
-                <Image className="w-[175px] h-[62px]" src="/icon/ptrn.svg" alt="Pattern" width={175} height={62}/>
-              </div>
-            </div>
-
-            <div className="w-full inline-flex flex-col justify-start items-start gap-8 mb-6">
-              <div className="relative w-full">
-                <div 
-                  className="relative w-full h-[240px] md:h-80 cursor-pointer"
-                  onClick={() => handleImageClick('/latest/10.jpeg')}
-                >
-                  <Image 
-                    className="rounded-xl object-cover" 
-                    src="/latest/10.jpeg" 
-                    alt="Art 10" 
-                    fill
-                  />
-                </div>
-              </div>
-              <div className="self-stretch h-[62px] inline-flex justify-between items-start w-full">
-                <div className="inline-flex flex-col justify-start items-start gap-1">
-                  <div className="justify-center text-color1 text-xl font-medium font-['Poppins'] leading-loose">Once Beneath a Time, Conversation</div>
-                  <div className="justify-center text-color5 text-base font-normal font-['Poppins'] ">Watercolor Ink, and Pencilon paper. 20.4/8X20.4/8. Prints available</div>
-                </div>
-                <Image className="w-[175px] h-[62px]" src="/icon/ptrn.svg" alt="Pattern" width={175} height={62}/>
-              </div>
-            </div>
-
-            <div className="w-full inline-flex flex-col justify-start items-start gap-8 mb-6">
-              <div className="relative w-full">
-                <div 
-                  className="relative w-full h-[240px] md:h-80 cursor-pointer"
-                  onClick={() => handleImageClick('/latest/11.jpg')}
-                >
-                  <Image 
-                    className="rounded-xl object-cover" 
-                    src="/latest/11.jpg" 
-                    alt="Art 11" 
-                    fill
-                  />
-                </div>
-              </div>
-              <div className="self-stretch h-[62px] inline-flex justify-between items-start w-full">
-                <div className="inline-flex flex-col justify-start items-start gap-1">
-                  <div className="justify-center text-color1 text-xl font-medium font-['Poppins'] ">Songs of the Flower-Eyed Dancer;Tribute to Michael Jackson</div>
-                  <div className="justify-center text-color5 text-base font-normal font-['Poppins'] leading-relaxed">Acrylic on paper. 28x38. Available</div>
-                </div>
-                <Image className="w-[175px] h-[62px]" src="/icon/ptrn.svg" alt="Pattern" width={175} height={62}/>
-              </div>
-            </div>
-
-            <div className="w-full inline-flex flex-col justify-start items-start gap-8 mb-6">
-              <div className="relative w-full">
-                <div 
-                  className="relative w-full h-[240px] md:h-80 cursor-pointer"
-                  onClick={() => handleImageClick('/latest/12.jpg')}
-                >
-                  <Image 
-                    className="rounded-xl object-cover" 
-                    src="/latest/12.jpg" 
-                    alt="Art 12" 
-                    fill
-                  />
-                </div>
-              </div>
-              <div className="self-stretch h-[62px] inline-flex justify-between items-start w-full">
-                <div className="inline-flex flex-col justify-start items-start gap-1">
-                  <div className="justify-center text-color1 text-xl font-medium font-['Poppins'] leading-loose">I see you Coming from Far Away</div>
-                  <div className="justify-center text-color5 text-base font-normal font-['Poppins'] leading-relaxed">Acrylic on paper9.4/8x7.4/8. Available</div>
-                </div>
-                <Image className="w-[175px] h-[62px]" src="/icon/ptrn.svg" alt="Pattern" width={175} height={62}/>
-              </div>
-            </div>
-
+            ))}
           </div>
 
           {/* Modal */}
