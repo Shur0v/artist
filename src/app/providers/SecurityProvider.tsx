@@ -1,60 +1,119 @@
 'use client';
 
-import { useEffect } from 'react';
-import {
-  disableRightClick,
-  disableKeyboardShortcuts,
-  disableImageDrag,
-  clearClipboard,
-} from '../security';
-
 interface SecurityProviderProps {
   children: React.ReactNode;
 }
 
-export default function SecurityProvider({ children }: SecurityProviderProps) {
-  useEffect(() => {
-    // Disable right click
-    const handleRightClick = (e: MouseEvent) => {
-      disableRightClick(e);
-    };
+class SecurityManager {
+  private static instance: SecurityManager;
+  private initialized: boolean = false;
+
+  private constructor() {
+    if (typeof window !== 'undefined') {
+      this.initializeSecurity();
+    }
+  }
+
+  public static getInstance(): SecurityManager {
+    if (!SecurityManager.instance) {
+      SecurityManager.instance = new SecurityManager();
+    }
+    return SecurityManager.instance;
+  }
+
+  private initializeSecurity(): void {
+    if (this.initialized) return;
+
+    // Disable context menu (right click)
+    document.addEventListener('contextmenu', (e) => {
+      e.preventDefault();
+      return false;
+    });
 
     // Disable keyboard shortcuts
-    const handleKeyDown = (e: KeyboardEvent) => {
-      disableKeyboardShortcuts(e);
-    };
+    document.addEventListener('keydown', (e) => {
+      // Prevent Ctrl/Cmd + key combinations
+      if (e.ctrlKey || e.metaKey) {
+        e.preventDefault();
+        return false;
+      }
 
-    // Disable image drag
-    const handleDragStart = (e: DragEvent) => {
-      disableImageDrag(e);
-    };
+      // Prevent F12 and other function keys
+      if (e.key.startsWith('F')) {
+        e.preventDefault();
+        return false;
+      }
 
-    // Add event listeners
-    document.addEventListener('contextmenu', handleRightClick);
-    document.addEventListener('keydown', handleKeyDown);
-    document.addEventListener('dragstart', handleDragStart);
-    
+      // Prevent Alt + key combinations
+      if (e.altKey) {
+        e.preventDefault();
+        return false;
+      }
+    }, true);
+
+    // Disable text selection
+    document.addEventListener('selectstart', (e) => {
+      e.preventDefault();
+      return false;
+    });
+
+    // Disable drag and drop
+    document.addEventListener('dragstart', (e) => {
+      e.preventDefault();
+      return false;
+    });
+
+    // Disable copy/paste
+    document.addEventListener('copy', (e) => {
+      e.preventDefault();
+      return false;
+    });
+
+    document.addEventListener('paste', (e) => {
+      e.preventDefault();
+      return false;
+    });
+
+    document.addEventListener('cut', (e) => {
+      e.preventDefault();
+      return false;
+    });
+
     // Clear clipboard periodically
-    const clipboardInterval = setInterval(clearClipboard, 1000);
+    setInterval(() => {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText('');
+      }
+    }, 1000);
 
-    // Cleanup
-    return () => {
-      document.removeEventListener('contextmenu', handleRightClick);
-      document.removeEventListener('keydown', handleKeyDown);
-      document.removeEventListener('dragstart', handleDragStart);
-      clearInterval(clipboardInterval);
-    };
-  }, []);
+    // Disable developer tools through various methods
+    function detectDevTools(): void {
+      if (window.outerWidth - window.innerWidth > 160 || window.outerHeight - window.innerHeight > 160) {
+        document.body.innerHTML = '';
+      }
+    }
+
+    window.addEventListener('resize', detectDevTools);
+    setInterval(detectDevTools, 1000);
+
+    this.initialized = true;
+  }
+}
+
+export default function SecurityProvider({ children }: SecurityProviderProps) {
+  // Initialize security manager
+  if (typeof window !== 'undefined') {
+    SecurityManager.getInstance();
+  }
 
   return (
-    <div
-      style={{
-        WebkitUserSelect: 'none',
-        MozUserSelect: 'none',
-        msUserSelect: 'none',
-        userSelect: 'none',
-      }}
-    >
+    <div style={{
+      WebkitUserSelect: 'none',
+      MozUserSelect: 'none',
+      msUserSelect: 'none',
+      userSelect: 'none',
+      WebkitTouchCallout: 'none',
+    }}>
       {children}
     </div>
   );
