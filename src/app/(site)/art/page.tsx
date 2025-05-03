@@ -1,5 +1,5 @@
 import React from "react";
-import Artbottom from "../_components/art/page";
+// import Artbottom from "../_components/art/page";
 import Arttop from "../_components/art/arttop";
 
 
