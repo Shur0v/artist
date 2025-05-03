@@ -38,7 +38,7 @@ export default function Footer() {
           
           <div className="top max-w-[996px] mx-auto flex justify-center flex-col items-center border-b border-white mb-10">
 
-          <div className="justify-start text-white text-[38px] font-normal font-garamond leading-9 mb-5">
+          <div className="justify-start text-white text-[8px] font-normal font-garamond leading-9 mb-5">
             Rajaa
             <br />
             Gharbi
