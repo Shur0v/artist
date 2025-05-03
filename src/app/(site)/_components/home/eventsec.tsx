@@ -157,7 +157,7 @@ export default function Eventsec() {
               </div>
 
               {/* Image moved here for mobile, will reposition on desktop */}
-              <div className="block md:hidden w-full mb-6">
+              {/* <div className="block md:hidden w-full mb-6">
                 <Image
                   className="w-full h-[520px] rounded-xl shadow-2xl object-cover bg-cover"
                   src="/event/ft1.png"
@@ -165,9 +165,9 @@ export default function Eventsec() {
                   width={2000}
                   height={2000}
                 />
-              </div>
+              </div> */}
 
-              <div className="flex flex-col justify-center items-start gap-2.5">
+              {/* <div className="flex flex-col justify-center items-start gap-2.5">
                 <div className="justify-center">
                   <span className="text-base font-normal leading-relaxed">
                     With years of experience,{" "}
@@ -184,8 +184,8 @@ export default function Eventsec() {
                     reliability, and a flawless finish every time!{" "}
                   </span>
                 </div>
-              </div>
-              <div className="flex flex-col justify-center items-start gap-2.5">
+              </div> */}
+              {/* <div className="flex flex-col justify-center items-start gap-2.5">
                 <div className="justify-center">
                   <span className=" text-base font-medium leading-relaxed">
                     Psychology is the scientific study
@@ -200,8 +200,8 @@ export default function Eventsec() {
                     across the lifespan.
                   </span>
                 </div>
-              </div>
-              <div className="flex flex-col justify-center items-start gap-2.5">
+              </div> */}
+              {/* <div className="flex flex-col justify-center items-start gap-2.5">
                 <div className="justify-center  text-base font-normal leading-relaxed">
                   By studying psychology, students gain insights into both
                   individual behavior and group dynamics, which can be applied
@@ -212,11 +212,11 @@ export default function Eventsec() {
                   classrooms, and supporting students&apos; emotional and
                   cognitive growth.
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Image hidden on mobile, visible on desktop */}
-            <div className="hidden md:block">
+            {/* <div className="hidden md:block">
               <Image
                 className="w-full md:max-w-[506px] h-[520px] md:h-[599px] rounded-xl shadow-2xl object-cover bg-cover"
                 src="/event/ft1.png"
@@ -224,7 +224,7 @@ export default function Eventsec() {
                 width={2000}
                 height={2000}
               />
-            </div>
+            </div> */}
           </div>
 
           {/* second part */}

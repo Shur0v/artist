@@ -40,7 +40,6 @@ export default function Footer() {
 
           <div className="justify-start text-white text-[38px] font-normal font-garamond leading-9 mb-5">
             Rajaa
-            <br />
             Gharbi
           </div>
           <div className="text-center text-white text-lg font-normal leading-[27px] mx-5 md:mx-0 mb-8">

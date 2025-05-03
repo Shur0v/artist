@@ -32,8 +32,8 @@ export default function Biography() {
               <div className="max-w-[487px] text-color5 text-base font-normal leading-relaxed">
               The same year the National Puppet Theatre of Tunisia (OTEMA) hosted performances by the visiting Boulder, Colorado Black Light Puppet Theatre of which Gharbi&apos;s future husband was a leading puppeteer. Gharbi agreed to leave the OTEMA and move with her husband to Morocco with the prenuptial condition that the couple will start its own puppet theatre in Fez, Morocco- The prenuptial condition never materialized.
               </div>
-              <div className="img max-w-[653px] h-[200px] rounded-xl overflow-hidden">
-                  <Image className="flex-1 object-cover bg-cover scale-110 bg-center" height={700} width={700} src="/images/image2.png" alt="biography" />
+              <div className="img max-w-[653px] h-[250px] rounded-xl overflow-hidden">
+                  <Image className="flex-1 object-cover bg-cover scale-110 bg-center" height={700} width={700} src="/latest/bio.jpg" alt="biography" />
               </div>
             </div>
 

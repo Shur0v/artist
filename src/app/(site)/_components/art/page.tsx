@@ -149,7 +149,7 @@ export default function Artbottom() {
                 <div className="gradient small-gradient" ref={smallGradientRef}></div>
                 <div className="gradient large-gradient" ref={largeGradientRef}></div>
                 <div className="text-container justify-start">
-                  <h2 className='font-playwrite'>Rajaa <br /> Gharbi </h2>
+                  <h2 className='font-garamond'>Rajaa <br /> Gharbi </h2>
                 </div>
               </div>
 
