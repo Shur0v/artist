@@ -34,7 +34,7 @@ export default function Homesec2() {
                             />
                         </div>
                         <p className="text-start text-sm font-normal leading-none ">
-                            <span className="font-bold">Rajaa Gharbi</span> Photo by <span className="font-bold">Sara Gharbi-Reinking</span> 2025.
+                            <span className="font-bold"></span> Photo by <span className="font-bold">Sara Gharbi-Reinking</span> 2025.
                         </p>
                     </div>
                 </div>

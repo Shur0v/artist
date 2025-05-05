@@ -44,106 +44,136 @@ const artworkData: ArtworkData[] = [
   },
   {
     id: 6,
+    image: '/latest/22.jpg',
+    title: 'Circus and Steady Dancers',
+    description: 'Acrylic on canvas. 48x24.Prints available'
+  },
+  {
+    id: 7,
     image: '/latest/21.jpg',
     title: 'Trip to Bountiful',
     description: 'Acrylic on paper.6.3/8x4. Prints available'
   },
   {
-    id: 7,
+    id: 8,
     image: '/latest/4.jpg',
     title: "Moons, Desires and Rumi's Mistresses",
     description: 'Acrylicon paper30.1/8x 22.3/8. Prints available'
   },
   {
-    id: 8,
+    id: 9,
+    image: '/latest/23.jpg',
+    title: 'Not an Omen',
+    description: 'Gouacheandink. 12x9/4/8. Prints available'
+  },
+  {
+    id: 10,
     image: '/latest/11.jpg',
     title: 'Songs of the Flower-Eyed Dancer;Tribute to Michael Jackson',
     description: 'Acrylic on paper. 28x38. Available'
   },
   {
-    id: 9,
+    id: 11,
     image: '/latest/12.jpg',
     title: 'I see you Coming from Far Away',
     description: 'Acrylic on paper9.4/8x7.4/8. Available'
   },
   {
-    id: 10,
+    id: 12,
     image: '/latest/10.jpeg',
     title: 'Once Beneath a Time, Conversation',
     description: 'Watercolor Ink, and Pencilon paper. 20.4/8X20.4/8. Prints available'
   },
   {
-    id: 11,  
+    id: 13,  
     image: '/latest/8.jpg',
     title: 'In-Sights',
     description: 'Acrylics on paper. 19.4/8X 9.1/4. Available'
   },
   {
-    id: 12,
+    id: 14,
     image: '/latest/7.jpg',
     title: 'I love you Too',
     description: 'Acrylic on paperboard. 14.6/8x10.7/8. Prints available.23.1/2x 11.6/8. Available'
   },
   {
-    id: 13,
+    id: 15,
     image: '/latest/13.jpg',
     title: 'A Child’s Freedom',
     description: 'Acrylic on paper.11x8.4/8. Prints available'
   },
   {
-    id: 14,
+    id: 16,
     image: '/latest/5.jpg',
     title: 'Hidden Friends I.',
     description: 'Acrylic on paper. 30.4/8x22.7/8. Available'
   },
   {
-    id: 15,
+    id: 17,
     image: '/latest/6.jpeg',
     title: 'Birds in the Wind and in the Mouth',
     description: 'Acrylic on canvas.24x24. Available'
   },
   {
-    id: 16,
+    id: 18,
     image: '/latest/16.jpg',
     title: 'Dancers by the Rim of Dreams',
     description: 'Acrylic on paper 18.4.8by17.4.8'
   },
   {
-    id: 17,
+    id: 19,
     image: '/latest/19.jpg',
     title: 'When the Diacritic Sign Speaks its Life',
     description: ' Acrylic on paper. 21.1/8x15.2/8.Printsavailable'
   },
   {
-    id: 18,
+    id: 20,
     image: '/latest/14.jpg',
     title: 'Birds in the City',
     description: ' Acrylic on canvas. 9x12. Prints available'
   },
   {
-    id: 19,
+    id: 21,
     image: '/latest/17.jpg',
     title: 'Memory Before the Tablet',
     description: 'Gouache, watercolor, pencil, ink on paper.32x25. Prints available'
   },
   {
-    id: 20,
+    id: 22,
     image: '/latest/20.jpg',
     title: 'On a Ride to Where...?',
     description: 'Acrylic on canvas. 48X36. Available'
   },
 
   {
-    id: 21,
+    id: 23,
     image: '/latest/9.jpg',
     title: 'Lioness, Le Rouge et Le Noir Ne s\'épousent-ils Pas ?',
     description: 'Acrylic on paper.11x8.4/8. Available'
   },
   {
-    id: 22,
+    id: 24,
     image: '/latest/18.jpg',
     title: 'Simorgh Never Was Entirely Plucked 2014',
     description: 'Acrylic on paper 41x28.4..8'
+  },
+  {
+    id: 25,
+    image: '/latest/25.jpg',
+    title: 'Triptych  Dancer in the City 1 of 3',
+    description: 'Acrylic 20x8. Prints available'
+  },
+  {
+    id: 26,
+    image: '/latest/24.jpg',
+    title: 'Triptych Dancer in the City 2 of 3',
+    description: 'Acrylic 20x8. Prints available'
+  },
+  {
+    id: 27,
+    image: '/latest/26.jpg',
+    title: 'Triptyh 3of 3 Dancer in the City',
+    description: 'Acrylic 20x8. Prints available'
   },
 ];
 
@@ -189,7 +219,7 @@ export default function Arttop() {
                             />
                         </div>
                         <p className="text-start text-sm font-normal leading-none ">
-                            <span className="font-bold">Rajaa Gharbi</span> Photo by <span className="font-bold">Amanda Ovena</span> 2025.
+                            <span className="font-bold"></span> Photo by <span className="font-bold">Amanda Ovena</span> 2025.
                         </p>
                     </div>
                 </div>

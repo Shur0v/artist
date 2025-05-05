@@ -83,7 +83,7 @@ export default function Slider() {
   }, []);
 
   return (
-    <div className="main pb-20 mx-4 lg:mx-0 my-[200px] mt-6">
+    <div className="main mx-4 lg:mx-0 mt-[20px] md:mt-6">
       <div className="container">
         <div className="content">
           <div className="flex flex-col justify-center items-center gap-6">
@@ -107,7 +107,7 @@ export default function Slider() {
             </div>
 
             {/* Text Slider */}
-            <div ref={textSliderRef} className="md:w-[62%] w-full relative h-[80px]">
+            {/* <div ref={textSliderRef} className="md:w-[62%] w-full relative h-[80px]">
               <div className="slide-container absolute w-full">
                 <h1 className="text-3xl font-bold text-black mb-2">Villages and Passages</h1>
                 <p className="text-black/80">Acrylic on canvas, 36&quot; x 48&quot;. Available.</p>
@@ -127,7 +127,7 @@ export default function Slider() {
                 <h1 className="text-3xl font-bold text-black mb-2">Cauldron Delights II</h1>
                 <p className="text-black/80">Acrylic on paper, 17&quot; x 11&quot;. Prints available.</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
