@@ -6,7 +6,7 @@ export default function Biography() {
   const [showFullText, setShowFullText] = useState(false);
 
   return (
-    <div className="main py-20 mx-4 lg:mx-0">
+    <div className="main pt-20 mx-4 lg:mx-0">
     <div className="container">
       <div className="content">
           {/* tittle */}

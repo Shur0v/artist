@@ -6,7 +6,7 @@ import { MdPictureAsPdf } from "react-icons/md";
 
 export default function Eventsec() {
   return (
-    <div className="main py-20 mx-4 lg:mx-0">
+    <div className="main pt-20 mx-4 lg:mx-0">
       <div className="container">
         <div className="content">
           {/* top part */}
@@ -124,7 +124,7 @@ export default function Eventsec() {
 
               <button 
               onClick={() => window.open('/event/Return.pdf', '_blank')}
-              className="bg-color2/20 px-4 py-2 rounded-md w-[400px] text-lg cursor-pointer hover:bg-color2 hover:text-white transition-all duration-300 mb-[220px] flex justify-between items-center group"
+              className="bg-color2/20 px-4 py-2 rounded-md w-[400px] text-lg cursor-pointer hover:bg-color2 hover:text-white transition-all duration-300 mb-[80px] flex justify-between items-center group"
               >
                 <span>The Circle of Departure and Return</span>
                 <MdPictureAsPdf className="group-hover:text-white group-hover:scale-150 transition-all duration-300" />

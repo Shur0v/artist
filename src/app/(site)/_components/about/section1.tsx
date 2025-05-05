@@ -111,7 +111,7 @@ export default function Section1() {
 
         {/* section4 */}
 
-        <div className="mt-[260px]">
+        <div className="-mt-[50px]">
         {/* <Artbottom  /> */}
         </div>
 

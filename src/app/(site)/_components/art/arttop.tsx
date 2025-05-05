@@ -189,7 +189,7 @@ export default function Arttop() {
   };
 
   return (
-    <div className="main py-20 mx-4 lg:mx-0">
+    <div className="main pt-20 mx-4 lg:mx-0">
       <div className="container">
         <div className="content">
           {/* top */}
@@ -219,7 +219,7 @@ export default function Arttop() {
                             />
                         </div>
                         <p className="text-start text-sm font-normal leading-none ">
-                            <span className="font-bold"></span> Photo by <span className="font-bold">Amanda Ovena</span> 2025.
+                            Photo by <span className="font-bold">Amanda Ovena</span> 2025.
                         </p>
                     </div>
                 </div>
@@ -276,7 +276,7 @@ export default function Arttop() {
             </div>
           )}
 
-          <div className='text-center text-color5 text-sm font-normal mt-32'> Art Photography by <span className='font-bold'>The Color Group</span> </div>
+          <div className='text-center text-color5 text-sm font-normal mt-12'> Art Photography by <span className='font-bold'>The Color Group</span> </div>
 
         </div>
       </div>
