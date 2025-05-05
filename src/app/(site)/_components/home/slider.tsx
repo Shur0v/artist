@@ -83,7 +83,7 @@ export default function Slider() {
   }, []);
 
   return (
-    <div className="main mx-4 lg:mx-0 mt-[20px] md:mt-6">
+    <div className="main mx-4 lg:mx-0 my-[20px] md:mt-6">
       <div className="container">
         <div className="content">
           <div className="flex flex-col justify-center items-center gap-6">
