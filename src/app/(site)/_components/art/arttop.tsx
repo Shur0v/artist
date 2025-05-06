@@ -261,7 +261,7 @@ export default function Arttop() {
             - gap-2: Gap between images
             - mt-20: Top margin
           */}
-          <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-2 mt-20 space-y-2">
+          <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-2 mt-20 space-y-2 cursor-pointer">
             {artworkData.map((artwork) => (
               <div 
                 key={artwork.id} 
@@ -291,7 +291,7 @@ export default function Arttop() {
           */}
           {selectedImage && (
             <div 
-              className="fixed inset-0 z-50 flex items-center justify-center bg-black/90"
+              className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 "
               onClick={handleCloseModal}
             >
               <div className="flex flex-col items-center w-[80vw]">
