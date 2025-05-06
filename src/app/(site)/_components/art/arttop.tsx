@@ -250,7 +250,7 @@ export default function Arttop() {
             - text-[36px] md:text-[56px]: Font sizes can be modified
           */}
           <div className="pb-5 border-b-2 border-color2 w-full inline-flex justify-start items-center gap-2.5">
-            <div className="justify-start text-color2 text-[36px] md:text-[56px] font-medium leading-[1.2]">Our Gallery</div>
+            <div className="justify-start text-color2 text-[30px] md:text-[40px] font-medium leading-[1.2]">Fine Art Portfolio</div>
           </div>
 
           {/* 
