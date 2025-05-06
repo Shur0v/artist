@@ -99,7 +99,7 @@ const artworkData: ArtworkData[] = [
   {
     id: 15,
     image: '/latest/13.jpg',
-    title: 'A Child’s Freedom',
+    title: 'A Child\'s Freedom',
     description: 'Acrylic on paper.11x8.4/8. Prints available'
   },
   {
@@ -192,9 +192,19 @@ export default function Arttop() {
     <div className="main pt-20 mx-4 lg:mx-0">
       <div className="container">
         <div className="content">
-          {/* top */}
+          {/* 
+            Top Section - Artist Profile
+            উপরের অংশ - শিল্পীর প্রোফাইল 
+            - pt-20: Top padding can be adjusted
+            - mx-4: Horizontal margin can be modified
+          */}
           <div className="top md:flex justify-between items-center mb-10 md:mb-20 gap-20 w-full">
             <div className="md:grid md:grid-cols-12 gap-8 w-full">
+                {/* 
+                  Artist Name Section (Left Side)
+                  শিল্পীর নাম অংশ (বাম দিক)
+                  - col-span-7: Column width can be adjusted
+                */}
                 <div className="col-span-7 flex justify-center items-center">
                     <div className="about">
                         <div className="max-w-[690px] flex justify-start items-center gap-2.5">
@@ -207,6 +217,13 @@ export default function Arttop() {
                     </div>
                 </div>
 
+                {/* 
+                  Artist Image Section (Right Side)
+                  শিল্পীর ছবি অংশ (ডান দিক)
+                  - col-span-5: Column width can be adjusted
+                  - max-w-[336px]: Maximum width can be modified
+                  - h-[240px]: Height can be customized
+                */}
                 <div className="col-span-5">
                     <div className="right flex my-6 md:m-0 flex-col gap-4">
                         <div className="image justify-start max-w-[336px] h-[240px] rounded-xl overflow-hidden shadow-2xl">
@@ -226,52 +243,76 @@ export default function Arttop() {
             </div>
           </div>
 
+          {/* 
+            Gallery Title Section
+            গ্যালারি শিরোনাম অংশ
+            - pb-5: Bottom padding can be adjusted
+            - text-[36px] md:text-[56px]: Font sizes can be modified
+          */}
           <div className="pb-5 border-b-2 border-color2 w-full inline-flex justify-start items-center gap-2.5">
             <div className="justify-start text-color2 text-[36px] md:text-[56px] font-medium leading-[1.2]">Our Gallery</div>
           </div>
 
-          <div className="self-stretch grid grid-cols-1 md:grid-cols-2 gap-6 mt-20">
+          {/* 
+            Gallery Grid Section
+            গ্যালারি গ্রিড অংশ
+            Customizable Properties:
+            - columns-1 sm:columns-2 md:columns-3 lg:columns-4: Number of columns
+            - gap-2: Gap between images
+            - mt-20: Top margin
+          */}
+          <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-2 mt-20 space-y-2">
             {artworkData.map((artwork) => (
-              <div key={artwork.id} className="w-full inline-flex flex-col justify-start items-start gap-8 mb-6">
-                <div className="relative w-full">
-                  <div 
-                    className="relative w-full h-[240px] md:h-80 cursor-pointer"
-                    onClick={() => handleImageClick(artwork.image)}
-                  >
-                    <Image 
-                      className="rounded-xl object-cover" 
-                      src={artwork.image} 
-                      alt={artwork.title} 
-                      fill
-                    />
-                  </div>
-                </div>
-                <div className="self-stretch h-[62px] inline-flex justify-between items-start w-full">
-                  <div className="inline-flex flex-col justify-start items-start gap-1">
-                    <div className="justify-center text-color1 text-xl font-medium font-['Poppins'] ">{artwork.title}</div>
-                    <div className="justify-center text-color5 text-base font-normal font-['Poppins'] leading-relaxed">{artwork.description}</div>
-                  </div>
-                  <Image className="w-[175px] h-[62px]" src="/icon/ptrn.svg" alt="Pattern" width={175} height={62}/>
+              <div 
+                key={artwork.id} 
+                className=" h-fit break-inside-avoid"
+                onClick={() => handleImageClick(artwork.image)}
+              >
+                <div className="relative w-full h-full p-8">
+                  <Image
+                    src={artwork.image}
+                    alt={artwork.title}
+                    width={500}
+                    height={500}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Modal */}
+          {/* 
+            Modal for Enlarged Image View
+            বড় আকারে ছবি দেখার মোডাল
+            Customizable:
+            - w-[80vw]: Modal width
+            - h-[80vh]: Modal height
+            - bg-black/90: Background opacity
+          */}
           {selectedImage && (
             <div 
-              className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm"
+              className="fixed inset-0 z-50 flex items-center justify-center bg-black/90"
               onClick={handleCloseModal}
             >
-              <div className="relative w-[70vw] h-[80vh] flex items-center justify-center">
-                <Image
-                  src={selectedImage}
-                  alt="Selected artwork"
-                  fill
-                  className="object-contain"
-                  sizes="70vw"
-                  priority
-                />
+              <div className="flex flex-col items-center w-[80vw]">
+                <div className="relative w-full h-[70vh]">
+                  <Image
+                    src={selectedImage}
+                    alt="Selected artwork"
+                    fill
+                    className="object-contain"
+                    sizes="90vw"
+                    priority
+                  />
+                </div>
+                <div className="w-full text-center p-4 mt-4">
+                  <h3 className="text-white text-xl font-medium">
+                    {artworkData.find(art => art.image === selectedImage)?.title}
+                  </h3>
+                  <p className="text-white/80 text-sm">
+                    {artworkData.find(art => art.image === selectedImage)?.description}
+                  </p>
+                </div>
               </div>
             </div>
           )}

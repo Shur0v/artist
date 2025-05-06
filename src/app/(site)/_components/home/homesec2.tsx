@@ -82,7 +82,7 @@ export default function Homesec2() {
 Utilizing natural and synthetic water-based media to paint, and many other media to
 design small and large installations, I still alternate, stylistically and thematically,
 between the meditative semi-abstract and the playfully caricatural, always looking for
-“Poetry” that surfaces in the dark and daylight, unsuspected, gentle, yet unbreakable
+“Poetry” that surfaces in the dark and daylight, unsuspected, gentle, yet unbreakable.
                 </div>
               </div>
 
