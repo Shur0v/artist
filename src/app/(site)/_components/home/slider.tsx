@@ -75,46 +75,56 @@ export default function Slider() {
             {/* Image Slider */}
             <div ref={imageSliderRef} className="relative h-[400px] md:h-[650px] md:w-[62%] w-full rounded-xl overflow-hidden shadow-2xl">
               
-              <div className="slide-container absolute inset-0">
-                <Image src="/latest/slider1.jpg" alt="Art 1" fill className="object-cover" priority />
-              </div>
 
-              <div className="slide-container absolute inset-0 opacity-0">
-                <Image src="/latest/slider2.jpg" alt="Art 2" fill className="object-cover" />
+
+              <div className="slide-container absolute inset-0">
+                <Image src="/art/art5.jpg" alt="Art 1" fill className="object-cover" priority />
               </div>
 
               <div className="slide-container absolute inset-0">
-                <Image src="/latest/slider1.jpg" alt="Art 1" fill className="object-cover" priority />
+                <Image src="/art/art2.jpg" alt="Art 1" fill className="object-cover" priority />
               </div>
-
-              <div className="slide-container absolute inset-0 opacity-0">
-                <Image src="/latest/slider2.jpg" alt="Art 2" fill className="object-cover" />
+              
+              <div className="slide-container absolute inset-0">
+                <Image src="/art/art3.jpg" alt="Art 1" fill className="object-cover" priority />
+              </div>
+              
+              <div className="slide-container absolute inset-0">
+                <Image src="/art/art4.jpg" alt="Art 1" fill className="object-cover" priority />
+              </div>
+              
+              <div className="slide-container absolute inset-0">
+                <Image src="/art/art5.jpg" alt="Art 1" fill className="object-cover" priority />
               </div>
 
               <div className="slide-container absolute inset-0">
-                <Image src="/latest/slider1.jpg" alt="Art 1" fill className="object-cover" priority />
+                <Image src="/art/art2.jpg" alt="Art 1" fill className="object-cover" priority />
               </div>
-
-              <div className="slide-container absolute inset-0 opacity-0">
-                <Image src="/latest/slider2.jpg" alt="Art 2" fill className="object-cover" />
+              
+              <div className="slide-container absolute inset-0">
+                <Image src="/art/art3.jpg" alt="Art 1" fill className="object-cover" priority />
+              </div>
+              
+              <div className="slide-container absolute inset-0">
+                <Image src="/art/art4.jpg" alt="Art 1" fill className="object-cover" priority />
               </div>
 
               <div className="slide-container absolute inset-0">
-                <Image src="/latest/slider1.jpg" alt="Art 1" fill className="object-cover" priority />
-              </div>
-
-              <div className="slide-container absolute inset-0 opacity-0">
-                <Image src="/latest/slider2.jpg" alt="Art 2" fill className="object-cover" />
+                <Image src="/art/art5.jpg" alt="Art 1" fill className="object-cover" priority />
               </div>
 
               <div className="slide-container absolute inset-0">
-                <Image src="/latest/slider1.jpg" alt="Art 1" fill className="object-cover" priority />
+                <Image src="/art/art2.jpg" alt="Art 1" fill className="object-cover" priority />
               </div>
-
-              <div className="slide-container absolute inset-0 opacity-0">
-                <Image src="/latest/slider2.jpg" alt="Art 2" fill className="object-cover" />
+              
+              <div className="slide-container absolute inset-0">
+                <Image src="/art/art3.jpg" alt="Art 1" fill className="object-cover" priority />
               </div>
-
+              
+              <div className="slide-container absolute inset-0">
+                <Image src="/art/art4.jpg" alt="Art 1" fill className="object-cover" priority />
+              </div>
+              
             </div>
           </div>
         </div>
