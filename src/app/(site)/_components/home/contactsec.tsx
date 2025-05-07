@@ -68,7 +68,7 @@ export default function Contactsec() {
                   </div>
                   <div className="max-w-[272px] inline-flex flex-col justify-start items-start gap-1.5">
                     <div className="self-stretch justify-start text-color1 text-base font-medium leading-tight">Email Us</div>
-                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">demo@gmail.com</div>
+                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">contact@rajaagharbi.com</div>
                   </div>
                 </div>
               </div>

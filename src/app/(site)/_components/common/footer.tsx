@@ -6,7 +6,7 @@ const socialLinks = [
   {
     id: 1,
     icon: FaFacebookF,
-    link: "https://facebook.com",
+    link: "https://www.facebook.com/RajaaGharbiStudio",
     ariaLabel: "Visit Facebook profile"
   },
   {
@@ -24,7 +24,7 @@ const socialLinks = [
   {
     id: 4,
     icon: RiInstagramFill ,
-    link: "https://instagram.com",
+    link: "https://www.instagram.com/rajaagharbistudio/",
     ariaLabel: "Visit Instagram profile"
   }
 ];
@@ -34,7 +34,6 @@ export default function Footer() {
     <div className="footer bg-color3">
       <div className="container h-[412px]">
         <div className="content py-[60px]">
-
           
           <div className="top max-w-[996px] mx-auto flex justify-center flex-col items-center border-b border-white mb-10">
 
