@@ -224,7 +224,7 @@ export default function Eventsec() {
               <div className="w-full md:w-96 inline-flex flex-col justify-start items-start gap-6">
                 <Image
                   className="w-full h-[287px] rounded-xl object-cover bg-cover"
-                  src="/event/ft2.jpg"
+                  src="/event/ft2.png"
                   alt="artist"
                   width={2000}
                   height={2000}
@@ -250,7 +250,7 @@ export default function Eventsec() {
               <div className="w-full md:w-96 inline-flex flex-col justify-start items-start gap-6">
                 <Image
                   className="w-full h-[287px] rounded-xl object-cover bg-cover"
-                  src="/event/ft3.jpg"
+                  src="/event/ft3.png"
                   alt="artist"
                   width={2000}
                   height={2000}
@@ -276,7 +276,7 @@ export default function Eventsec() {
               <div className="w-full md:w-96 inline-flex flex-col justify-start items-start gap-6">
                 <Image
                   className="w-full h-[287px] rounded-xl object-cover bg-cover"
-                  src="/event/ft4.jpg"
+                  src="/event/ft4.png"
                   alt="artist"
                   width={2000}
                   height={2000}

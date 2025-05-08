@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import { useForm } from 'react-hook-form'
-import { HiOutlineLocationMarker, HiOutlinePhone, HiOutlineMail } from 'react-icons/hi'
+import { HiOutlineLocationMarker, HiOutlinePhone, HiOutlineMail, HiOutlineBookOpen } from 'react-icons/hi'
 
 type FormData = {
   name: string;
@@ -22,7 +22,7 @@ export default function Contactsec() {
   };
 
   return (
-    <div className="main py-20 mx-4 lg:mx-0 ">
+    <div id="contactsec" className="main py-20 mx-4 lg:mx-0 ">
       <div className="container">
         <div className="content">
           <div className="both flex justify-between flex-col lg:flex-row">
@@ -39,14 +39,25 @@ export default function Contactsec() {
               </div>
 
               <div className="lg:col-span-4 inline-flex flex-col justify-start items-start gap-6">
-                {/* Address */}
+                {/* Representation */}
                 <div className="self-stretch inline-flex justify-start items-center gap-[13px]">
                   <div className="w-10 h-10 p-[5px] bg-color2/20 rounded-[20px] flex justify-center items-center">
                     <HiOutlineLocationMarker className="w-6 h-6 text-color2" />
                   </div>
                   <div className="max-w-[272px] inline-flex flex-col justify-start items-start gap-1.5">
-                    <div className="self-stretch justify-start text-color1 text-base font-medium leading-tight">Address</div>
-                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">2518 Adams Street, New York, NY 53022</div>
+                    <div className="self-stretch justify-start text-color1 text-base font-medium leading-tight">Representation</div>
+                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">Center on Contemporary Art<br />Seattle, Washington</div>
+                  </div>
+                </div>
+
+                {/* Books */}
+                <div className="self-stretch inline-flex justify-start items-center gap-[13px]">
+                  <div className="w-10 h-10 p-[5px] bg-color2/20 rounded-[20px] flex justify-center items-center">
+                    <HiOutlineBookOpen className="w-6 h-6 text-color2" />
+                  </div>
+                  <div className="max-w-[272px] inline-flex flex-col justify-start items-start gap-1.5">
+                    <div className="self-stretch justify-start text-color1 text-base font-medium leading-tight">Available Books</div>
+                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">From Sons of Bridges/Men Aghani Aljousour<br />Available on Amazon</div>
                   </div>
                 </div>
 
@@ -57,7 +68,7 @@ export default function Contactsec() {
                   </div>
                   <div className="max-w-[272px] inline-flex flex-col justify-start items-start gap-1.5">
                     <div className="self-stretch justify-start text-color1 text-base font-medium leading-tight">Call Us</div>
-                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">(206)816-9378</div>
+                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">(206) 816-9378</div>
                   </div>
                 </div>
 

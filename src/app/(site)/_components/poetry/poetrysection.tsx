@@ -16,11 +16,6 @@ export default function Poetrysection() {
 
 
 
-
-
-
-
-
           {/* top */}
           <div className="top md:flex justify-between items-center mb-10 md:mb-20 gap-20 w-full">
             <div className="md:grid md:grid-cols-12 gap-8 w-full">

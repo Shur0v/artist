@@ -3,6 +3,31 @@ import React from 'react'
 import { HiOutlineDownload, HiOutlineMail } from 'react-icons/hi'
 
 export default function Poetrysec() {
+  const handleEmailClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    const contactSection = document.getElementById('contactsec');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleDownloadClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    const win = window.open('', '_blank');
+    if (win) {
+      win.document.write(`
+        <html>
+          <head><title>Download Images</title></head>
+          <body style='margin:0;padding:0;display:flex;flex-direction:column;align-items:center;background:#111;'>
+            <img src='/latest/prg1.jpg' style='max-width:90vw;max-height:160vh;margin:20px 0;'/>
+            <img src='/latest/prg2.jpg' style='max-width:90vw;max-height:160vh;margin:20px 0;'/>
+          </body>
+        </html>
+      `);
+      win.document.close();
+    }
+  };
+
   return (
     <div className="main mx-4 lg:mx-0 md:mt-[80px] my-0 -mb-[80px]">
     <div className="container">
@@ -25,8 +50,8 @@ export default function Poetrysec() {
 
 {/* content */}
 <div className="content md:grid grid-cols-12 gap-[60px] justify-between">
-  <div className="col-span-5 mb-10 md:mb-0 h-auto">
-    <Image className="w-full h-auto md:w-[506px] md:h-[736px] rounded-xl" src="/images/image4.png" alt="artist" width={2000} height={2000}/>
+  <div className="col-span-5 mb-10 md:mb-0 h-auto shadow-2xl">
+    <Image className="w-full h-auto md:w-[506px] md:h-[736px] rounded-xl" src="/latest/prg.jpg" alt="artist" width={2000} height={2000}/>
   </div>
   <div className="col-span-7 flex flex-col justify-start items-start gap-7">
     <div className="w-full md:w-[640px] justify-center text-base font-normal font-['Poppins'] leading-relaxed">
@@ -43,7 +68,7 @@ export default function Poetrysec() {
         </div>
       </div>
       <div className="w-full flex flex-col md:flex-row justify-start items-start md:items-center gap-6">
-        <div className="w-full md:w-auto px-7 py-2.5 bg-color7 rounded-xl flex justify-start items-center gap-3">
+        <div className="w-full md:w-auto px-7 py-2.5 bg-color7 rounded-xl flex justify-start items-center gap-3 cursor-pointer" onClick={handleDownloadClick}>
           <div className="w-10 h-10 p-[5px] bg-white/20 rounded-[20px] flex justify-center items-center gap-2.5">
             <HiOutlineDownload className="w-6 h-6 text-white" />
           </div>
@@ -52,7 +77,7 @@ export default function Poetrysec() {
             <div className="self-stretch justify-start text-white text-sm font-normal font-['Poppins'] leading-[18.20px]">The Poetry of Abdul</div>
           </div>
         </div>
-        <div className="w-full md:w-auto px-7 py-2.5 bg-color7 rounded-xl flex justify-start items-center gap-3">
+        <div className="w-full md:w-auto px-7 py-2.5 bg-color7 rounded-xl flex justify-start items-center gap-3 cursor-pointer" onClick={handleEmailClick}>
           <div className="w-10 h-10 p-[5px] bg-white/20 rounded-[20px] flex justify-center items-center gap-2.5">
             <HiOutlineMail className="w-6 h-6 text-white" />
           </div>
@@ -71,6 +96,11 @@ export default function Poetrysec() {
           <div className=" flex justify-center items-center mt-20">
     <Image src="/icon/ptrnbuttom.svg" alt="artist" width={2000} height={2000} className="w-[636px] h-auto" />
 </div>
+
+
+
+
+
 
       </div>
     </div>

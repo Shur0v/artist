@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn  } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
+import Image from "next/image";
 
 const socialLinks = [
   {
@@ -18,7 +19,7 @@ const socialLinks = [
   {
     id: 3,
     icon: FaLinkedinIn,
-    link: "https://linkedin.com",
+    link: "https://www.linkedin.com/in/rajaa-gharbi-0b07861b?trk=people-guest_people_search-card",
     ariaLabel: "Visit LinkedIn profile"
   },
   {
@@ -58,6 +59,24 @@ export default function Footer() {
                 <item.icon className="text-white text-xl" />
               </a>
             ))}
+          </div>
+
+          {/* Payment Methods */}
+          <div className="flex items-center gap-6 mb-10">
+            <Image
+              src="/images/PayPal.svg"
+              alt="PayPal"
+              width={250}
+              height={120}
+              className="h-[80px] w-auto bg-white p-2 rounded"
+            />
+            <Image
+              src="/images/Zelle.svg"
+              alt="Zelle"
+              width={250}
+              height={120}
+              className="h-[80px] w-auto bg-white p-2 rounded"
+            />
           </div>
 
           </div>
