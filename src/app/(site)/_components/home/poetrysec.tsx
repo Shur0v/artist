@@ -74,7 +74,7 @@ export default function Poetrysec() {
           </div>
           <div className="flex-1 md:flex-none inline-flex flex-col justify-start items-start gap-1.5">
             <div className="self-stretch justify-start text-white text-base font-medium font-['Poppins'] leading-tight">Download This Poet</div>
-            <div className="self-stretch justify-start text-white text-sm font-normal font-['Poppins'] leading-[18.20px]">The Poetry of Abdul</div>
+            <div className="self-stretch justify-start text-white text-sm font-normal font-['Poppins'] leading-[18.20px]">The Poetry of Rajaa Gharbi</div>
           </div>
         </div>
         <div className="w-full md:w-auto px-7 py-2.5 bg-color7 rounded-xl flex justify-start items-center gap-3 cursor-pointer" onClick={handleEmailClick}>
@@ -83,7 +83,7 @@ export default function Poetrysec() {
           </div>
           <div className="flex-1 md:flex-none inline-flex flex-col justify-start items-start gap-1.5">
             <div className="self-stretch justify-start text-white text-base font-medium font-['Poppins'] leading-tight">Email Us</div>
-            <div className="self-stretch justify-start text-white text-sm font-normal font-['Poppins'] leading-[18.20px]">demo@gmail.com</div>
+            <div className="self-stretch justify-start text-white text-sm font-normal font-['Poppins'] leading-[18.20px]">contact@rajaagharbi.com</div>
           </div>
         </div>
       </div>

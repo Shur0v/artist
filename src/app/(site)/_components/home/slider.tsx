@@ -86,7 +86,7 @@ export default function Slider() {
               </div>
               
               <div className="slide-container absolute inset-0">
-                <Image src="/art/art3.jpg" alt="Art 1" fill className="object-cover" priority />
+                <Image src="/images/slidersecond.jpg" alt="Art 1" fill className="object-cover" priority />
               </div>
               
               <div className="slide-container absolute inset-0">
@@ -102,7 +102,7 @@ export default function Slider() {
               </div>
               
               <div className="slide-container absolute inset-0">
-                <Image src="/art/art3.jpg" alt="Art 1" fill className="object-cover" priority />
+                <Image src="/images/slidersecond.jpg" alt="Art 1" fill className="object-cover" priority />
               </div>
               
               <div className="slide-container absolute inset-0">
@@ -118,7 +118,7 @@ export default function Slider() {
               </div>
               
               <div className="slide-container absolute inset-0">
-                <Image src="/art/art3.jpg" alt="Art 1" fill className="object-cover" priority />
+                <Image src="/images/slidersecond.jpg" alt="Art 1" fill className="object-cover" priority />
               </div>
               
               <div className="slide-container absolute inset-0">
