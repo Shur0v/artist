@@ -23,40 +23,47 @@ export default function Eventsec() {
 
 
               <div className="w-[70%] justify-center mb-[50px]">
-              …Her writing is steeped in symbolism… is  made of different terrains of meanings that paint with words where the poet makes the unraveling of the third person pronoun a spiritual rebirth that reaches deep flight into existence and one's being; as the poet comments: "It's important to write in the first person pronoun, the pronoun of the historian, the witness, the documentarian, the analyst, the creator, the one who defies the pains of silence or its comforts. <br />
-              <span className="text-base font-medium leading-relaxed"> -Dr. Fatma Lakhdhar, Writer, literary Critic, University of Tunis</span>
+              ...Rajaa Gharbi&apos;swriting is steeped in symbolism...of different terrains of meanings that paint with wordswhere the poetmakestheunraveling ofthe third person pronouna spiritual rebirththat reaches deep flight into psychologiesand intoone&apos;s being;as the poet comments: &ldquo;It&apos;s importantto writeinthe first person pronoun, the pronoun of thehistorian, the creator,the witness, the documentarian,the analyst, the one who defiesthe pains of silence or its comforts. <br />
               </div>
 
 
               <div className="w-[70%] justify-center mb-[50px]" dir="rtl">
-                نوع الكتابة التي توختها الشاعرة موغل في الرمزية... يتكوّن من تضاريس معنوية مختلفة... فهو شعر يستكشف أغوار الذات والنّفسيات ويعمد إلى رسم بالكلمات، لتجعل فيها من انسلاخها عن ضمير الغائب انبعاثا روحيّا يحقّق لها التحليق بعيدا في الكون وفي الكيان كما تضيف الشاعرة &ldquo; الكتابة بالانا ضمير الحاضر المؤرخ الشاهِد، الموثِق، المحلِل، المبدِع، المتحدِي لعذاب  الصمت أو راحته المِؤرخ &rdquo;
+              بالطبع، إليك إعادة صياغة للنص الموجود في الصورة بلغة عربية واضحة وسلسة:
+
+&ldquo;الكتابة التي تمارسها الشاعرة تنتمي إلى الشعر الرمزي، حيث تتعدد دلالاتها وتتنوع معانيها. فهي كتابة تستكشف عمق الذات وتغوص في التأويل، متجاوزة الشكل الظاهري للكلمات، لتصوغ هي ضمير الغائب بأنفاسٍ داخلية وروح تتفاعل مع الكون والوجود. وكما تصف الشاعرة: &lsquo;إنها كتابة بصوت الحاضر، الأنا الساردة، الشاهد، المبدع، المتأمل، الذي يواجه عذابات الصمت أو يجد فيها سكينته.&rsquo;&rdquo;
+
+هل ترغب في تلخيصه أيضًا؟
                 <br />
+
+                <span className="text-base font-medium leading-relaxed">Dr. Fatma Lakhdhar, Writer, literary Critic, University of Tunis-</span>
+
+
               </div>
 
 
               <div className="w-[70%] justify-center mb-[50px]">
-              Her poetic writing is fresh, powerful... it commands attention and mandates its own articulations of verb and meaning. It establishes an innovation in the emotional and the esthetic in this North American context. But her writing goes beyond [this context] thanks to her quest for the universal... Pearls of Love... Her reflections on Poetry are sublime...A warrior for light..
-              </div>
-
-              
-              <div className="w-[70%] justify-center mb-[50px]">
-
-              Son écriture poétique est fraiche et forte qui force l'attention et exige ses propres articulations compréhensives verbales. C'est une mise au point affectif et esthétique dans ce contexte nord-américain. Mais son écriture va plus loin grâce à cette quête de l'universel ... perles d'Amour... sa réflexion sur la poésie est sublime...une guerrière de la lumière... C'est une grande joie et un immense honneur d'avoir cette écrivaine dans Le Maghreb Littéraire... <br />
-              <span className="text-base font-medium leading-relaxed">-Najib Redouane, Literary critic Chief editor of the international Le Maghreb Littéraire</span>
-
+              ...Herpoetic writing is fresh, powerful... it commandsattention and mandates its own articulations of verb and meaning. It establishes an innovationin the emotional and the esthetic in this North American context. But her writing goes beyond [it] thanks to her quest for the universal... Pearls of Love... Her reflections on Poetry are sublime...A warrior for light...
               </div>
 
               
               <div className="w-[70%] justify-center mb-[50px]">
 
-              Gharbi's visuals read like poems and her poems read like poems. She dissects meaning and reinstates it in a narrative context that embraces forces of an intuitive nature...
+              Son écriture poétique est fraiche et forte qui force l&apos;attention et exige ses propres articulations compréhensives verbales. C&apos;est une mise au point affectif et esthétique dans ce contexte nord-américain. Mais son écriture va plus loin grâce à cette quêtede l&apos;universel ... perles d&apos;Amour... sa réflexionsur la poésie est sublime...une guerrière de la lumière...C&apos;est une grande joie et un immense honneur d&apos;avoir cette écrivaine dans Le Maghreb Littéraire...<br />
+              <span className="text-base font-medium leading-relaxed">-Dr. Najib Redouane,Literary critic Chief editor of the internationalLe Maghreb Littéraire</span>
+
+              </div>
+
+              
+              <div className="w-[70%] justify-center mb-[50px]">
+
+              Gharbi&apos;s visuals read like poemsand her poems read like poems. She dissects meaning and reinstates it in a narrative context that embraces forces of an intuitive nature...
               </div>
               
 
               
               <div className="w-[70%] justify-center mb-[50px]">
 
-              L'art visuel de Gharbi se lit comme des poèmes et ses poèmes se lisent comme de l'art visuel… Elle dissèque le sens et le réintègre dans un contexte de récit qui embrasse des forces d'une nature intuitive… <br />
+              L&apos;art visuelde Gharbi se lit comme des poèmes et ses poèmes se lisent comme de l&apos;art visuel... Elle dissèque le sens et le réintègredans un contextede récit qui embrasse des forces d&apos;une nature intuitive...<br />
               <span className="text-base font-medium leading-relaxed">-American Artist Joe Fedderson</span>
 
               </div>
@@ -72,7 +79,7 @@ export default function Eventsec() {
 
               <div className="w-[70%] justify-center mb-[50px]">
 
-              L'artiste et poète d'origine Tunisienne Rajaa Gharbi a emerveillé l'audience pendant sa lecture et signature de livre à l'espace culturel de l'ambassade de Tunisie… <br />
+              L&apos;artiste et poète d&apos;origine Tunisienne Rajaa Gharbi a emerveillé l&apos;audience pendant sa lecture et signature de livre à l&apos;espace culturel de l&apos;ambassade de Tunisie... <br />
               <span className="text-base font-medium leading-relaxed">-The Washington Report on Middle East Affairs</span>
 
               </div>
@@ -80,12 +87,12 @@ export default function Eventsec() {
               
 
               <div className="w-[70%] justify-center mb-[50px]">
-              …In I-dentity", the poetic voice employs an image – metaphor – that comes back to haunt the fortunate reader. This successful metaphor is but one of many in this delightful book of words and images.
+              ...In I-dentity&rdquo;, the poetic voice employs an image &ndash;metaphor &ndash;that comes back to haunt the fortunate reader. This successful metaphor is but one of many in this delightful book of words and images.
               </div>
               
 
               <div className="w-[70%] justify-center mb-[50px]">
-              ...Dans le poème "I-Dentity" la voix poetique emploie une image-métaphore qui revient pour hanter le chanceux lecteur. <br />
+              ...Dans le poème&ldquo;I-Dentity&rdquo; la voix poetique emploie une image-métaphore qui revient pour hanter le chanceux lecteur. <br />
               <span className="text-base font-medium leading-relaxed">-Dena Bugel-Shunra Literary and Judiciary Hebrew Translator, Proteus publication</span>
               </div>
               
@@ -97,7 +104,7 @@ export default function Eventsec() {
 
 
               <div className="w-[70%] justify-center mb-[50px]">
-              ...J'étais touchée aussi bien par l'étendue que par la profondeur de son travail.  La force de son expression dans la langue anglaise est extraordinaire. <br />
+              ...J&apos;étais touchée aussi bien par l&apos;étendue que par la profondeur de son travail.  La force de son expression dans la langue anglaise est extraordinaire. <br />
               <span className="text-base font-medium leading-relaxed">-Reader, Malti Greenberg</span>
               </div>
 
