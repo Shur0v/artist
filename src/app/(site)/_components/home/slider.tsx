@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import gsap from "gsap";
@@ -11,7 +11,9 @@ export default function Slider() {
     const imageSlider = imageSliderRef.current;
     if (!imageSlider) return;
 
-    const imageContainers = imageSlider.querySelectorAll('.slide-container') as NodeListOf<HTMLElement>;
+    const imageContainers = imageSlider.querySelectorAll(
+      ".slide-container"
+    ) as NodeListOf<HTMLElement>;
     if (!imageContainers || imageContainers.length === 0) return;
 
     // Initially hide all slides except the first one
@@ -28,16 +30,18 @@ export default function Slider() {
       repeat: -1,
       repeatDelay: 0,
     });
-    
+
     timelineRef.current = tl;
 
     // Build the timeline
     imageContainers.forEach((_, index) => {
       const currentImageContainer = imageContainers[index];
-      const nextImageContainer = imageContainers[(index + 1) % imageContainers.length];
+      const nextImageContainer =
+        imageContainers[(index + 1) % imageContainers.length];
 
       // Create a nested timeline for each transition
-      const transitionTl = gsap.timeline()
+      const transitionTl = gsap
+        .timeline()
         // Fade out current slide
         .to(currentImageContainer, {
           autoAlpha: 0,
@@ -45,7 +49,8 @@ export default function Slider() {
           ease: "power2.inOut",
         })
         // Fade in next slide
-        .fromTo(nextImageContainer,
+        .fromTo(
+          nextImageContainer,
           { autoAlpha: 0 },
           {
             autoAlpha: 1,
@@ -56,8 +61,7 @@ export default function Slider() {
         );
 
       // Add the transition timeline to the main timeline
-      tl.add(transitionTl)
-        .to({}, { duration: 4 }); // Pause between transitions
+      tl.add(transitionTl).to({}, { duration: 4 }); // Pause between transitions
     });
 
     return () => {
@@ -73,58 +77,129 @@ export default function Slider() {
         <div className="content">
           <div className="flex flex-col justify-center items-center gap-6">
             {/* Image Slider */}
-            <div ref={imageSliderRef} className="relative h-[400px] md:h-[650px] md:w-[62%] w-full rounded-xl overflow-hidden shadow-2xl">
-              
-
-
+            <div
+              ref={imageSliderRef}
+              className="relative h-[400px] md:h-[650px] md:w-[62%] w-full rounded-xl overflow-hidden shadow-2xl"
+            >
               <div className="slide-container absolute inset-0">
-                <Image src="/art/art5.jpg" alt="Art 1" fill className="object-cover" priority />
+                <Image
+                  src="/art/art5.jpg"
+                  alt="Art 1"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
 
               <div className="slide-container absolute inset-0">
-                <Image src="/art/art2.jpg" alt="Art 1" fill className="object-cover" priority />
-              </div>
-              
-              <div className="slide-container absolute inset-0">
-                <Image src="/images/slidersecond.jpg" alt="Art 1" fill className="object-cover" priority />
-              </div>
-              
-              <div className="slide-container absolute inset-0">
-                <Image src="/art/art4.jpg" alt="Art 1" fill className="object-cover" priority />
-              </div>
-              
-              <div className="slide-container absolute inset-0">
-                <Image src="/art/art5.jpg" alt="Art 1" fill className="object-cover" priority />
+                <Image
+                  src="/art/art2.jpg"
+                  alt="Art 1"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
 
               <div className="slide-container absolute inset-0">
-                <Image src="/art/art2.jpg" alt="Art 1" fill className="object-cover" priority />
-              </div>
-              
-              <div className="slide-container absolute inset-0">
-                <Image src="/images/slidersecond.jpg" alt="Art 1" fill className="object-cover" priority />
-              </div>
-              
-              <div className="slide-container absolute inset-0">
-                <Image src="/art/art4.jpg" alt="Art 1" fill className="object-cover" priority />
+                <Image
+                  src="/images/slidersecond.jpg"
+                  alt="Art 1"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
 
               <div className="slide-container absolute inset-0">
-                <Image src="/art/art5.jpg" alt="Art 1" fill className="object-cover" priority />
+                <Image
+                  src="/art/art4.jpg"
+                  alt="Art 1"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
 
               <div className="slide-container absolute inset-0">
-                <Image src="/art/art2.jpg" alt="Art 1" fill className="object-cover" priority />
+                <Image
+                  src="/art/art5.jpg"
+                  alt="Art 1"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
-              
+
               <div className="slide-container absolute inset-0">
-                <Image src="/images/slidersecond.jpg" alt="Art 1" fill className="object-cover" priority />
+                <Image
+                  src="/art/art2.jpg"
+                  alt="Art 1"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
-              
+
               <div className="slide-container absolute inset-0">
-                <Image src="/art/art4.jpg" alt="Art 1" fill className="object-cover" priority />
+                <Image
+                  src="/images/slidersecond.jpg"
+                  alt="Art 1"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
-              
+
+              <div className="slide-container absolute inset-0">
+                <Image
+                  src="/art/art4.jpg"
+                  alt="Art 1"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+
+              <div className="slide-container absolute inset-0">
+                <Image
+                  src="/art/art5.jpg"
+                  alt="Art 1"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+
+              <div className="slide-container absolute inset-0">
+                <Image
+                  src="/art/art2.jpg"
+                  alt="Art 1"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+
+              <div className="slide-container absolute inset-0">
+                <Image
+                  src="/images/slidersecond.jpg"
+                  alt="Art 1"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+
+              <div className="slide-container absolute inset-0">
+                <Image
+                  src="/art/art4.jpg"
+                  alt="Art 1"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -132,7 +207,3 @@ export default function Slider() {
     </div>
   );
 }
-
-
-
-

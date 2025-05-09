@@ -31,10 +31,6 @@ export default function Contactsec() {
               {/* Left Side - Contact Info */}
               {/* Contact Title */}
               <div className="max-w-[135px] flex flex-col justify-start items-start gap-2">
-                {/* <div className="self-stretch inline-flex justify-start items-center gap-2">
-                  <div className="justify-start text-base font-normal leading-tight">Contact</div>
-                  <div className="w-[60px] h-0 outline-1 outline-offset-[-0.50px] outline-color2"></div>
-                </div> */}
                 <div className="self-stretch justify-start text-color1 text-2xl whitespace-nowrap font-semibold mb-8">Contact US For Booking</div>
               </div>
 
