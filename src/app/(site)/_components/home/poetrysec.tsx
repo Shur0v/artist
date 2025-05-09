@@ -50,8 +50,8 @@ export default function Poetrysec() {
 
 {/* content */}
 <div className="content md:grid grid-cols-12 gap-[60px] justify-between">
-  <div className="col-span-5 mb-10 md:mb-0 h-auto shadow-2xl">
-    <Image className="w-full h-auto md:w-[506px] md:h-[736px] rounded-xl" src="/latest/prg.jpg" alt="artist" width={2000} height={2000}/>
+  <div className="col-span-5 mb-10 md:mb-0 h-[650px] shadow-2xl">
+    <Image className="w-full h-auto md:w-[506px] md:h-[650px] rounded-xl object-cover" src="/latest/prg.jpg" alt="artist" width={2000} height={2000}/>
   </div>
   <div className="col-span-7 flex flex-col justify-start items-start gap-7">
     <div className="w-full md:w-[640px] justify-center text-base font-normal font-['Poppins'] leading-relaxed">
@@ -93,9 +93,9 @@ export default function Poetrysec() {
 
 
           {/* top frame */}
-          <div className=" flex justify-center items-center mt-20">
-    <Image src="/icon/ptrnbuttom.svg" alt="artist" width={2000} height={2000} className="w-[636px] h-auto" />
-</div>
+          {/* <div className=" flex justify-center items-center mt-20">
+              <Image src="/icon/ptrnbuttom.svg" alt="artist" width={2000} height={2000} className="w-[636px] h-auto" />
+          </div> */}
 
 
 

@@ -12,7 +12,7 @@ export default function Eventsec() {
           {/* top part */}
 
 
-              <div className="max-w-[135px] flex flex-col justify-start items-start gap-2 mb-[50px]">
+              <div className="max-w-[70%] flex flex-col justify-start items-start gap-2 mb-[50px]">
                 <div className="inline-flex justify-start items-center gap-2">
                   <div className="justify-start text-color5 text-base font-normal leading-tight">
                     Reviews
@@ -22,47 +22,47 @@ export default function Eventsec() {
               </div>
 
 
-              <div className="justify-center mb-[50px]">
-              …Her writing is steeped in symbolism… is  made of different terrains of meanings that paint with words where the poet makes the unraveling of the third person pronoun a spiritual rebirth that reaches deep flight into existence and one’s being; as the poet comments: “It’s important to write in the first person pronoun, the pronoun of the historian, the witness, the documentarian, the analyst, the creator, the one who defies the pains of silence or its comforts. <br />
+              <div className="w-[70%] justify-center mb-[50px]">
+              …Her writing is steeped in symbolism… is  made of different terrains of meanings that paint with words where the poet makes the unraveling of the third person pronoun a spiritual rebirth that reaches deep flight into existence and one's being; as the poet comments: "It's important to write in the first person pronoun, the pronoun of the historian, the witness, the documentarian, the analyst, the creator, the one who defies the pains of silence or its comforts. <br />
               <span className="text-base font-medium leading-relaxed"> -Dr. Fatma Lakhdhar, Writer, literary Critic, University of Tunis</span>
               </div>
 
 
-              <div className="justify-center mb-[50px]" dir="rtl">
+              <div className="w-[70%] justify-center mb-[50px]" dir="rtl">
                 نوع الكتابة التي توختها الشاعرة موغل في الرمزية... يتكوّن من تضاريس معنوية مختلفة... فهو شعر يستكشف أغوار الذات والنّفسيات ويعمد إلى رسم بالكلمات، لتجعل فيها من انسلاخها عن ضمير الغائب انبعاثا روحيّا يحقّق لها التحليق بعيدا في الكون وفي الكيان كما تضيف الشاعرة &ldquo; الكتابة بالانا ضمير الحاضر المؤرخ الشاهِد، الموثِق، المحلِل، المبدِع، المتحدِي لعذاب  الصمت أو راحته المِؤرخ &rdquo;
                 <br />
               </div>
 
 
-              <div className="justify-center mb-[50px]">
+              <div className="w-[70%] justify-center mb-[50px]">
               Her poetic writing is fresh, powerful... it commands attention and mandates its own articulations of verb and meaning. It establishes an innovation in the emotional and the esthetic in this North American context. But her writing goes beyond [this context] thanks to her quest for the universal... Pearls of Love... Her reflections on Poetry are sublime...A warrior for light..
               </div>
 
               
-              <div className="justify-center mb-[50px]">
+              <div className="w-[70%] justify-center mb-[50px]">
 
-              Son écriture poétique est fraiche et forte qui force l’attention et exige ses propres articulations compréhensives verbales. C’est une mise au point affectif et esthétique dans ce contexte nord-américain. Mais son écriture va plus loin grâce à cette quête de l’universel ... perles d’Amour... sa réflexion sur la poésie est sublime...une guerrière de la lumière... C’est une grande joie et un immense honneur d’avoir cette écrivaine dans Le Maghreb Littéraire... <br />
+              Son écriture poétique est fraiche et forte qui force l'attention et exige ses propres articulations compréhensives verbales. C'est une mise au point affectif et esthétique dans ce contexte nord-américain. Mais son écriture va plus loin grâce à cette quête de l'universel ... perles d'Amour... sa réflexion sur la poésie est sublime...une guerrière de la lumière... C'est une grande joie et un immense honneur d'avoir cette écrivaine dans Le Maghreb Littéraire... <br />
               <span className="text-base font-medium leading-relaxed">-Najib Redouane, Literary critic Chief editor of the international Le Maghreb Littéraire</span>
 
               </div>
 
               
-              <div className="justify-center mb-[50px]">
+              <div className="w-[70%] justify-center mb-[50px]">
 
-              Gharbi’s visuals read like poems and her poems read like poems. She dissects meaning and reinstates it in a narrative context that embraces forces of an intuitive nature...
+              Gharbi's visuals read like poems and her poems read like poems. She dissects meaning and reinstates it in a narrative context that embraces forces of an intuitive nature...
               </div>
               
 
               
-              <div className="justify-center mb-[50px]">
+              <div className="w-[70%] justify-center mb-[50px]">
 
-              L’art visuel de Gharbi se lit comme des poèmes et ses poèmes se lisent comme de l’art visuel… Elle dissèque le sens et le réintègre dans un contexte de récit qui embrasse des forces d’une nature intuitive… <br />
+              L'art visuel de Gharbi se lit comme des poèmes et ses poèmes se lisent comme de l'art visuel… Elle dissèque le sens et le réintègre dans un contexte de récit qui embrasse des forces d'une nature intuitive… <br />
               <span className="text-base font-medium leading-relaxed">-American Artist Joe Fedderson</span>
 
               </div>
 
 
-              <div className="justify-center mb-[50px]">
+              <div className="w-[70%] justify-center mb-[50px]">
 
               ...Tunisian-born artist/poet Rajaa A. Gharbi enthralled the audience at her poetry reading and book signing...
 
@@ -70,39 +70,39 @@ export default function Eventsec() {
 
               
 
-              <div className="justify-center mb-[50px]">
+              <div className="w-[70%] justify-center mb-[50px]">
 
-              L’artiste et poète d’origine Tunisienne Rajaa Gharbi a emerveillé l’audience pendant sa lecture et signature de livre à l’espace culturel de l’ambassade de Tunisie… <br />
+              L'artiste et poète d'origine Tunisienne Rajaa Gharbi a emerveillé l'audience pendant sa lecture et signature de livre à l'espace culturel de l'ambassade de Tunisie… <br />
               <span className="text-base font-medium leading-relaxed">-The Washington Report on Middle East Affairs</span>
 
               </div>
 
               
 
-              <div className="justify-center mb-[50px]">
-              …In I-dentity”, the poetic voice employs an image – metaphor – that comes back to haunt the fortunate reader. This successful metaphor is but one of many in this delightful book of words and images.
+              <div className="w-[70%] justify-center mb-[50px]">
+              …In I-dentity", the poetic voice employs an image – metaphor – that comes back to haunt the fortunate reader. This successful metaphor is but one of many in this delightful book of words and images.
               </div>
               
 
-              <div className="justify-center mb-[50px]">
-              ...Dans le poème “I-Dentity” la voix poetique emploie une image-métaphore qui revient pour hanter le chanceux lecteur. <br />
+              <div className="w-[70%] justify-center mb-[50px]">
+              ...Dans le poème "I-Dentity" la voix poetique emploie une image-métaphore qui revient pour hanter le chanceux lecteur. <br />
               <span className="text-base font-medium leading-relaxed">-Dena Bugel-Shunra Literary and Judiciary Hebrew Translator, Proteus publication</span>
               </div>
               
 
-              <div className="justify-center mb-[50px]">
+              <div className="w-[70%] justify-center mb-[50px]">
               ...I was moved by both the scope and depth of her work.  Her strength of expression in the English language is extraordinary.
               </div>
               
 
 
-              <div className="justify-center mb-[50px]">
-              ...J’étais touchée aussi bien par l’étendue que par la profondeur de son travail.  La force de son expression dans la langue anglaise est extraordinaire. <br />
+              <div className="w-[70%] justify-center mb-[50px]">
+              ...J'étais touchée aussi bien par l'étendue que par la profondeur de son travail.  La force de son expression dans la langue anglaise est extraordinaire. <br />
               <span className="text-base font-medium leading-relaxed">-Reader, Malti Greenberg</span>
               </div>
 
 
-<div className="max-w-[405px]"> 
+<div className="max-w-[70%]"> 
 
 <button 
                 onClick={() => window.open('/event/Dreamscapes.pdf', '_blank')}
@@ -127,20 +127,18 @@ export default function Eventsec() {
 
 
           <div className="flex flex-col md:flex-row justify-start items-start gap-16 mb-[60px]">
-            <div className="w-full md:max-w-[690px] inline-flex flex-col justify-start items-start gap-6">
+            <div className="w-full md:max-w-[70%] inline-flex flex-col justify-start items-start gap-6">
               <div className="max-w-[135px] flex flex-col justify-start items-start gap-2">
-                <div className="inline-flex justify-start items-center gap-2">
+                {/* <div className="inline-flex justify-start items-center gap-2">
                   <div className="justify-start text-color5 text-base font-normal leading-tight">
                     Event
                   </div>
                   <div className="w-[63px] h-0 outline-[1.50px] outline-offset-[-0.75px] outline-color2"></div>
-                </div>
+                </div> */}
               </div>
               <div className="inline-flex justify-start items-center gap-2.5">
                 <div className="flex-1 justify-center">
-                  <span className="text-color1 text-[28px] md:text-[40px] font-bold leading-tight md:leading-[48px]">
-                    Upcoming and{" "}
-                  </span>
+
                   <span className="text-color2 text-[28px] md:text-[40px] font-bold leading-tight md:leading-[48px]">
                   Past Events
                   </span>
@@ -223,20 +221,46 @@ export default function Eventsec() {
             <div className="flex flex-col md:flex-row justify-start items-center gap-6 w-full">
               <div className="w-full md:w-96 inline-flex flex-col justify-start items-start gap-6">
                 <Image
-                  className="w-full h-[287px] rounded-xl object-cover bg-cover"
-                  src="/event/ft2.png"
+                  className="w-full h-[400px] rounded-xl object-cover bg-cover"
+                  src="/latest/event3.jpg"
                   alt="artist"
-                  width={2000}
-                  height={2000}
+                  width={1200}
+                  height={800}
                 />
                 <div className="inline-flex justify-start items-start gap-[105px]">
                   <div className="w-[177px] inline-flex flex-col justify-start items-start gap-1">
                     <div className="justify-center text-color1 text-lg font-medium leading-[28.80px]">
-                      Purpose of the Prize
+                    Tell Me More I Exhibition Gallery 110 Seattle, Washington 2019 
                     </div>
-                    <div className="justify-center text-color5 text-sm font-normal leading-snug">
+                    {/* <div className="justify-center text-color5 text-sm font-normal leading-snug">
                       22 Sep, 2025
+                    </div> */}
+                  </div>
+                  <Image
+                    className="w-[102px] h-9"
+                    src="/icon/ptrn.svg"
+                    alt="artist"
+                    width={2000}
+                    height={2000}
+                  />
+                </div>
+              </div>
+              <div className="w-full md:w-96 inline-flex flex-col justify-start items-start gap-6 mt-6">
+                <Image
+                  className="w-full h-[400px] rounded-xl object-cover bg-cover"
+                  src="/latest/event2.jpg"
+                  alt="artist"
+                  width={1200}
+                  height={800}
+                />
+                <div className="inline-flex justify-start items-start gap-[105px]">
+                  <div className="w-[177px] inline-flex flex-col justify-start items-start gap-1">
+                    <div className="justify-center text-color1 text-lg font-medium leading-[28.80px]">
+                    Rajaa Gharbi  Universidad Central, Santiago 2022 Poetry recitals Tour Chile.
                     </div>
+                    {/* <div className="justify-center text-color5 text-sm font-normal leading-snug">
+                      22 Sep, 2025
+                    </div> */}
                   </div>
                   <Image
                     className="w-[102px] h-9"
@@ -249,46 +273,20 @@ export default function Eventsec() {
               </div>
               <div className="w-full md:w-96 inline-flex flex-col justify-start items-start gap-6">
                 <Image
-                  className="w-full h-[287px] rounded-xl object-cover bg-cover"
-                  src="/event/ft3.png"
+                  className="w-full h-[400px] rounded-xl object-cover bg-cover"
+                  src="/latest/event1.jpg"
                   alt="artist"
-                  width={2000}
-                  height={2000}
+                  width={1200}
+                  height={800}
                 />
                 <div className="inline-flex justify-start items-start gap-[105px]">
                   <div className="w-[177px] inline-flex flex-col justify-start items-start gap-1">
                     <div className="justify-center text-color1 text-lg font-medium leading-[28.80px]">
-                      Purpose of the Prize
+                    2016 Art residency Russia. Museum of Modern Art, Moscow.
                     </div>
-                    <div className="justify-center text-color5 text-sm font-normal leading-snug">
+                    {/* <div className="justify-center text-color5 text-sm font-normal leading-snug">
                       22 Sep, 2025
-                    </div>
-                  </div>
-                  <Image
-                    className="w-[102px] h-9"
-                    src="/icon/ptrn.svg"
-                    alt="artist"
-                    width={2000}
-                    height={2000}
-                  />
-                </div>
-              </div>
-              <div className="w-full md:w-96 inline-flex flex-col justify-start items-start gap-6">
-                <Image
-                  className="w-full h-[287px] rounded-xl object-cover bg-cover"
-                  src="/event/ft4.png"
-                  alt="artist"
-                  width={2000}
-                  height={2000}
-                />
-                <div className="inline-flex justify-start items-start gap-[105px]">
-                  <div className="w-[177px] inline-flex flex-col justify-start items-start gap-1">
-                    <div className="justify-center text-color1 text-lg font-medium leading-[28.80px]">
-                      Purpose of the Prize
-                    </div>
-                    <div className="justify-center text-color5 text-sm font-normal leading-snug">
-                      22 Sep, 2025
-                    </div>
+                    </div> */}
                   </div>
                   <Image
                     className="w-[102px] h-9"
@@ -300,7 +298,7 @@ export default function Eventsec() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col justify-start items-start gap-6">
+            {/* <div className="flex flex-col justify-start items-start gap-6">
               <div className="justify-center">
                 <span className=" text-base font-normal leading-relaxed">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -345,7 +343,7 @@ export default function Eventsec() {
                   pariatur. Excepteur sint occaecat cupidatat non proident.{" "}
                 </span>
               </div>
-            </div>
+            </div> */}
           </div>
 
 

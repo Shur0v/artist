@@ -34,8 +34,8 @@ export default function Nav() {
             <div className="nav text-white flex justify-between items-center relative w-full">
               <div className="logo align-middle text-3xl font-extrabold">
               <div className="wraper md:block hidden ">
-                    <div className="wraper h-12 w-[600px] bg-color2  flex justify-center items-center -rotate-45 absolute -left-100  top-0">
-                      <div className="justify-center text-white text-[22px] font-bold font-playwrite leading-7 pl-30">
+                    <div className="wraper shadow-lg h-12 w-[600px] bg-color2  flex justify-center items-center -rotate-45 absolute -left-100  top-0">
+                      <div className="justify-center text-white text-[22px] font-bold font-playwrite leading-7 pl-30 shadow-xl">
                         The Art of
                       </div>
                     </div>
