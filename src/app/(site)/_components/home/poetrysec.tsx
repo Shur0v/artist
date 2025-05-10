@@ -74,48 +74,131 @@ export default function Poetrysec() {
               />
             </div>
             <div className="col-span-7 flex flex-col justify-start items-start gap-7">
-              <div className="w-full md:w-[640px] justify-center text-base font-normal font-['Poppins'] leading-relaxed">
-                Gharbi&apos;s writing and visual arts have been critically
-                acclaimed by writers, artists and art organizers, and her book
-                ...From Songs of a Grasshopper has been attaining recognition as
-                seminal work that is both refreshing and challenging in its
-                themes as well as its aesthetics...Subject and object...
-                brilliant, authoritative work ...From Songs of a Grasshopper is
-                a book of selected memoirs fluidly interweaving poetry, painting
-                and prosems* written between 1982 and 2004 in the United States,
-                Tunisia, Morocco and Spain with color and B&W paintings
-                exhibited during the same period. All poems in the book are
-                simultaneously independent and connected to each other and the
-                paintings reproduced in the book (Najib Redouane).
-              </div>
               <div className="w-full flex flex-col justify-start items-start gap-8">
-                <div className="w-full flex flex-col justify-start items-start gap-4">
-                  <div className="h-[23px] inline-flex justify-start items-center gap-2">
-                    <div className="justify-start text-color5 text-lg font-medium leading-normal">
-                      About the poet
-                    </div>
-                    <div className="w-[63px] h-0 outline-[1.50px] outline-offset-[-0.75px] outline-color2 "></div>
+                <div className="content">
+                  {/* top part */}
+
+                  <div className="w-[70%] justify-center mb-[16px]">
+                    ...Rajaa Gharbi&apos;swriting is steeped in symbolism...of
+                    different terrains of meanings that paint with wordswhere
+                    the poetmakestheunraveling ofthe third person pronouna
+                    spiritual rebirththat reaches deep flight into
+                    psychologiesand intoone&apos;s being;as the poet comments:
+                    &ldquo;It&apos;s importantto writeinthe first person
+                    pronoun, the pronoun of thehistorian, the creator,the
+                    witness, the documentarian,the analyst, the one who
+                    defiesthe pains of silence or its comforts. <br />
                   </div>
-                  <div className="w-full justify-center text-base font-normal font-['Poppins'] leading-relaxed">
-                    ...From Songs of a Grasshopper is an uncompromised narrative
-                    that begins at the book&apos;s front cover with
-                    Gharbi&apos;s painting titled &ldquo;Memory before the
-                    Tablet&rdquo;. The author meditates on Love, language,
-                    religion, exile, identity, poetry, History and the tightly
-                    woven relationship between religion and poetry as she
-                    investigates and lives them in her native country and in the
-                    United States ...The poetics of her writing embody a motion
-                    that is unpredictable...with linguistic and spiritual
-                    resonances that open the door of the wondrous and the
-                    sublime [whether she] is proposing her own re-interpretation
-                    of the History and evolution of the Arabic language, a
-                    phrase from the bible, or a verse from the Quoraan... Her
-                    words, are like blood that emerges to translate the
-                    interiority of silence...She looks into the night for what
-                    transcends it...giving space to poetic meanings that
-                    initiate an enriching dialogue.&rdquo; (N.R)
+
+                  <div className="w-[70%] justify-center mb-[16px]" dir="rtl">
+                    بالطبع، إليك إعادة صياغة للنص الموجود في الصورة بلغة عربية
+                    واضحة وسلسة: &ldquo;الكتابة التي تمارسها الشاعرة تنتمي إلى
+                    الشعر الرمزي، حيث تتعدد دلالاتها وتتنوع معانيها. فهي كتابة
+                    تستكشف عمق الذات وتغوص في التأويل، متجاوزة الشكل الظاهري
+                    للكلمات، لتصوغ هي ضمير الغائب بأنفاسٍ داخلية وروح تتفاعل مع
+                    الكون والوجود. وكما تصف الشاعرة: &lsquo;إنها كتابة بصوت
+                    الحاضر، الأنا الساردة، الشاهد، المبدع، المتأمل، الذي يواجه
+                    عذابات الصمت أو يجد فيها سكينته.&rsquo;&rdquo; هل ترغب في
+                    تلخيصه أيضًا؟
+                    <br />
+                    <span className="text-base font-medium leading-relaxed">
+                      Dr. Fatma Lakhdhar, Writer, literary Critic, University of
+                      Tunis-
+                    </span>
+                  </div>
+
+                  <div className="w-[70%] justify-center mb-[16px]">
+                    ...Herpoetic writing is fresh, powerful... it
+                    commandsattention and mandates its own articulations of verb
+                    and meaning. It establishes an innovationin the emotional
+                    and the esthetic in this North American context. But her
+                    writing goes beyond [it] thanks to her quest for the
+                    universal... Pearls of Love... Her reflections on Poetry are
+                    sublime...A warrior for light...
+                  </div>
+
+                  <div className="w-[70%] justify-center mb-[16px]">
+                    Son écriture poétique est fraiche et forte qui force
+                    l&apos;attention et exige ses propres articulations
+                    compréhensives verbales. C&apos;est une mise au point
+                    affectif et esthétique dans ce contexte nord-américain. Mais
+                    son écriture va plus loin grâce à cette quêtede
+                    l&apos;universel ... perles d&apos;Amour... sa réflexionsur
+                    la poésie est sublime...une guerrière de la
+                    lumière...C&apos;est une grande joie et un immense honneur
+                    d&apos;avoir cette écrivaine dans Le Maghreb Littéraire...
+                    <br />
+                    <span className="text-base font-medium leading-relaxed">
+                      -Dr. Najib Redouane,Literary critic Chief editor of the
+                      internationalLe Maghreb Littéraire
+                    </span>
+                  </div>
+
+                  <div className="w-[70%] justify-center mb-[16px]">
+                    Gharbi&apos;s visuals read like poemsand her poems read like
+                    poems. She dissects meaning and reinstates it in a narrative
+                    context that embraces forces of an intuitive nature...
+                  </div>
+
+                  <div className="w-[70%] justify-center mb-[16px]">
+                    L&apos;art visuelde Gharbi se lit comme des poèmes et ses
+                    poèmes se lisent comme de l&apos;art visuel... Elle dissèque
+                    le sens et le réintègredans un contextede récit qui embrasse
+                    des forces d&apos;une nature intuitive...
+                    <br />
+                    <span className="text-base font-medium leading-relaxed">
+                      -American Artist Joe Fedderson
+                    </span>
+                  </div>
+
+                  <div className="w-[70%] justify-center mb-[16px]">
+                    ...Tunisian-born artist/poet Rajaa A. Gharbi enthralled the
+                    audience at her poetry reading and book signing...
+                  </div>
+
+                  <div className="w-[70%] justify-center mb-[16px]">
+                    L&apos;artiste et poète d&apos;origine Tunisienne Rajaa
+                    Gharbi a emerveillé l&apos;audience pendant sa lecture et
+                    signature de livre à l&apos;espace culturel de
+                    l&apos;ambassade de Tunisie... <br />
+                    <span className="text-base font-medium leading-relaxed">
+                      -The Washington Report on Middle East Affairs
+                    </span>
+                  </div>
+
+                  <div className="w-[70%] justify-center mb-[16px]">
+                    ...In I-dentity&rdquo;, the poetic voice employs an image
+                    &ndash;metaphor &ndash;that comes back to haunt the
+                    fortunate reader. This successful metaphor is but one of
+                    many in this delightful book of words and images.
+                  </div>
+
+                  <div className="w-[70%] justify-center mb-[16px]">
+                    ...Dans le poème&ldquo;I-Dentity&rdquo; la voix poetique
+                    emploie une image-métaphore qui revient pour hanter le
+                    chanceux lecteur. <br />
+                    <span className="text-base font-medium leading-relaxed">
+                      -Dena Bugel-Shunra Literary and Judiciary Hebrew
+                      Translator, Proteus publication
+                    </span>
+                  </div>
+
+                  <div className="w-[70%] justify-center mb-[16px]">
+                    ...I was moved by both the scope and depth of her work. Her
+                    strength of expression in the English language is
+                    extraordinary.
+                  </div>
+
+                  <div className="w-[70%] justify-center mb-[16px]">
+                    ...J&apos;étais touchée aussi bien par l&apos;étendue que
+                    par la profondeur de son travail. La force de son expression
+                    dans la langue anglaise est extraordinaire. <br />
+                    <span className="text-base font-medium leading-relaxed">
+                      -Reader, Malti Greenberg
+                    </span>
                   </div>
                 </div>
+
                 <div className="w-full flex flex-col md:flex-row justify-start items-start md:items-center gap-6">
                   <div
                     className="w-full md:w-auto px-7 py-2.5 bg-color7 rounded-xl flex justify-start items-center gap-3 cursor-pointer"
@@ -133,6 +216,7 @@ export default function Poetrysec() {
                       </div>
                     </div>
                   </div>
+
                   <div
                     className="w-full md:w-auto px-7 py-2.5 bg-color7 rounded-xl flex justify-start items-center gap-3 cursor-pointer"
                     onClick={handleEmailClick}
@@ -154,10 +238,7 @@ export default function Poetrysec() {
             </div>
           </div>
 
-          {/* top frame */}
-          {/* <div className=" flex justify-center items-center mt-20">
-              <Image src="/icon/ptrnbuttom.svg" alt="artist" width={2000} height={2000} className="w-[636px] h-auto" />
-          </div> */}
+
         </div>
       </div>
     </div>

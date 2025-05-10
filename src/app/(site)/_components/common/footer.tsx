@@ -81,8 +81,6 @@ export default function Footer() {
             {" "}
             © 2025 Rajaa Gharbi All Rights Reserved
           </div>
-
-
         </div>
       </div>
     </div>

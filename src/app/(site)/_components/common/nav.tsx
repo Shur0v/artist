@@ -13,7 +13,7 @@ const navItems: NavItem[] = [
   { label: "Fine Art Portfolio", path: "/art" },
   { label: "Poetry", path: "/poetry" },
   { label: "Artist Statement", path: "/about" },
-  { label: "Biography", path: "/bio"},
+  { label: "Biography", path: "/bio" },
   { label: "Reviews", path: "/event" },
   { label: "Contact", path: "/contact" },
 ];
@@ -33,13 +33,13 @@ export default function Nav() {
           <div className="container mx-auto px-4 w-full">
             <div className="nav text-white flex justify-between items-center relative w-full">
               <div className="logo align-middle text-3xl font-extrabold">
-              <div className="wraper md:block hidden ">
-                    <div className="wraper shadow-lg h-12 w-[600px] bg-color2  flex justify-center items-center -rotate-45 absolute -left-100  top-0">
-                      <div className="justify-center text-white text-[22px] font-bold font-playwrite leading-7 pl-30 shadow-xl">
-                        The Art of
-                      </div>
+                <div className="wraper md:block hidden ">
+                  <div className="wraper shadow-lg h-12 w-[600px] bg-color2  flex justify-center items-center -rotate-45 absolute -left-100  top-0">
+                    <div className="justify-center text-white text-[22px] font-bold font-playwrite leading-7 pl-30 shadow-xl">
+                      The Art of
                     </div>
                   </div>
+                </div>
               </div>
 
               {/* Hamburger Menu Button */}
@@ -78,7 +78,11 @@ export default function Nav() {
                           isActive ? "bg-color2 rounded-[20px]" : ""
                         }`}
                       >
-                        <div className={`${isActive ? 'text-white' : 'text-white'} text-base font-normal leading-tight whitespace-nowrap`}>
+                        <div
+                          className={`${
+                            isActive ? "text-white" : "text-white"
+                          } text-base font-normal leading-tight whitespace-nowrap`}
+                        >
                           {item.label}
                         </div>
                       </Link>
@@ -102,7 +106,11 @@ export default function Nav() {
                             isActive ? "bg-color2" : ""
                           }`}
                         >
-                          <div className={`${isActive ? 'text-white' : 'text-white'} text-base font-normal leading-tight`}>
+                          <div
+                            className={`${
+                              isActive ? "text-white" : "text-white"
+                            } text-base font-normal leading-tight`}
+                          >
                             {item.label}
                           </div>
                         </Link>

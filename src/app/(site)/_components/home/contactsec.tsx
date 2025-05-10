@@ -31,7 +31,7 @@ export default function Contactsec() {
               {/* Left Side - Contact Info */}
               {/* Contact Title */}
               <div className="max-w-[135px] flex flex-col justify-start items-start gap-2">
-                <div className="self-stretch justify-start text-color1 text-2xl whitespace-nowrap font-semibold mb-8">Contact US For Booking</div>
+                <div className="self-stretch justify-start text-color1 text-2xl font-semibold w-[380px] mb-8">For Booking, Art Purchases or Studio Visits Contact Us</div>
               </div>
 
               <div className="lg:col-span-4 inline-flex flex-col justify-start items-start gap-6">
