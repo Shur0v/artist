@@ -53,7 +53,7 @@ export default function Contactsec() {
                   </div>
                   <div className="max-w-[272px] inline-flex flex-col justify-start items-start gap-1.5">
                     <div className="self-stretch justify-start text-color1 text-base font-medium leading-tight">Available Books</div>
-                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">From Sons of Bridges/Men Aghani Aljousour<br />Available on Amazon</div>
+                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">From Songs of Bridges/Men Aghani Aljousour<br />Available on Amazon</div>
                   </div>
                 </div>
 
