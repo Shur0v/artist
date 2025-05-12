@@ -1,7 +1,9 @@
 "use client"
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import Image from 'next/image'
 import { HiOutlineLocationMarker, HiOutlinePhone, HiOutlineMail, HiOutlineBookOpen } from 'react-icons/hi'
+import { BsAmazon } from 'react-icons/bs'
 
 type FormData = {
   name: string;
@@ -31,7 +33,14 @@ export default function Contactsec() {
               {/* Left Side - Contact Info */}
               {/* Contact Title */}
               <div className="max-w-[135px] flex flex-col justify-start items-start gap-2">
-                <div className="self-stretch justify-start text-color1 text-2xl font-semibold w-[380px] mb-8">For Booking, Art Purchases or Studio Visits Contact Us</div>
+                <div className="self-stretch justify-start text-color1 text-2xl w-[380px] mb-8">
+                  For Bookings, Art Purchases or Studio Visits<br />
+                  Email us contact@rajaagharbi.com<br />
+                  Call us 206-816-9378<br />
+                  Available Books From <i>Songs of Bridges</i> <BsAmazon className='inline-block align-middle' /> <br />
+                  Representation: Center on Contemporary Art Seattle, Washington & <br />
+                  Rajaa Gharbi Studio
+                </div>
               </div>
 
               <div className="lg:col-span-4 inline-flex flex-col justify-start items-start gap-6">
@@ -53,7 +62,7 @@ export default function Contactsec() {
                   </div>
                   <div className="max-w-[272px] inline-flex flex-col justify-start items-start gap-1.5">
                     <div className="self-stretch justify-start text-color1 text-base font-medium leading-tight">Available Books</div>
-                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">From Songs of Bridges/Men Aghani Aljousour<br />Available on Amazon</div>
+                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">From <i>Songs of Bridges</i>/Men Aghani Aljousour<br />Available on Amazon</div>
                   </div>
                 </div>
 

@@ -26,27 +26,27 @@ const artworkData: ArtworkData[] = [
   },
   {
     id: 3,
-    image: "/art/art3.jpg",
-    title: "L'Aiisha, Life in our Names",
-    description: "Acrylic on paper 20.1/8 X 22.6/8.Prints available",
+    image: "/art/art3.png",
+    title: "Cauldron Delights II",
+    description: "Acrylic on parchment. 17x11. Prints available",
   },
   {
     id: 4,
     image: "/art/art5.jpg",
-    title: "Cauldron Delights II",
-    description: "Acrylic on parchment.17x11. Prints available",
+    title: "L'Aiisha, Life in our Names",
+    description: "Acrylic on paper 20.1/8 X 22.6/8. Prints available",
   },
   {
     id: 5,
     image: "/latest/15.jpg",
     title: "Cauldron Delights I",
-    description: "Acrylic on parchment.14X11.Available",
+    description: "Acrylic on parchment. 14X11. Available",
   },
   {
     id: 6,
     image: "/latest/22.jpg",
     title: "Circus and Steady Dancers",
-    description: "Acrylic on canvas. 48x24.Prints available",
+    description: "Acrylic on canvas. 48x24. Prints available",
   },
   {
     id: 7,
@@ -58,13 +58,13 @@ const artworkData: ArtworkData[] = [
     id: 8,
     image: "/latest/4.jpg",
     title: "Moons, Desires and Rumi's Mistresses",
-    description: "Acrylicon paper30.1/8x 22.3/8. Prints available",
+    description: "Acrylicon paper30. 1/8x 22.3/8. Prints available",
   },
   {
     id: 9,
     image: "/latest/23.jpg",
     title: "Not an Omen",
-    description: "Gouacheandink. 12x9/4/8. Prints available",
+    description: "Gouacheandink. 12X9/4/8. Prints available",
   },
   {
     id: 10,
@@ -76,7 +76,7 @@ const artworkData: ArtworkData[] = [
     id: 11,
     image: "/latest/12.jpg",
     title: "I see you Coming from Far Away",
-    description: "Acrylic on paper9.4/8x7.4/8. Available",
+    description: "Acrylic on paper 9.4/8x7.4/8. Available",
   },
   {
     id: 12,
@@ -96,13 +96,13 @@ const artworkData: ArtworkData[] = [
     image: "/latest/7.jpg",
     title: "I love you Too",
     description:
-      "Acrylic on paperboard. 14.6/8x10.7/8. Prints available.23.1/2x 11.6/8. Available",
+      "Acrylic on paperboard. 14.6/8x10.7/8. Prints available. 23.1/2x 11.6/8. Available",
   },
   {
     id: 15,
     image: "/latest/13.jpg",
     title: "A Child's Freedom",
-    description: "Acrylic on paper.11x8.4/8. Prints available",
+    description: "Acrylic on paper .11x8.4/8. Prints available",
   },
   {
     id: 16,
@@ -114,19 +114,19 @@ const artworkData: ArtworkData[] = [
     id: 17,
     image: "/latest/6.jpeg",
     title: "Birds in the Wind and in the Mouth",
-    description: "Acrylic on canvas.24x24. Available",
+    description: "Acrylic on canvas. 24x24. Available",
   },
   {
     id: 18,
     image: "/latest/16.jpg",
     title: "Dancers by the Rim of Dreams",
-    description: "Acrylic on paper 18.4.8by17.4.8",
+    description: "Acrylic on paper 8.5X7.48",
   },
   {
     id: 19,
     image: "/latest/19.jpg",
     title: "When the Diacritic Sign Speaks its Life",
-    description: " Acrylic on paper. 21.1/8x15.2/8.Printsavailable",
+    description: " Acrylic on paper. 21.1/8x15.2/8. Printsavailable",
   },
   {
     id: 20,
@@ -152,7 +152,7 @@ const artworkData: ArtworkData[] = [
     id: 23,
     image: "/latest/9.jpg",
     title: "Lioness, Le Rouge et Le Noir Ne s'épousent-ils Pas ?",
-    description: "Acrylic on paper.11x8.4/8. Available",
+    description: "Acrylic on paper. 11x8.4/8. Available",
   },
   {
     id: 24,
