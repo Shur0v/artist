@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import { useForm } from 'react-hook-form'
-import Image from 'next/image'
 import { HiOutlineLocationMarker, HiOutlinePhone, HiOutlineMail, HiOutlineBookOpen } from 'react-icons/hi'
 import { BsAmazon } from 'react-icons/bs'
 
