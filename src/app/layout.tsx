@@ -22,7 +22,15 @@ const ebGaramond = EB_Garamond({
   variable: "--font-eb-garamond",
   weight: ["400", "500", "600", "700", "800"],
   style: ["normal", "italic"],
-  subsets: ["cyrillic", "cyrillic-ext", "greek", "greek-ext", "latin", "latin-ext", "vietnamese"],
+  subsets: [
+    "cyrillic",
+    "cyrillic-ext",
+    "greek",
+    "greek-ext",
+    "latin",
+    "latin-ext",
+    "vietnamese",
+  ],
 });
 
 export const metadata: Metadata = {
@@ -38,10 +46,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';" />
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';"
+        />
         <meta name="referrer" content="no-referrer" />
       </head>
-      <body className={`${poppins.variable} ${playwrite.variable} ${ebGaramond.variable} antialiased`}>
+      <body
+        className={`${poppins.variable} ${playwrite.variable} ${ebGaramond.variable} antialiased`}
+      >
         <SecurityProvider>
           <Nav />
           {/* <Wave /> */}

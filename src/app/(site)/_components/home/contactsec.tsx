@@ -1,23 +1,33 @@
-"use client"
-import React from 'react'
-import { useForm } from 'react-hook-form'
-import { HiOutlineLocationMarker, HiOutlinePhone, HiOutlineMail, HiOutlineBookOpen } from 'react-icons/hi'
-import { BsAmazon } from 'react-icons/bs'
+"use client";
+import React from "react";
+import { useForm } from "react-hook-form";
+import {
+  HiOutlineLocationMarker,
+  HiOutlinePhone,
+  HiOutlineMail,
+  HiOutlineBookOpen,
+} from "react-icons/hi";
+import { BsAmazon } from "react-icons/bs";
 
 type FormData = {
   name: string;
   email: string;
   subject: string;
   message: string;
-}
+};
 
 export default function Contactsec() {
-  const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<FormData>();
 
   const onSubmit = (data: FormData) => {
     console.log(data);
     // Handle form submission here
-    
+
     // Reset form after successful submission
     reset();
   };
@@ -33,11 +43,16 @@ export default function Contactsec() {
               {/* Contact Title */}
               <div className="max-w-[135px] flex flex-col justify-start items-start gap-2">
                 <div className="self-stretch justify-start text-color1 text-2xl w-[380px] mb-8">
-                  For Bookings, Art Purchases or Studio Visits<br />
-                  Email us contact@rajaagharbi.com<br />
-                  Call us 206-816-9378<br />
-                  Available Books From <i>Songs of Bridges</i> <BsAmazon className='inline-block align-middle' /> <br />
-                  Representation: Center on Contemporary Art Seattle, Washington & <br />
+                  For Bookings, Art Purchases or Studio Visits
+                  <br />
+                  Email us contact@rajaagharbi.com
+                  <br />
+                  Call us 206-816-9378
+                  <br />
+                  Available Books From <i>Songs of Bridges</i>{" "}
+                  <BsAmazon className="inline-block align-middle" /> <br />
+                  Representation: Center on Contemporary Art Seattle, Washington
+                  & <br />
                   Rajaa Gharbi Studio
                 </div>
               </div>
@@ -49,8 +64,14 @@ export default function Contactsec() {
                     <HiOutlineLocationMarker className="w-6 h-6 text-color2" />
                   </div>
                   <div className="max-w-[272px] inline-flex flex-col justify-start items-start gap-1.5">
-                    <div className="self-stretch justify-start text-color1 text-base font-medium leading-tight">Representation</div>
-                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">Center on Contemporary Art<br />Seattle, Washington</div>
+                    <div className="self-stretch justify-start text-color1 text-base font-medium leading-tight">
+                      Representation
+                    </div>
+                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">
+                      Center on Contemporary Art
+                      <br />
+                      Seattle, Washington
+                    </div>
                   </div>
                 </div>
 
@@ -60,8 +81,14 @@ export default function Contactsec() {
                     <HiOutlineBookOpen className="w-6 h-6 text-color2" />
                   </div>
                   <div className="max-w-[272px] inline-flex flex-col justify-start items-start gap-1.5">
-                    <div className="self-stretch justify-start text-color1 text-base font-medium leading-tight">Available Books</div>
-                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">From <i>Songs of Bridges</i>/Men Aghani Aljousour<br />Available on Amazon</div>
+                    <div className="self-stretch justify-start text-color1 text-base font-medium leading-tight">
+                      Available Books
+                    </div>
+                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">
+                      From <i>Songs of Bridges</i>/Men Aghani Aljousour
+                      <br />
+                      Available on Amazon
+                    </div>
                   </div>
                 </div>
 
@@ -71,8 +98,12 @@ export default function Contactsec() {
                     <HiOutlinePhone className="w-6 h-6 text-color2" />
                   </div>
                   <div className="max-w-[272px] inline-flex flex-col justify-start items-start gap-1.5">
-                    <div className="self-stretch justify-start text-color1 text-base font-medium leading-tight">Call Us</div>
-                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">(206) 816-9378</div>
+                    <div className="self-stretch justify-start text-color1 text-base font-medium leading-tight">
+                      Call Us
+                    </div>
+                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">
+                      (206) 816-9378
+                    </div>
                   </div>
                 </div>
 
@@ -82,8 +113,12 @@ export default function Contactsec() {
                     <HiOutlineMail className="w-6 h-6 text-color2" />
                   </div>
                   <div className="max-w-[272px] inline-flex flex-col justify-start items-start gap-1.5">
-                    <div className="self-stretch justify-start text-color1 text-base font-medium leading-tight">Email Us</div>
-                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">contact@rajaagharbi.com</div>
+                    <div className="self-stretch justify-start text-color1 text-base font-medium leading-tight">
+                      Email Us
+                    </div>
+                    <div className="self-stretch justify-start text-color5 text-sm font-normal leading-[18.20px]">
+                      contact@rajaagharbi.com
+                    </div>
                   </div>
                 </div>
               </div>
@@ -91,54 +126,77 @@ export default function Contactsec() {
 
             {/* Right Side - Contact Form */}
             <div className="w-full lg:w-[756px] mt-8 lg:mt-0">
-              <form onSubmit={handleSubmit(onSubmit)} className="w-full inline-flex flex-col justify-start items-start gap-6">
+              <form
+                onSubmit={handleSubmit(onSubmit)}
+                className="w-full inline-flex flex-col justify-start items-start gap-6"
+              >
                 <div className="self-stretch flex flex-col justify-start items-start gap-3">
                   <div className="self-stretch inline-flex justify-start items-start gap-3 flex-col md:flex-row">
                     <div className="flex-1 w-full inline-flex flex-col justify-start items-start gap-2">
                       <div className="inline-flex justify-center items-center gap-2.5">
-                        <div className="justify-start text-color5 text-base font-normal font-['Poppins'] leading-relaxed">Your Name</div>
+                        <div className="justify-start text-color5 text-base font-normal font-['Poppins'] leading-relaxed">
+                          Your Name
+                        </div>
                       </div>
                       <input
                         type="text"
                         {...register("name", { required: true })}
                         className="self-stretch h-14 px-[18px] py-3.5 bg-white rounded-md border-[0.60px] border-black/20 focus:outline-none focus:border-color2 w-full"
                       />
-                      {errors.name && <span className="text-red-500 text-sm">This field is required</span>}
+                      {errors.name && (
+                        <span className="text-red-500 text-sm">
+                          This field is required
+                        </span>
+                      )}
                     </div>
                     <div className="flex-1 w-full inline-flex flex-col justify-start items-start gap-2">
                       <div className="inline-flex justify-center items-center gap-2.5">
-                        <div className="justify-start text-color5 text-base font-normal font-['Poppins'] leading-relaxed">Your Email</div>
+                        <div className="justify-start text-color5 text-base font-normal font-['Poppins'] leading-relaxed">
+                          Your Email
+                        </div>
                       </div>
                       <input
                         type="email"
-                        {...register("email", { 
+                        {...register("email", {
                           required: true,
-                          pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i 
+                          pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                         })}
                         className="self-stretch h-14 px-[18px] py-3.5 bg-white rounded-md border-[0.60px] border-black/20 focus:outline-none focus:border-color2  w-full"
                       />
-                      {errors.email && <span className="text-red-500 text-sm">Please enter a valid email</span>}
+                      {errors.email && (
+                        <span className="text-red-500 text-sm">
+                          Please enter a valid email
+                        </span>
+                      )}
                     </div>
                   </div>
 
                   <div className="self-stretch inline-flex justify-start items-start gap-3">
                     <div className="flex-1 inline-flex flex-col justify-start items-start gap-2 w-full">
                       <div className="inline-flex justify-center items-center gap-2.5">
-                        <div className="justify-start text-color5 text-base font-normal font-['Poppins'] leading-relaxed">Subject</div>
+                        <div className="justify-start text-color5 text-base font-normal font-['Poppins'] leading-relaxed">
+                          Subject
+                        </div>
                       </div>
                       <input
                         type="text"
                         {...register("subject", { required: true })}
                         className="self-stretch h-14 px-[18px] py-3.5 bg-white rounded-md border-[0.60px] border-black/20 focus:outline-none focus:border-color2  w-full"
                       />
-                      {errors.subject && <span className="text-red-500 text-sm">This field is required</span>}
+                      {errors.subject && (
+                        <span className="text-red-500 text-sm">
+                          This field is required
+                        </span>
+                      )}
                     </div>
                   </div>
 
                   <div className="self-stretch flex flex-col justify-start items-start gap-8 w-full">
                     <div className="self-stretch flex flex-col justify-start items-start gap-2 w-full">
                       <div className="inline-flex justify-center items-center gap-2.5">
-                        <div className="justify-start text-color5 text-base font-normal font-['Poppins'] leading-relaxed">Message</div>
+                        <div className="justify-start text-color5 text-base font-normal font-['Poppins'] leading-relaxed">
+                          Message
+                        </div>
                       </div>
                       <textarea
                         {...register("message", { required: true })}
@@ -146,7 +204,11 @@ export default function Contactsec() {
                         placeholder="Share your thoughts..."
                         className="self-stretch h-[168px] px-[18px] py-3.5 bg-white rounded-md border-[0.60px] border-black/20 focus:outline-none focus:border-color2 resize-none text-color5 text-base font-normal font-['Poppins'] leading-relaxed w-full"
                       />
-                      {errors.message && <span className="text-red-500 text-sm">This field is required</span>}
+                      {errors.message && (
+                        <span className="text-red-500 text-sm">
+                          This field is required
+                        </span>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -156,7 +218,9 @@ export default function Contactsec() {
                     type="submit"
                     className="self-stretch h-14 px-7 py-4 bg-color2 rounded-[10px] inline-flex justify-center items-center gap-4 hover:bg-color1 transition-colors duration-300"
                   >
-                    <span className="justify-center text-white text-xl font-medium font-['Poppins'] leading-7">Send Message</span>
+                    <span className="justify-center text-white text-xl font-medium font-['Poppins'] leading-7">
+                      Send Message
+                    </span>
                   </button>
                 </div>
               </form>
@@ -165,5 +229,5 @@ export default function Contactsec() {
         </div>
       </div>
     </div>
-  )
-} 
+  );
+}

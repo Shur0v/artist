@@ -3,8 +3,6 @@ import React from "react";
 import { HiOutlineDownload } from "react-icons/hi";
 
 export default function Poetrysec() {
-
-
   const handleDownloadClick = (e: React.MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
     const win = window.open("", "_blank");
@@ -42,24 +40,8 @@ export default function Poetrysec() {
     <div className="main mx-4 lg:mx-0 md:mt-[80px] my-0 -mb-[80px]">
       <div className="container">
         <div className="content">
-          {/* top frame
-          <div className=" flex justify-center items-center mb-20">
-            <Image
-              src="/icon/ptrntop.svg"
-              alt="artist"
-              width={2000}
-              height={2000}
-              className="w-[636px] h-auto"
-            />
-          </div> */}
-
           {/* title */}
           <div className="flex flex-col justify-start items-center gap-6 mb-[60px]">
-            {/* <div className="px-6 py-2.5 border-b-2 border-color2 flex justify-center items-center gap-3">
-              <div className="justify-center text-color2 text-base font-normal leading-none">
-                {" "}
-              </div>
-            </div> */}
             <div className="flex justify-center items-center gap-2.5">
               <div className="max-w-[1099px] text-center justify-center">
                 <span className="text-color1 text-[40px] font-semibold leading-[46px]">
@@ -243,29 +225,10 @@ export default function Poetrysec() {
                       </div>
                     </div>
                   </div>
-{/* 
-                  <div
-                    className="w-full md:w-auto px-7 py-2.5 bg-color7 rounded-xl flex justify-start items-center gap-3 cursor-pointer"
-                    onClick={handleEmailClick}
-                  >
-                    <div className="w-10 h-10 p-[5px] bg-white/20 rounded-[20px] flex justify-center items-center gap-2.5">
-                      <HiOutlineMail className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="flex-1 md:flex-none inline-flex flex-col justify-start items-start gap-1.5">
-                      <div className="self-stretch justify-start text-white text-base font-medium font-['Poppins'] leading-tight">
-                        Email Us
-                      </div>
-                      <div className="self-stretch justify-start text-white text-sm font-normal font-['Poppins'] leading-[18.20px]">
-                        contact@rajaagharbi.com
-                      </div>
-                    </div>
-                  </div> */}
                 </div>
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </div>

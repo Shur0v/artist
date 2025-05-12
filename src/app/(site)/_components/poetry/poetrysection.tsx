@@ -3,7 +3,6 @@ import Image from "next/image";
 import Poetrysec from "../home/poetrysec";
 
 export default function Poetrysection() {
-
   return (
     <div>
       <div className="main py-20 mx-4 lg:mx-0 ">
@@ -43,7 +42,6 @@ export default function Poetrysection() {
                 </div>
               </div>
             </div>
-
             <Poetrysec />
           </div>
         </div>

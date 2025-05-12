@@ -1,9 +1,9 @@
-import React from 'react'
-import Eventsec from '../_components/home/eventsec'
+import React from "react";
+import Eventsec from "../_components/home/eventsec";
 export default function Event() {
   return (
     <div>
-        <Eventsec />
+      <Eventsec />
     </div>
-  )
+  );
 }
