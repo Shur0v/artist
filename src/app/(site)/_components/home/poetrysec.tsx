@@ -1,15 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import { HiOutlineDownload, HiOutlineMail } from "react-icons/hi";
+import { HiOutlineDownload } from "react-icons/hi";
 
 export default function Poetrysec() {
-  const handleEmailClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    e.preventDefault();
-    const contactSection = document.getElementById("contactsec");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+
 
   const handleDownloadClick = (e: React.MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
